@@ -71,7 +71,8 @@ namespace Twitch_Chatbot_Mitsuki
         public static class TradeResponseStrings
         {
             public static string RequestNotFoundGameDefault = "({0}) @{1} We couldn't trade your Pokémon!";
-            public static string RequestNotFoundDefault = "@{0} We couldn't trade your Pokémon!";
+            public static string RequestNotFoundGameDefaultMessage = "({0}) @{1} We couldn't trade your Pokémon! Error Message: {2}";
+            public static string RequestNotFoundDefault = "@{0} We couldn't trade your Pokémon! Error Message: {1}";
             public static string RequestNotFoundMessage = "({0}) @{1} We couldn't trade your Pokémon {2}!";
             public static string RequestInvalid = "@{0} your Request seems invalid: {1}";
 
