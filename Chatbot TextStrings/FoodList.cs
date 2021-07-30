@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Chatbot_TextStrings
+namespace TextStrings
 {
     public static class Food
     {

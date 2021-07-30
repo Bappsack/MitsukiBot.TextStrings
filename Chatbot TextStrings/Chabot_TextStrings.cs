@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Twitch_Chatbot_Mitsuki
+namespace TextStrings
 {
-    public static class TextStrings
+    public static class Chatbot_TextStrings
     {
         public static class InternalStrings
         {

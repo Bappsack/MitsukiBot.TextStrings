@@ -40,8 +40,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="3DS_ErrorStrings.cs" />
     <Compile Include="FoodList.cs" />
-    <Compile Include="TextStrings.cs" />
+    <Compile Include="SWSH_ErrorStrings.cs" />
+    <Compile Include="Chabot_TextStrings.cs" />
     <Compile Include="TwitchCommandHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
