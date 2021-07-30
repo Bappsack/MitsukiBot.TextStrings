@@ -35,7 +35,7 @@ namespace Twitch_Chatbot_Mitsuki
                 "error" or "errors" => TextStrings.HelpCommandsStrings.Error,
                 "errorgts" or "gts" => TextStrings.HelpCommandsStrings.ErrorGTS,
                 "errorlink" or "link" => TextStrings.HelpCommandsStrings.ErrorLink,
-                "errorcustom" or "custom" => TextStrings.HelpCommandsStrings.ErrorCustom,
+                "errorcustom" or "custom" or "invalid" => TextStrings.HelpCommandsStrings.ErrorCustom,
 
                 // Trade Command Help
                 "commands" or "command" => TextStrings.HelpCommandsStrings.CommandList,
@@ -48,8 +48,9 @@ namespace Twitch_Chatbot_Mitsuki
                 "mythicals" or "mythical" => TextStrings.HelpCommandsStrings.Mythicals,
                 "mythicals6" or "mythical6" => TextStrings.HelpCommandsStrings.Mythicals6,
                 "mythicals7" or "mythical7" => TextStrings.HelpCommandsStrings.Mythicals7,
+                "mythicals8" or "mythical8" => TextStrings.HelpCommandsStrings.Mythicals8,
                 "shiny" => TextStrings.HelpCommandsStrings.ShinyDefault,
-                "sub" or "subscribe" or "subscriber" => TextStrings.HelpCommandsStrings.Sub,
+                "sub" or "subs" or "subscribe" or "subscriber" => TextStrings.HelpCommandsStrings.Sub,
                 "takeown" or "mydetails" or "trainerid" or "trainer" => TextStrings.HelpCommandsStrings.Takeown,
 
                 // Chat Command Help
@@ -61,7 +62,6 @@ namespace Twitch_Chatbot_Mitsuki
                 "jackpot" or "jp" or "jack" or "bank" => TextStrings.HelpCommandsStrings.Jackpot,
                 "trivia" => TextStrings.HelpCommandsStrings.Trivia,
                 "raffle" or "raff" => TextStrings.HelpCommandsStrings.Raffle,
-                "mythicals8" or "mythical8" => TextStrings.HelpCommandsStrings.Mythicals8,
 
                 // Options
                 "options" or "option" => TextStrings.HelpCommandsStrings.Options,

@@ -40,7 +40,7 @@ namespace Twitch_Chatbot_Mitsuki
             public static string Invalid_Shiny = "Invalid Shiny State!";
             public static string Invalid_PokeRus = "Invalid Pokérus State!";
             public static string Invalid_Gender = "Invalid Gender State!";
-            public static string Invalid_GMax = "Invalid GMax State!";
+            public static string Invalid_GMax = "Invalid Gmax State!";
             public static string Invalid_Event = "Invalid Event State!";
             public static string Invalid_Egg = "Invalid Egg State!";
             public static string Invalid_TakeOwn = "Invalid TakeOwn State!";
@@ -71,15 +71,15 @@ namespace Twitch_Chatbot_Mitsuki
         public static class TradeResponseStrings
         {
             public static string RequestNotFoundGameDefault = "({0}) @{1} We couldn't trade your Pokémon!";
-            public static string RequestNotFoundGameDefaultMessage = "({0}) @{1} We couldn't trade your Pokémon! Error Message: {2}";
-            public static string RequestNotFoundDefault = "@{0} We couldn't trade your Pokémon! Error Message: {1}";
+            public static string RequestNotFoundGameDefaultMessage = "({0}) @{1} We couldn't trade your Pokémon! Error message: {2}";
+            public static string RequestNotFoundDefault = "@{0} We couldn't trade your Pokémon! Error message: {1}";
             public static string RequestNotFoundMessage = "({0}) @{1} We couldn't trade your Pokémon {2}!";
-            public static string RequestInvalid = "@{0} your Request seems invalid: {1}";
+            public static string RequestInvalid = "@{0} your request seems invalid: {1}";
 
-            public static string RequestWasTradedGame = "({0}) @{1} your Pokémon {2} was traded!";
-            public static string RequestWasTraded = "@{0} your Pokémon {1} was traded!";
-            public static string RequestWasTradedSubscriberGame = "[Subscriber Trade] ({0}) @{1} your Pokémon {2} was traded!";
-            public static string RequestWasTradedSubscriber = "[Subscriber Trade] @{0} your Pokémon {1} was traded!";
+            public static string RequestWasTradedGame = "({0}) @{1} your Pokémon {2} has been traded!";
+            public static string RequestWasTraded = "@{0} your Pokémon {1} has been traded!";
+            public static string RequestWasTradedSubscriberGame = "[Subscriber Trade] ({0}) @{1} your Pokémon {2} has been traded!";
+            public static string RequestWasTradedSubscriber = "[Subscriber Trade] @{0} your Pokémon {1} has been traded!";
         }
 
         public static class ResponseStrings
@@ -133,10 +133,10 @@ namespace Twitch_Chatbot_Mitsuki
             public static string FindUserFriendcode_Null = "Friend code is invalid.";
 
             // Bans
-            public static string Ban_SuccessWithFriendcode = "[Ban Message] User: {0} was banned from chat, reason: {1}, friend code: {2} is now banned globally.";
-            public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} was banned from chat, reason: {1}, user didn't save a friend code yet, no friend code was banned.";
+            public static string Ban_SuccessWithFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, friend code: {2} has been banned globally.";
+            public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, user didn't save a friend code yet, no friend code was banned.";
             public static string BanFriendcode_Success = "@{0} has banned the friend code: {1} from user: {2}";
-            public static string BanFriendcode_NotFound = "Nobody has this friend code.";
+            public static string BanFriendcode_NotFound = "Nobody has this friend code saved.";
 
 
             // Unban
@@ -214,7 +214,6 @@ namespace Twitch_Chatbot_Mitsuki
             // Jackpot
             public static string Jackpot_BankAmount = "The jackpot bank has a total Pcoin amount of";
             public static string Jackpot_NotEnoughPcoins = "You don't have enough Pcoins to play jackpot! [{0}/5000 Pcoins]";
-
             public static string Jackpot_Winner = "You won the JACKPOT of";
             public static string Jackpot_Loser = "You lose! Better luck next time!";
             public static string Jackpot_Cooldown = "You currently have a gamble cooldown! Remaining time:";
@@ -338,17 +337,17 @@ namespace Twitch_Chatbot_Mitsuki
 
         public static class HelpCommandsStrings
         {
-            public static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving the Gender and Level set to 'Any', 3) Request a trade using '!tradeORAS Deposit: [Pokémon Deposited]', 4) Wait for MitsukiBot to say your Pokémon has arrived!";
-            public static string TradeHelp7 = "[SUMO/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving the Gender and Level set to 'Any', 3) Request a trade using '!trade Deposit: [Pokémon Deposited]', 4) Wait for MitsukiBot to say your Pokémon has arrived! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
+            public static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving the Gender and Level set to 'Any', 3) Request a trade using '!tradeORAS Deposit: [Pokémon Deposited]', 4) Wait for MitsukiBot to say your Pokémon has been traded!";
+            public static string TradeHelp7 = "[SUMO/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving the Gender and Level set to 'Any', 3) Request a trade using '!trade Deposit: [Pokémon Deposited]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
             public static string TradeHelp8 = "[SWSH] 1) Save a custom 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!strade Request: [Pokémon Wanted]', 3) Wait for swsh_linkbot to ping you to start searching with your saved Link Code!";
 
-            public static string Error = "Specify what error you're getting: '!help link' for Gen 8 (SWSH) Link Trade, '!help gts' for Gen 7 (SUMO/USUM) or Gen 6 (XY/ORAS) GTS, '!help custom' for Pokémon not coming with customizations, or ask for help in the #support channel in our Discord server!";
+            public static string Error = "Specify what error you're getting: '!help link' for Gen 8 (SWSH) Link Trade, '!help gts' for Gen 7 (SUMO/USUM) or Gen 6 (XY/ORAS) GTS, '!help custom' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public static string ErrorLink = "[Switch] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Searching with saved Link Code? (Link Trade -> Set Link Code), 3) Try saving a new Link Code, 4) Try restarting your console";
             public static string ErrorGTS = "[3DS] 1) Correct friend code saved? ('!myfc'), 2) Correct trade command used? (Gen 7 -> '!trade' // Gen 6 -> '!tradeORAS'), 3) Correct Pokémon specified in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Gender and Level in GTS left at default settings? ('Any' or fixed Gender), 5) Deposited Trubbish if using Showdown set?, 6) Can't request mythical Pokémon in Gen 7! ('!help mythicals7')";
-            public static string ErrorCustom = "If you're receiving a Pokémon without your customizations, there's either a formatting error in your trade command, or your requested customizations are not legal so the bot is trading you a default set.";
+            public static string ErrorCustom = "If your customizations are not legal, the bot will cancel the trade and remove you from the queue. Common issues include setting the level of the Pokémon too low, selecting a ball that the Pokémon cannot be in, and having moves that the Pokémon cannot learn. You can try to fix your command in the #command_testing channel or ask for help in the #support channel in our Discord server.";
 
             public static string Mythicals = "Specify what game you're on: '!help mythicals8' for Gen 8 (SWSH), '!help mythicals7' for Gen 7 (SUMO/USUM), '!help mythicals6' for Gen 6 (XY/ORAS), or '!mythicals' for a list of mythical Pokémon";
-            public static string Mythicals6 = "[XY/ORAS] If your requested mythical Pokémon does not arrive in the Gen 6 (XY/ORAS) GTS, the bot was unable to trade it because the Pokémon has unsupported customizations // Supported mythical customizations: Nickname, Item, Nature, EVs, IVs, Language, Pokerus, Ribbons, Moves (standard movepool only), IsShiny (Jirachi, Arceus, Diancie only) // Additional customizations for Deoxys only: Form, Ball, OT, TID, SID, TakeOwn, Level (80-100)";
+            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon with unsupported customizations can't be requested from the Gen 6 (XY/ORAS) GTS trades // Supported mythical customizations: Nickname, Item, Nature, EVs, IVs, Language, Pokerus, Ribbons, Moves (standard movepool only), IsShiny (Jirachi, Arceus, Diancie only) // Additional customizations for Deoxys only: Form, Ball, OT, TID, SID, TakeOwn, Level (80-100)";
             public static string Mythicals7 = "[SUMO/USUM] Mythical Pokémon can't be requested from the Gen 7 (SUMO/USUM) GTS trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
             public static string Mythicals8 = "[SWSH] Mythical Pokémon can be requested from the Gen 8 (SWSH) Link Trades as long as they are in the game // Mythical Pokémon not in SWSH: Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Meloetta, Hoopa";
 
@@ -363,7 +362,7 @@ namespace Twitch_Chatbot_Mitsuki
             public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8), sub-only chat commands";
             public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Trade the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
 
-            public static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', earn Pcoins from the daily bonus ('!daily'), gambling ('!gamble', '!bandit', !raffle', '!jackpot'), trivia (1000 Pcoins per win), or by just being in stream chat!";
+            public static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', earn Pcoins from the daily bonus ('!daily'), gambling ('!gamble', '!bandit', '!raffle', '!jackpot'), trivia (1000 Pcoins per win), or by just being in stream chat!";
             public static string Raffle = "Raffle happens every 10 minutes and gives you the chance to win the total Pcoins from all the entries, pay 5000 Pcoins to enter using '!raffle'";
             public static string Bandit = "Bandit/slots multiplies the amount gambled if you match 3 emotes, try your luck using '!bandit ###' // Allowed gamble amounts: 1-50000 | quarter | half | all // Multipliers: mitsukiWill 20x | mitsukiLick 10x | mitsukiLUL 8x | mitsukiWhat 6x | mitsukiFlirt 4x | mitsukiThink 2x";
             public static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double the amount gambled if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";
@@ -374,22 +373,19 @@ namespace Twitch_Chatbot_Mitsuki
             public static string CommandList = "List of available commands: https://bit.ly/2m9qcwN";
 
             public static string Options = "Help options: bandit, commands, cooldown, cparty, deposit, eggs, error, events, format, forms, friendcode, gamble, gen6, gen7, gen8, jackpot, mythicals, pcoins, raffle, shiny, sub, takeown, trivia";
-            public static string InvalidArgsMessage = "Specify what help you're looking for: '!help Gen8' for SWSH Link Trade, '!help Gen7' for SUMO/USUM GTS, '!help Gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
+            public static string InvalidArgsMessage = "Specify what help you're looking for: '!help gen8' for SWSH Link Trade, '!help gen7' for SUMO/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
         public static class RegularTextCommands
         {
-            public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Zacian, Zamazenta, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow";
+            public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Zacian, Zamazenta, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude";
             public static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude";
             public static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
-            public static string WonderTradeHowTo = "Press 'Yes' when the Wonder Trade timer says﻿ 'Go Wonder Trade' for the best chance!";
             public static string CommandsListURL = "List of available commands: https://bit.ly/2m9qcwN";
             public static string RulesURL = "Stream rules: https://bit.ly/3wDHp00";
             public static string FormListURL = "List of available forms: https://bit.ly/2OYRzUm";
             public static string TwitterURL = "Twitter account: https://twitter.com/ThatChrisWhite";
             public static string DiscordURL = "Discord server: https://discordapp.com/invite/5mdVKq9";
-            public static string FriendCodeHowTo = "[3DS] Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
-            public static string TakeOwnHowTo = "[SUBS ONLY] 1) '!unlockdetails', 2) Trade the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
             public static string SubscribeMessage = "You can support us with only $4.99 and gain awesome subscriber-only perks! (Check '!help sub' for a list of perks) - https://www.twitch.tv/products/mitsuki_tv/ticket - If you have Amazon Prime it's completely free (or a 30-day free trial) - https://twitch.amazon.com/prime";
             public static string FreeTrialSub = "Start your 30-day free trial with Amazon Prime - https://twitch.amazon.com/prime";
             public static string BigShaq = "The ting goes skrrrahh, PAP, PAP, ka-ka-ka, Skidiki-pap-pap-pap. QUICK MATH, SKRRRAHH, MANS NOT HOT, No Ketchup, just sauce.";
