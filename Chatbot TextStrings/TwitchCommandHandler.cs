@@ -13,13 +13,11 @@ namespace TextStrings
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        public static string HandleHelpCommands(string context, dynamic data = null, int GeneralTradeCooldown = -1)
+        public static string HandleHelpCommands(string context, int GeneralTradeCooldown = -1)
         {
 
             if (GeneralTradeCooldown is -1)
                 GeneralTradeCooldown = 10;
-
-            /* TODO if we ever use the SQL data Block we should hardcode some variables for Discord like GeneralTradeCooldown */
 
             if (!context.Contains(" "))
                 return HelpCommandsStrings.InvalidArgsMessage;
