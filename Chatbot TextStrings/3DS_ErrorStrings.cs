@@ -1,6 +1,6 @@
 ﻿namespace TextStrings
 {
-    public static class ErrorStrings
+    public static class _3DSErrorStrings
     {
         public static string InvalidDepoit = "Invalid deposit Pokémon!";
         public static string NoEntriesFound = "It appears there are no entries of your deposit Pokémon, request again with a different Pokémon! (ERROR: NO ENTRIES FOUND!)";

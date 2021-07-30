@@ -1,6 +1,6 @@
 ﻿namespace TextStrings
 {
-    public static class TextStrings
+    public static class SWSH_TextStrings
     {
 
         public static class ErrorStrings
