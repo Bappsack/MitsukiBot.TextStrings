@@ -248,7 +248,7 @@ namespace TextStrings
 
             //Stats
             public static string Stats = "[Stats] Pcoins: {0}, Trivia Wins: {1}, Longest Trivia Streak: {2}, Watch Time: {3} days, {4} hours, and {5} minutes, Wonder Trade Wins: {6}, Total Trades: {7}";
-
+            public static string CheckStats = "[Stats] User: @{0}, Pcoins: {1}, Trivia Wins: {2}, Longest Trivia Streak: {3}, Watch Time: {4} days, {5} hours, and {6} minutes, Wonder Trade Wins: {7}, Total Trades: {8}";
 
             // Global Cooldown
             public static string GlobalCooldown_Success = "Updated the general trade cooldown to:";
