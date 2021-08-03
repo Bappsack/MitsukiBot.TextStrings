@@ -200,7 +200,7 @@ namespace TextStrings
 
             // Trivia 
             public static string Trivia_Win = "Winner, Winner, Chicken Dinner! Trivia Winner: {0}, Right Answer: {1}, Time Taken: {2} Seconds, Current Streak: {3}";
-            public static string Trivia_End_Winner = "[Trivia] Trivia Ended! Correct Answer:";
+            public static string Trivia_End_Winner_Log = "[Trivia] Trivia Ended! Winner: {0}, Correct Answer: {1}";
             public static string Trivia_End_NoWinner = "[Trivia] Trivia Ended! Correct Answer: {0}, better luck next time folks!";
             public static string User_Request_Hint = "Requested a hint:";
 
