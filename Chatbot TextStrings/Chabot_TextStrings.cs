@@ -62,8 +62,8 @@ namespace TextStrings
             public static string EvolvingDepositMon = "You can't use this deposit Pokémon, this Pokémon will evolve during trade!";
             public static string MegaStonesSubOnly = "Mega Stones are sub-only!";
 
-            public static string TooManyErrorsToPrint = "Too many invalid commands! It looks like you missed the commas!";
-            public static string Exception = "Wrong/bad command usage, make sure you didn't forget the commas!";
+            public static string TooManyErrorsToPrint = "Too many invalid commands! Make sure you didn't forget the commas!";
+            public static string Exception = "Wrong/bad command usage! Make sure you didn't forget the commas!";
             public static string NoGameDetect = "Invalid command usage!";
 
         }
@@ -157,7 +157,7 @@ namespace TextStrings
 
 
             // Cooldowns
-            public static string TradeCooldownMessage = "You currently have a trade cooldown, you can request a trade in: {0} minutes and {1} seconds! mitsukiAngry";
+            public static string TradeCooldownMessage = "You currently have a trade cooldown! Remaining time: {0} minutes and {1} seconds! mitsukiAngry";
             public static string TradeCooldownOver = "You can request a trade!";
             public static string TradeCooldownSubMessage = "As a sub you don't have a trade cooldown!";
             public static string TimeCapsule_Success = @"You took a step into the future, there are over 5000 Pokémon now and it looks like here you don't have a trade cooldown ¯\_(ツ)_/¯";
@@ -172,7 +172,7 @@ namespace TextStrings
             public static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
             public static string Trade_AlreadyInQueue = "You're already in the queue, please wait a bit!";
             public static string Trade_Cooldown = "You currently have a trade cooldown! Remaining time:";
-            public static string Trade_NoFriendCodeSaved = "[3DS] You haven't saved your friend code yet! Use '!savefc ####-####-####' to save your friend code! If you are on a Switch game, use '!strade' (Gen 8 -> SWSH) instead!";
+            public static string Trade_NoFriendCodeSaved = "[3DS] You haven't saved your friend code yet! Use '!savefc ####-####-####' to save your friend code! Check '!help fc' for where to find your friend code! If you are on a Switch game, use '!strade' (Gen 8 -> SWSH) instead!";
             public static string Trade_ShowdownConvertError = "Wrong command usage!";
             public static string Trade_Failed_Error = "Trade request failed! Reason(s): {0}";
             public static string Trade_Success_Normal = "Your trade has been accepted!";
@@ -199,8 +199,8 @@ namespace TextStrings
 
 
             // Trivia 
-            public static string Trivia_Win = "Winner, Winner, Chicken Dinner! Trivia Winner: {0}, Right Answer: {1}, Time Taken: {2} Seconds, Current Streak: {3}";
-            public static string Trivia_End_Winner_Log = "[Trivia] Trivia Ended! Winner: {0}, Correct Answer: {1}";
+            public static string Trivia_Win = "Winner, Winner, Chicken Dinner! Trivia Winner: {0}, Right Answer: {1}, Time Taken: {2} Seconds, Current Streak: {3} [+1000 Pcoins]";
+            public static string Trivia_End_Winner_Log = "[Trivia] Trivia Ended! Winner: {0}, Correct Answer: {1} [+1000 Pcoins]";
             public static string Trivia_End_NoWinner = "[Trivia] Trivia Ended! Correct Answer: {0}, better luck next time folks!";
             public static string User_Request_Hint = "Requested a hint:";
 
@@ -215,15 +215,15 @@ namespace TextStrings
             public static string Jackpot_BankAmount = "The jackpot bank has a total Pcoin amount of";
             public static string Jackpot_NotEnoughPcoins = "You don't have enough Pcoins to play jackpot! [{0}/5000 Pcoins]";
             public static string Jackpot_Winner = "You won the JACKPOT of";
-            public static string Jackpot_Loser = "You lose! Better luck next time!";
+            public static string Jackpot_Loser = "You lose! Better luck next time! [-5000 Pcoins]";
             public static string Jackpot_Cooldown = "You currently have a gamble cooldown! Remaining time:";
 
 
             // Gamble
-            public static string Gamble_Winner = "Hail Hydra! You won!";
-            public static string Gamble_Loser = "mitsukiOof You lose!";
-            public static string Gamble_Coinflip_Winner = "4Head Hail Hydra! You won!";
-            public static string Gamble_Coinflip_Loser = "PJSalt mitsukiOof You lose!";
+            public static string Gamble_Winner = "Hail Hydra! You won! [+{0} Pcoins]";
+            public static string Gamble_Loser = "mitsukiOof You lose! [-{0} Pcoins]";
+            public static string Gamble_Coinflip_Winner = "4Head Hail Hydra! You won! [+{0} Pcoins]";
+            public static string Gamble_Coinflip_Loser = "PJSalt mitsukiOof You lose! [-{0} Pcoins]";
             public static string Gamble_NotEnoughPcoins = "You don't have that many Pcoins!";
             public static string Gamble_Cooldown = "You currently have a gamble cooldown! Remaining time:";
             public static string Gamble_ToMuchInput = "You can't gamble over 50000 Pcoins!";
@@ -235,6 +235,14 @@ namespace TextStrings
             public static string RaffleTextBegin = "[Raffle] 💰 A raffle has started! Type '!raffle' to join and have a chance of winning all bets!";
             public static string RaffleOver = "[Raffle] 💰 Time's up! Total entries: {0}, the winner is: {1} and has won: {2} Pcoins!";
             public static string RaffleOverNoEntries = "[Raffle] Time's up! No winner because nobody joined! NotLikeThis";
+
+
+            // Roulette
+            public static string Roulette_Winner = "You won! Bet: {0}, Spin: {1} [+{2} Pcoins]";
+            public static string Roulette_Loser = "You lose! Bet: {0}, Spin: {1} [-{2} Pcoins]";
+            public static string Roulette_NotEnoughPcoins = "You don't have that many Pcoins!";
+            public static string Roulette_Cooldown = "You currently have a gamble cooldown! Remaining time:";
+            public static string Roulette_ToMuchInput = "You can't gamble over 50000 Pcoins!";
 
 
             // Daily Bonus
@@ -344,7 +352,7 @@ namespace TextStrings
             public static string Error = "Specify what error you're getting: '!help link' for Gen 8 (SWSH) Link Trade, '!help gts' for Gen 7 (SUMO/USUM) or Gen 6 (XY/ORAS) GTS, '!help custom' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public static string ErrorLink = "[Switch] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Searching with saved Link Code? (Link Trade -> Set Link Code), 3) Try saving a new Link Code, 4) Try restarting your console";
             public static string ErrorGTS = "[3DS] 1) Correct friend code saved? ('!myfc'), 2) Correct trade command used? (Gen 7 -> '!trade' // Gen 6 -> '!tradeORAS'), 3) Correct Pokémon specified in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Gender and Level in GTS left at default settings? ('Any' or fixed Gender), 5) Deposited Trubbish if using Showdown set?, 6) Can't request mythical Pokémon in Gen 7! ('!help mythicals7')";
-            public static string ErrorCustom = "If your customizations are not legal, the bot will cancel the trade and remove you from the queue. Common issues include setting the level of the Pokémon too low, selecting a ball that the Pokémon cannot be in, and having moves that the Pokémon cannot learn. You can try to fix your command in the #command_testing channel or ask for help in the #support channel in our Discord server.";
+            public static string ErrorCustom = "If your customizations are not legal, the bot will cancel the trade and remove you from the queue. You can try to fix your command in the #command_testing channel or ask for help in the #support channel in our Discord server!";
 
             public static string Mythicals = "Specify what game you're on: '!help mythicals8' for Gen 8 (SWSH), '!help mythicals7' for Gen 7 (SUMO/USUM), '!help mythicals6' for Gen 6 (XY/ORAS), or '!mythicals' for a list of mythical Pokémon";
             public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon with unsupported customizations can't be requested from the Gen 6 (XY/ORAS) GTS trades // Supported mythical customizations: Nickname, Item, Nature, EVs, IVs, Language, Pokerus, Ribbons, Moves (standard movepool only), IsShiny (Jirachi, Arceus, Diancie only) // Additional customizations for Deoxys only: Form, Ball, OT, TID, SID, TakeOwn, Level (80-100)";
@@ -354,7 +362,7 @@ namespace TextStrings
             public static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
             public static string Cparty = "Community Party is activated whenever someone cheers Bits and allows non-subs to use extra customizations (OT, Event, Event_ID, Pokerus, Ribbons, Mark, Language, Origin), check if a cparty is active and the number of remaining trades using '!cparty'";
             public static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
-            public static string Eggs = "[SUBS ONLY] Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus, Language // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
+            public static string Eggs = "[SUBS ONLY] [SWSH] Eggs can be requested on SWSH by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus, Language // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
             public static string Events = "[CPARTY/SUBS ONLY] Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event)";
             public static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public static string Friendcodes = "[3DS] Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
@@ -362,22 +370,24 @@ namespace TextStrings
             public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8), sub-only chat commands";
             public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Trade the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
 
-            public static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', earn Pcoins from the daily bonus ('!daily'), gambling ('!gamble', '!bandit', '!raffle', '!jackpot'), trivia (1000 Pcoins per win), or by just being in stream chat!";
+            public static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username],[amount]', and earn Pcoins from the daily bonus ('!daily'), gambling ('!gamble', '!bandit', '!raffle', '!jackpot', '!roulette'), trivia (1000 Pcoins per win), or by just being in stream chat!";
             public static string Raffle = "Raffle happens every 10 minutes and gives you the chance to win the total Pcoins from all the entries, pay 5000 Pcoins to enter using '!raffle'";
-            public static string Bandit = "Bandit/slots multiplies the amount gambled if you match 3 emotes, try your luck using '!bandit ###' // Allowed gamble amounts: 1-50000 | quarter | half | all // Multipliers: mitsukiWill 20x | mitsukiLick 10x | mitsukiLUL 8x | mitsukiWhat 6x | mitsukiFlirt 4x | mitsukiThink 2x";
-            public static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double the amount gambled if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";
+            public static string Bandit = "Bandit/slots multiplies your gamble if you match 3 emotes, try your luck using '!bandit ###' // Allowed gamble amounts: 1-50000 | quarter | half | all // Multipliers: mitsukiWill 20x | mitsukiLick 10x | mitsukiLUL 8x | mitsukiWhat 6x | mitsukiFlirt 4x | mitsukiThink 2x";
+            public static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double your gamble if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";
             public static string Jackpot = "Jackpot gives you a ~1% chance to win a large prize (500K+ Pcoins), pay 5000 Pcoins to try your luck using '!jackpot', check the prize amount using '!bank'";
+            public static string Roulette = "Roulette multiplies your bet if it matches the spin, place a bet using '!roulette [bet amount] [bet type]' // Allowed bet amounts: 1-50000 | quarter | half | all // Bet types: Black/Red (2x) | Even/Odd (2x) | High/Low (2x) | First/Second/Third (3x) | 0-36 (36x)";
             public static string Trivia = "Trivia happens every 2 minutes and gives you 1000 Pcoins if you guess the correct answer first, get a hint if you're stuck using '!hint'";
 
             public static string FormList = "List of available forms: https://bit.ly/2OYRzUm";
             public static string CommandList = "List of available commands: https://bit.ly/2m9qcwN";
 
-            public static string Options = "Help options: bandit, commands, cooldown, cparty, deposit, eggs, error, events, format, forms, friendcode, gamble, gen6, gen7, gen8, jackpot, mythicals, pcoins, raffle, shiny, sub, takeown, trivia";
+            public static string Options = "Help options: bandit, commands, cooldown, cparty, deposit, eggs, error, events, format, forms, friendcode, gamble, gen6, gen7, gen8, jackpot, mythicals, pcoins, raffle, roulette, shiny, sub, takeown, trivia";
             public static string InvalidArgsMessage = "Specify what help you're looking for: '!help gen8' for SWSH Link Trade, '!help gen7' for SUMO/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
         public static class RegularTextCommands
         {
+            public static string Info = "This is a 24/7 Pokémon giveaway stream that offers trades for Gens 6-8 (XY/ORAS, SUMO/USUM, SWSH)! Try your luck at winning legendary/mythical Pokémon via Wonder Trade (Gen 6/7) or Link Trade using Link Code 7562-7562 (Gen 8) by following the countdown timer! Request customized Pokémon via the GTS (Gen 6/7) or Link Trade (Gen 8) using trade commands! Type !help for more info on requesting Pokémon!";
             public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Zacian, Zamazenta, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude";
             public static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude";
             public static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";

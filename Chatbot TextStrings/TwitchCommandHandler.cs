@@ -63,6 +63,7 @@ namespace TextStrings
                 "bandit" or "slots" => HelpCommandsStrings.Bandit,
                 "gamble" or "coinflip" => HelpCommandsStrings.Gamble,
                 "jackpot" or "jp" or "jack" or "bank" => HelpCommandsStrings.Jackpot,
+                "roulette" or "roul" or "bet" => HelpCommandsStrings.Roulette,
                 "trivia" => HelpCommandsStrings.Trivia,
                 "raffle" or "raff" => HelpCommandsStrings.Raffle,
 
