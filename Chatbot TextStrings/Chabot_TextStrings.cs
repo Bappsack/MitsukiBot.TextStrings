@@ -2,6 +2,7 @@
 
 namespace TextStrings
 {
+    // I am Sir Cumalot!
     public static class Chatbot_TextStrings
     {
         public static class InternalStrings
@@ -243,7 +244,8 @@ namespace TextStrings
             public static string Roulette_NotEnoughPcoins = "You don't have that many Pcoins!";
             public static string Roulette_Cooldown = "You currently have a gamble cooldown! Remaining time:";
             public static string Roulette_ToMuchInput = "You can't gamble over 50000 Pcoins!";
-
+            public static string Roulette_Negative = "You can't gamble a negative amount!";
+            public static string Roulette_Invalid = "@{0} Invalid Command usage!";
 
             // Daily Bonus
             public static string DailyBonus_Sub_Success = "You requested your daily subscriber bonus! [+10000 Pcoins]";
@@ -322,7 +324,7 @@ namespace TextStrings
             public static string Queue_Success = "{0} The queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} minutes and {5} seconds.";
             public static string Queue_SQLFlood = "{0} The queue currently has: {1} people, you are not in the queue.";
             public static string Queue_All = "{0} The queue currently has a total of: {1} people.";
-
+            public static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
 
             // Every 5min Random Text
             public static List<string> SpamMessages = new List<string> {
