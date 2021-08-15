@@ -245,7 +245,7 @@ namespace TextStrings
             public static string Roulette_Cooldown = "You currently have a gamble cooldown! Remaining time:";
             public static string Roulette_ToMuchInput = "You can't gamble over 50000 Pcoins!";
             public static string Roulette_Negative = "You can't gamble a negative amount!";
-            public static string Roulette_Invalid = "@{0} Invalid Command usage!";
+            public static string Roulette_Invalid = "@{0} Invalid command usage!";
 
             // Daily Bonus
             public static string DailyBonus_Sub_Success = "You requested your daily subscriber bonus! [+10000 Pcoins]";
@@ -352,12 +352,12 @@ namespace TextStrings
             public static string TradeHelp8 = "[SWSH] 1) Save a custom 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!strade Request: [Pokémon Wanted]', 3) Wait for swsh_linkbot to ping you to start searching with your saved Link Code!";
 
             public static string Error = "Specify what error you're getting: '!help link' for Gen 8 (SWSH) Link Trade, '!help gts' for Gen 7 (SUMO/USUM) or Gen 6 (XY/ORAS) GTS, '!help custom' for invalid customizations, or ask for help in the #support channel in our Discord server!";
-            public static string ErrorLink = "[Switch] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Searching with saved Link Code? (Link Trade -> Set Link Code), 3) Try saving a new Link Code, 4) Try restarting your console";
+            public static string ErrorLink = "[Switch] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Searching with saved Link Code? (Link Trade -> Set Link Code), 3) Try saving a new Link Code, 4) Try restarting your Switch";
             public static string ErrorGTS = "[3DS] 1) Correct friend code saved? ('!myfc'), 2) Correct trade command used? (Gen 7 -> '!trade' // Gen 6 -> '!tradeORAS'), 3) Correct Pokémon specified in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Gender and Level in GTS left at default settings? ('Any' or fixed Gender), 5) Deposited Trubbish if using Showdown set?, 6) Can't request mythical Pokémon in Gen 7! ('!help mythicals7')";
             public static string ErrorCustom = "If your customizations are not legal, the bot will cancel the trade and remove you from the queue. You can try to fix your command in the #command_testing channel or ask for help in the #support channel in our Discord server!";
 
-            public static string Mythicals = "Specify what game you're on: '!help mythicals8' for Gen 8 (SWSH), '!help mythicals7' for Gen 7 (SUMO/USUM), '!help mythicals6' for Gen 6 (XY/ORAS), or '!mythicals' for a list of mythical Pokémon";
-            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon with unsupported customizations can't be requested from the Gen 6 (XY/ORAS) GTS trades // Supported mythical customizations: Nickname, Item, Nature, EVs, IVs, Language, Pokerus, Ribbons, Moves (standard movepool only), IsShiny (Jirachi, Arceus, Diancie only) // Additional customizations for Deoxys only: Form, Ball, OT, TID, SID, TakeOwn, Level (80-100)";
+            public static string Mythicals = "Specify what game you're on: '!help mythicals8' for Gen 8 (SWSH), '!help mythicals7' for Gen 7 (SUMO/USUM), '!help mythicals6' for Gen 6 (XY/ORAS), or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
+            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon can be requested from the Gen 6 (XY/ORAS) GTS trades as long as the customizations are possible on a mythical event distributed in Gen 6";
             public static string Mythicals7 = "[SUMO/USUM] Mythical Pokémon can't be requested from the Gen 7 (SUMO/USUM) GTS trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
             public static string Mythicals8 = "[SWSH] Mythical Pokémon can be requested from the Gen 8 (SWSH) Link Trades as long as they are in the game // Mythical Pokémon not in SWSH: Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Meloetta, Hoopa";
 
@@ -368,7 +368,10 @@ namespace TextStrings
             public static string Events = "[CPARTY/SUBS ONLY] Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event)";
             public static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public static string Friendcodes = "[3DS] Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
-            public static string ShinyDefault = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check what Pokémon are shiny locked using '!shinylocked'";
+            public static string Language = "List of languages: JPN|Japanese, ENG|English, FRE|French, ITA|Italian, GER|German, ESP|Spanish, KOR|Korean, CHS|ChineseS, CHT|ChineseT";
+            public static string Marks = "List of marks: https://www.serebii.net/swordshield/marks.shtml";
+            public static string Origin = "List of origins: Red, Blue, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, Fire Red, Leaf Green, Col, XD, Diamond, Pearl, Platinum, Heart Gold, Soul Silver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, GO";
+            public static string ShinyState = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check this link for a list of shiny locked Pokémon: https://www.serebii.net/games/shiny.shtml";
             public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8), sub-only chat commands";
             public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Trade the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
 
@@ -383,7 +386,7 @@ namespace TextStrings
             public static string FormList = "List of available forms: https://bit.ly/2OYRzUm";
             public static string CommandList = "List of available commands: https://bit.ly/2m9qcwN";
 
-            public static string Options = "Help options: bandit, commands, cooldown, cparty, deposit, eggs, error, events, format, forms, friendcode, gamble, gen6, gen7, gen8, jackpot, mythicals, pcoins, raffle, roulette, shiny, sub, takeown, trivia";
+            public static string Options = "Help options: [Trading] gen6, gen7, gen8, cooldown, cparty, error, friendcode, mythicals, sub // [Customizations] commands, format, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, trivia";
             public static string InvalidArgsMessage = "Specify what help you're looking for: '!help gen8' for SWSH Link Trade, '!help gen7' for SUMO/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
