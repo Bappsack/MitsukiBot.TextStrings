@@ -241,10 +241,7 @@ namespace TextStrings
             // Roulette
             public static string Roulette_Winner = "You won! Bet: {0}, Spin: {1} [+{2} Pcoins]";
             public static string Roulette_Loser = "You lose! Bet: {0}, Spin: {1} [-{2} Pcoins]";
-            public static string Roulette_NotEnoughPcoins = "You don't have that many Pcoins!";
-            public static string Roulette_Cooldown = "You currently have a gamble cooldown! Remaining time:";
-            public static string Roulette_ToMuchInput = "You can't gamble over 50000 Pcoins!";
-            public static string Roulette_Negative = "You can't gamble a negative amount!";
+            public static string Roulette_Negative = "You can't gamble a zero/negative amount!";
             public static string Roulette_Invalid = "@{0} Invalid command usage!";
 
             // Daily Bonus
