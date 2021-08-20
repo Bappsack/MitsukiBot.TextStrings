@@ -56,6 +56,7 @@ namespace TextStrings
                 "mythicals8" or "mythical8" => HelpCommandsStrings.Mythicals8,
                 "origin" or "origins" => HelpCommandsStrings.Origin,
                 "shiny" or "shinylock" or "shinylocked" => HelpCommandsStrings.ShinyState,
+                "showdown" or "smogon" => HelpCommandsStrings.Showdown,
                 "sub" or "subs" or "subscribe" or "subscriber" => HelpCommandsStrings.Sub,
                 "takeown" or "mydetails" or "trainerid" or "trainer" => HelpCommandsStrings.Takeown,
 
