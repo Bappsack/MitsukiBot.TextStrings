@@ -185,7 +185,7 @@ namespace TextStrings
             public static string TradeCancel_Error = "You're not in the queue!";
             public static string TradeCancel_ToEarly = "No need to hurry, wait a minimum of 15 minutes!";
 
-            public static string Trade_Showdown_Gen67_Disclaimer = "(Showdown sets for Gen 6/7 require you to deposit a Trubbish!)";
+            public static string Trade_Showdown_Gen67_Disclaimer = "(The deposit Pokémon defaults to Trubbish for Gen 6/7 Showdown sets if not specified!)";
 
 
             // Wondertrade Winner Message
@@ -351,7 +351,7 @@ namespace TextStrings
 
             public static string Error = "Specify what error you're getting: '!help link' for Gen 8 (SWSH) Link Trade, '!help gts' for Gen 7 (SUMO/USUM) or Gen 6 (XY/ORAS) GTS, '!help custom' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public static string ErrorLink = "[Switch] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Searching with saved Link Code? (Link Trade -> Set Link Code), 3) Try saving a new Link Code, 4) Try restarting your Switch";
-            public static string ErrorGTS = "[3DS] 1) Correct friend code saved? ('!myfc'), 2) Correct trade command used? (Gen 7 -> '!trade' // Gen 6 -> '!tradeORAS'), 3) Correct Pokémon specified in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Gender and Level in GTS left at default settings? ('Any' or fixed Gender), 5) Deposited Trubbish if using Showdown set?, 6) Can't request mythical Pokémon in Gen 7! ('!help mythicals7')";
+            public static string ErrorGTS = "[3DS] 1) Correct friend code saved? ('!myfc'), 2) Correct trade command used? (Gen 7 -> '!trade' // Gen 6 -> '!tradeORAS'), 3) Correct Pokémon specified in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Gender and Level in GTS left at default settings? ('Any' or fixed Gender), 5) Deposited Trubbish or specified deposit Pokémon if using Showdown set?, 6) Can't request mythical Pokémon in Gen 7! ('!help mythicals7')";
             public static string ErrorCustom = "If your customizations are not legal, the bot will cancel the trade and remove you from the queue. You can try to fix your command in the #command_testing channel or ask for help in the #support channel in our Discord server!";
 
             public static string Mythicals = "Specify what game you're on: '!help mythicals8' for Gen 8 (SWSH), '!help mythicals7' for Gen 7 (SUMO/USUM), '!help mythicals6' for Gen 6 (XY/ORAS), or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
@@ -370,7 +370,7 @@ namespace TextStrings
             public static string Marks = "List of marks: https://www.serebii.net/swordshield/marks.shtml";
             public static string Origin = "List of origins: Red, Blue, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, Fire Red, Leaf Green, Col, XD, Diamond, Pearl, Platinum, Heart Gold, Soul Silver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, GO";
             public static string ShinyState = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check this link for a list of shiny locked Pokémon: https://www.serebii.net/games/shiny.shtml";
-            public static string Showdown = "Showdown/Smogon sets are supported using this format: '!tradeORAS/!trade/!strade [Showdown set]' (Trubbish must be deposited in the GTS for Gen 6/7 requests)";
+            public static string Showdown = "Showdown/Smogon sets are supported using this format: '!tradeORAS/!trade/!strade [Showdown set]' // 'Deposit: xxx' can be added to specify a deposit Pokémon for Gen 6/7 GTS (defaults to Trubbish if deposit not specified)";
             public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8), sub-only chat commands";
             public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Trade the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
 
