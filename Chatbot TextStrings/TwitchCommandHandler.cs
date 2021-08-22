@@ -79,9 +79,6 @@ namespace TextStrings
             };
         }
 
-        public static string HungryString()
-        {
-            return Food.List[ran.Next(0, Food.List.Count)];
-        }
+        public static string HungryString() => Food.List[ran.Next(0, Food.List.Count)];
     }
 }
