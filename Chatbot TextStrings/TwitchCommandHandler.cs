@@ -45,10 +45,11 @@ namespace TextStrings
                 "deposit" or "deposited" => HelpCommandsStrings.Deposit,
                 "eggs" or "egg" => HelpCommandsStrings.Eggs,
                 "events" or "event" => HelpCommandsStrings.Events,
-                "fc" or "friendcode" => HelpCommandsStrings.Friendcodes,
+                "fc" or "friendcode" => HelpCommandsStrings.FriendCode,
                 "format" or "example" => HelpCommandsStrings.Format,
                 "forms" or "form" => HelpCommandsStrings.FormList,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
+                "lc" or "linkcode" => HelpCommandsStrings.LinkCode, 
                 "mark" or "marks" => HelpCommandsStrings.Marks,
                 "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
                 "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
@@ -59,6 +60,7 @@ namespace TextStrings
                 "showdown" or "smogon" => HelpCommandsStrings.Showdown,
                 "sub" or "subs" or "subscribe" or "subscriber" => HelpCommandsStrings.Sub,
                 "takeown" or "mydetails" or "trainerid" or "trainer" => HelpCommandsStrings.Takeown,
+                "wt" or "wondertrade" => HelpCommandsStrings.WonderTrade,
 
                 // Chat Command Help
                 "cd" or "cooldown" or "cap" or "timecapsule" => string.Format(HelpCommandsStrings.Cooldown, GeneralTradeCooldown),
