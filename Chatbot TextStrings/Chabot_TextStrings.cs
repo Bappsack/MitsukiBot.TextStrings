@@ -110,6 +110,10 @@ namespace TextStrings
 
             public static string Bits_ReceivedMessage = "{0} cheered {1} Bits! Community Party has been extended to {2} trades!";
 
+            public static string UpTime = "The stream has been running for {0} days, {1} hours, and {2} minutes";
+            public static string FollowAge = "@{0} you have been following this channel for {1} days, {2} hours, and {3} minutes";
+            public static string NotFollowing = "@{0} It seem like you don't follow this channel yet";
+            public static string StreamOffline = "@{0} The stream is currently offline, bots should still be working, stream will be back soon.";
 
             // Save Trade Code
             public static string SetCode_BlacklistedCode = "Your wanted Link Code is blacklisted, this Link Code is used by other people already! Please save a different Link Code!";
