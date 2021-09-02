@@ -49,7 +49,7 @@ namespace TextStrings
                 "format" or "example" => HelpCommandsStrings.Format,
                 "forms" or "form" => HelpCommandsStrings.FormList,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
-                "lc" or "linkcode" => HelpCommandsStrings.LinkCode, 
+                "lc" or "linkcode" => HelpCommandsStrings.LinkCode,
                 "mark" or "marks" => HelpCommandsStrings.Marks,
                 "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
                 "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,

@@ -215,7 +215,8 @@ namespace TextStrings
             public static string RewardPcoinsMessage = "{0} redeemed {1} UwU's and got rewarded with {2}!";
             public static string RewardTestMessage = "{0} Ok Boomer.";
             public static string RewardCparty = "{0} redeemed {1} and extended the Community Party by {2}";
-
+            public static string RewardUserSuccess = "@{0} rewarded @{1} with {2} Pcoins!";
+            public static string RewardUserFail = "@{0} failed to reward '{1}', Username not found!";
 
             // Jackpot
             public static string Jackpot_BankAmount = "The jackpot bank has a total Pcoin amount of";
