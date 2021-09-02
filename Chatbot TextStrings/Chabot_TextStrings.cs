@@ -110,10 +110,10 @@ namespace TextStrings
 
             public static string Bits_ReceivedMessage = "{0} cheered {1} Bits! Community Party has been extended to {2} trades!";
 
-            public static string UpTime = "The stream has been running for {0} days, {1} hours, and {2} minutes";
-            public static string FollowAge = "@{0} you have been following this channel for {1} days, {2} hours, and {3} minutes";
-            public static string NotFollowing = "@{0} It seem like you don't follow this channel yet";
-            public static string StreamOffline = "@{0} The stream is currently offline, bots should still be working, stream will be back soon.";
+            public static string UpTime = "The stream has been running for {0} days, {1} hours, and {2} minutes.";
+            public static string FollowAge = "@{0} you have been following this channel for {1} days, {2} hours, and {3} minutes.";
+            public static string NotFollowing = "@{0} It seems like you aren't following this channel yet.";
+            public static string StreamOffline = "@{0} The stream is currently offline, but the bots should still be working. The stream will be back soon!";
 
             // Save Trade Code
             public static string SetCode_BlacklistedCode = "Your wanted Link Code is blacklisted, this Link Code is used by other people already! Please save a different Link Code!";
@@ -216,7 +216,7 @@ namespace TextStrings
             public static string RewardTestMessage = "{0} Ok Boomer.";
             public static string RewardCparty = "{0} redeemed {1} and extended the Community Party by {2}";
             public static string RewardUserSuccess = "@{0} rewarded @{1} with {2} Pcoins!";
-            public static string RewardUserFail = "@{0} failed to reward '{1}', Username not found!";
+            public static string RewardUserFail = "@{0} failed to reward '{1}', user not found.";
 
             // Jackpot
             public static string Jackpot_BankAmount = "The jackpot bank has a total Pcoin amount of";
@@ -297,10 +297,10 @@ namespace TextStrings
 
             // Leaderboard
             public static string Leaderboard_Trivia = "Trivia Leaderboard: ";
-            public static string Leaderboard_GTS = "GTS Leaderboard: ";
+            public static string Leaderboard_GTS = "GTS / Link Trade Leaderboard: ";
             public static string Leaderboard_Wondertrade = "Wonder Trade Leaderboard: ";
             public static string Leaderboard_Level_Watchtime = "Level / Watch Time Leaderboard: ";
-            public static string Leaderboard_Pcoins = "Top 10 Pcoin Users: ";
+            public static string Leaderboard_Pcoins = "Pcoin Leaderboard: ";
 
 
             // Current Song / Skip Song
@@ -368,7 +368,7 @@ namespace TextStrings
             public static string Cparty = "Community Party is activated whenever someone cheers Bits and allows non-subs to use extra customizations (OT, Event, Event_ID, Pokerus, Ribbons, Mark, Language, Origin), check if a cparty is active and the number of remaining trades using '!cparty'";
             public static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
             public static string Eggs = "[SUBS ONLY] [SWSH] Eggs can be requested on SWSH by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus, Language // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
-            public static string Events = "[CPARTY/SUBS ONLY] Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event)";
+            public static string Events = "[CPARTY/SUBS ONLY] Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event) // Event database: https://www.serebii.net/events/";
             public static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public static string FriendCode = "[3DS] Save your friend code using '!savefc ####-####-####' // How to find your friend code: Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
             public static string Language = "List of languages: JPN/Japanese, ENG/English, FRE/French, ITA/Italian, GER/German, ESP/Spanish, KOR/Korean, CHS/ChineseS, CHT/ChineseT";
@@ -378,7 +378,7 @@ namespace TextStrings
             public static string ShinyState = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check this link for a list of shiny locked Pokémon: https://www.serebii.net/games/shiny.shtml";
             public static string Showdown = "Showdown/Smogon sets are supported using this format: '!tradeORAS/!trade/!strade [Showdown set]' // 'Deposit: xxx' can be added to specify a deposit Pokémon for Gen 6/7 GTS (defaults to Trubbish if deposit not specified)";
             public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8), sub-only chat commands";
-            public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Trade the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
+            public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Request a trade and send the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
             public static string WonderTrade = "Trade when the countdown timer from MitsukiBot says 'Go Wonder Trade!' to try your luck at winning a mythical Pokémon!";
 
             public static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username],[amount]', and earn Pcoins from the daily bonus ('!daily'), gambling ('!gamble', '!bandit', '!raffle', '!jackpot', '!roulette'), trivia (1000 Pcoins per win), or by just being in stream chat!";

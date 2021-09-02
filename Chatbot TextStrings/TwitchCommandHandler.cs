@@ -41,7 +41,7 @@ namespace TextStrings
                 "errorcustom" or "custom" or "invalid" => HelpCommandsStrings.ErrorCustom,
 
                 // Trade Command Help
-                "commands" or "command" => HelpCommandsStrings.CommandList,
+                "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
                 "deposit" or "deposited" => HelpCommandsStrings.Deposit,
                 "eggs" or "egg" => HelpCommandsStrings.Eggs,
                 "events" or "event" => HelpCommandsStrings.Events,
