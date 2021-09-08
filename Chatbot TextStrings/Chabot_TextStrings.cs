@@ -124,7 +124,7 @@ namespace TextStrings
             // Transfer Pcoins
             public static string Give_Success = "{0} transferred {1} Pcoins to {2}";
             public static string Give_NegativeAmount = "You can't transfer a negative amount Kappa";
-            public static string Give_Error = "Failed to transfer Pcoins to";
+            public static string Give_Error = "Failed to transfer Pcoins";
             public static string Give_SameUser = "You can't transfer Pcoins to yourself!";
 
 
@@ -253,7 +253,7 @@ namespace TextStrings
             // Daily Bonus
             public static string DailyBonus_Sub_Success = "You requested your daily subscriber bonus! [+10000 Pcoins]";
             public static string DailyBonus_Success = "You requested your daily bonus! [+5000 Pcoins]";
-            public static string DailyBonus_AlreadyRequested = "You already requested your daily bonus!";
+            public static string DailyBonus_AlreadyRequested = "You already requested your daily bonus! Daily will reset in {0} hours, {1} minutes, and {2} seconds (12 AM / 00:00 CET)";
 
 
             // Pcoins
