@@ -42,14 +42,16 @@ namespace TextStrings
 
                 // Trade Command Help
                 "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
+                "cooldown" or "cd" or "cap" or "timecapsule" => string.Format(HelpCommandsStrings.Cooldown, GeneralTradeCooldown),
+                "cparty" or "cp" or "communityparty" => HelpCommandsStrings.Cparty,
                 "deposit" or "deposited" => HelpCommandsStrings.Deposit,
                 "eggs" or "egg" => HelpCommandsStrings.Eggs,
                 "events" or "event" => HelpCommandsStrings.Events,
-                "fc" or "friendcode" => HelpCommandsStrings.FriendCode,
+                "friendcode" or "fc" => HelpCommandsStrings.FriendCode,
                 "format" or "example" => HelpCommandsStrings.Format,
                 "forms" or "form" => HelpCommandsStrings.FormList,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
-                "lc" or "linkcode" => HelpCommandsStrings.LinkCode,
+                "linkcode" or "lc" => HelpCommandsStrings.LinkCode,
                 "mark" or "marks" => HelpCommandsStrings.Marks,
                 "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
                 "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
@@ -63,15 +65,14 @@ namespace TextStrings
                 "wt" or "wondertrade" => HelpCommandsStrings.WonderTrade,
 
                 // Chat Command Help
-                "cd" or "cooldown" or "cap" or "timecapsule" => string.Format(HelpCommandsStrings.Cooldown, GeneralTradeCooldown),
-                "cp" or "cparty" or "communityparty" => HelpCommandsStrings.Cparty,
                 "pcoins" or "pcoin" or "coins" or "points" => HelpCommandsStrings.PCoins,
                 "bandit" or "slots" => HelpCommandsStrings.Bandit,
                 "gamble" or "coinflip" => HelpCommandsStrings.Gamble,
                 "jackpot" or "jp" or "jack" or "bank" => HelpCommandsStrings.Jackpot,
-                "roulette" or "roul" or "bet" => HelpCommandsStrings.Roulette,
-                "trivia" => HelpCommandsStrings.Trivia,
                 "raffle" or "raff" => HelpCommandsStrings.Raffle,
+                "roulette" or "roul" or "bet" => HelpCommandsStrings.Roulette,
+                "sounds" or "sound" => HelpCommandsStrings.Sounds,
+                "trivia" => HelpCommandsStrings.Trivia,
 
                 // Options
                 "options" or "option" => HelpCommandsStrings.Options,
