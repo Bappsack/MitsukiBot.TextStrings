@@ -387,7 +387,7 @@ namespace TextStrings
             public static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double your gamble if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";
             public static string Jackpot = "Jackpot gives you a ~1% chance to win a large prize (500K+ Pcoins), pay 5000 Pcoins to try your luck using '!jackpot', check the prize amount using '!bank'";
             public static string Roulette = "Roulette multiplies your bet if it matches the spin, place a bet using '!roulette [type] [amount]' // Allowed bet amounts: 1-50000 | quarter | half | all // Bet types: black/red (2x) | even/odd (2x) | high/low (2x) | first/second/third (3x) | 0-36 (36x)";
-            public static string Sounds = "[SUBS ONLY] List of sounds: {0}";
+            public static string Sounds = "[SUBS ONLY] List of sounds: {0}.";
             public static string Trivia = "Trivia happens every 2 minutes and gives you 1000 Pcoins if you guess the correct answer first, get a hint if you're stuck using '!hint'";
 
             public static string FormList = "List of available forms: https://bit.ly/2OYRzUm";
