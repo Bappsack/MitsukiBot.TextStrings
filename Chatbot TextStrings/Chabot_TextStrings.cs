@@ -139,16 +139,16 @@ namespace TextStrings
             public static string FindUserFriendcode_Null = "Friend code is invalid.";
 
             // Bans
-            public static string Ban_SuccessWithFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, friend code: {2} has been banned globally.";
-            public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, user didn't save a friend code yet, no friend code was banned.";
-            public static string BanFriendcode_Success = "@{0} has banned the friend code: {1} from user: {2}";
-            public static string BanFriendcode_NotFound = "Nobody has this friend code saved.";
+            public static string Ban_SuccessWithFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, friend code/NNID: {2} has been banned globally.";
+            public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, user didn't save a friend/NNID code yet, no friend code was banned.";
+            public static string BanFriendcode_Success = "@{0} has banned the friend code/NNID: {1} from user: {2}";
+            public static string BanFriendcode_NotFound = "Nobody has this friend code/NNID saved.";
 
 
             // Unban
-            public static string Unban_Success = "@{0} has unbanned the friend code: {1} from user: {2}";
+            public static string Unban_Success = "@{0} has unbanned the friend code/NNID: {1} from user: {2}";
             public static string Unban_NotBanned = "This user isn't banned.";
-            public static string Unban_NotFound = "This user was not found/never saved a friend code.";
+            public static string Unban_NotFound = "This user was not found/never saved a friend code/NNID.";
 
 
             // Last Seen
@@ -175,6 +175,7 @@ namespace TextStrings
             // Trades
             public static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code! If you are on a 3DS game, use '!trade' (Gen 7 -> SUMO/USUM) or '!tradeORAS' (Gen 6 -> XY/ORAS) instead!";
             public static string Trade_FriendcodeBanned = "So you're trying to trade? Too bad, your friend code is banned! mitsukiLUL";
+            public static string Trade_NNIDBanned = "So you're trying to trade? Too bad, your Nintendo Network ID is banned! mitsukiLUL";
             public static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
             public static string Trade_AlreadyInQueue = "You're already in the queue, please wait a bit!";
             public static string Trade_Cooldown = "You currently have a trade cooldown! Remaining time:";
