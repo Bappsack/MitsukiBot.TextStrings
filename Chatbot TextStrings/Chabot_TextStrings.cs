@@ -295,6 +295,12 @@ namespace TextStrings
             public static string CheckBan_ListofUsers = "List of users with this friend code:";
             public static string CheckBan_NotBanned = "This user's friend code isn't banned.";
 
+            public static string CheckBan_NNIDNotSaved = "This user hasn't saved a NNID yet.";
+            public static string CheckBan_NNIDListofUsers = "List of users with this NNID:";
+            public static string CheckBan_NNIDNotBanned = "This user's NNID isn't banned.";
+
+            public static string CheckBan_NNIDFriendcodeNotBanned = "This user's Friendcode or NNID isn't banned.";
+
 
             // Leaderboard
             public static string Leaderboard_Trivia = "Trivia Leaderboard: ";
