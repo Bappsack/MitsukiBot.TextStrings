@@ -1,0 +1,12 @@
+﻿namespace Chatbot_TextStrings
+{
+    public static class YT_ErrorStrings
+    {
+        public static string YT_Custom_Trade_Error = "The custom request from {0} has invalid changes. Trade cancelled!";
+        public static string YT_Shiny_Clone_Error = "The shinifying request from {0} is not possible. Trade cancelled!";
+        public static string YT_Train_Clone_Error = "The training request from {0} is not possible. Trade cancelled!";
+        public static string YT_Evo_Clone_Error = "The trade evolution request from {0} is not possible. Trade cancelled!";
+        public static string YT_Cleaning_Clone_Error = "The name clearing request from {0} is not possible. Trade cancelled!";
+
+    }
+}

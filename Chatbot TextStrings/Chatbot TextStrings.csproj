@@ -45,6 +45,16 @@
     <Compile Include="SWSH_ErrorStrings.cs" />
     <Compile Include="Chabot_TextStrings.cs" />
     <Compile Include="TwitchCommandHandler.cs" />
+    <Compile Include="Youtube\YT_ErrorStrings.cs" />
+    <Compile Include="Youtube\YT_Forms.cs" />
+    <Compile Include="Youtube\YT_Items.cs" />
+    <Compile Include="Youtube\YT_TradeEvos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PKHeX.Core">
+      <HintPath>..\..\PKHeX\PKHeX.Core\bin\Debug\net46\PKHeX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
