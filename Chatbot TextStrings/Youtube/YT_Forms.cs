@@ -12,7 +12,7 @@ namespace Chatbot_TextStrings
         /// </summary>
         /// <param name="Nickname">Nicknamed Pokemon from User</param>
         /// <returns>Formated Nickname Identifier and PKHEX Formated Species Name</returns>
-        public static (string, string) GetFormIdentifier(string Nickname)
+        public static (string, string, int) GetFormIdentifier(string Nickname)
         {
             try
             {
@@ -20,9 +20,9 @@ namespace Chatbot_TextStrings
 
                 var pk = PKMConverter.GetPKMfromBytes(File.ReadAllBytes(formFile));
 
-                return (Path.GetFileName(formFile).Replace(".pk8", string.Empty), ((Species)pk.Species).ToString());
+                return (Path.GetFileName(formFile).Replace(".pk8", string.Empty), ((Species)pk.Species).ToString(),pk.Form);
             }
-            catch { return (null, null); }
+            catch { return (null, null,-1); }
         }
 
         private static Dictionary<string, string> NicknameForms = new Dictionary<string, string>() {
