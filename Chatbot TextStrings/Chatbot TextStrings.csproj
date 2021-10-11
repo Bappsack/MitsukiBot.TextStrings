@@ -45,6 +45,7 @@
     <Compile Include="SWSH_ErrorStrings.cs" />
     <Compile Include="Chabot_TextStrings.cs" />
     <Compile Include="TwitchCommandHandler.cs" />
+    <Compile Include="Youtube\GalarPokemon.cs" />
     <Compile Include="Youtube\YT_ErrorStrings.cs" />
     <Compile Include="Youtube\YT_Forms.cs" />
     <Compile Include="Youtube\YT_Items.cs" />
