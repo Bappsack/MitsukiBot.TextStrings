@@ -1,9 +1,5 @@
-﻿using System;
+﻿using PKHeX.Core;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PKHeX.Core;
 namespace Chatbot_TextStrings.Youtube
 {
     public static class GalarPokemon

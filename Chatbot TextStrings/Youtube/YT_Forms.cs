@@ -20,9 +20,9 @@ namespace Chatbot_TextStrings
 
                 var pk = PKMConverter.GetPKMfromBytes(File.ReadAllBytes(formFile));
 
-                return (Path.GetFileName(formFile).Replace(".pk8", string.Empty), ((Species)pk.Species).ToString(),pk.Form);
+                return (Path.GetFileName(formFile).Replace(".pk8", string.Empty), ((Species)pk.Species).ToString(), pk.Form);
             }
-            catch { return (null, null,-1); }
+            catch { return (null, null, -1); }
         }
 
         private static Dictionary<string, string> NicknameForms = new Dictionary<string, string>() {
