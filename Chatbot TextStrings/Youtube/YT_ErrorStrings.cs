@@ -7,6 +7,6 @@
         public static string YT_Train_Clone_Error = "The training request from {0} is not possible. Trade cancelled!";
         public static string YT_Evo_Clone_Error = "The trade evolution request from {0} is not possible. Trade cancelled!";
         public static string YT_Cleaning_Clone_Error = "The name clearing request from {0} is not possible. Trade cancelled!";
-
+        public static string YT_Not_In_Galar = "@{0} This Pokémon doesn't exist in Galar!";
     }
 }
