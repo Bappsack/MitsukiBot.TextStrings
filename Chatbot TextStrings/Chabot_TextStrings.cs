@@ -140,7 +140,7 @@ namespace TextStrings
 
             // Bans
             public static string Ban_SuccessWithFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, friend code/NNID: {2} has been banned globally.";
-            public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, user didn't save a friend/NNID code yet, no friend code was banned.";
+            public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, user didn't save a friend code/NNID yet, no friend code/NNID was banned.";
             public static string BanFriendcode_Success = "@{0} has banned the friend code/NNID: {1} from user: {2}";
             public static string BanFriendcode_NotFound = "Nobody has this friend code/NNID saved.";
 
@@ -299,7 +299,7 @@ namespace TextStrings
             public static string CheckBan_NNIDListofUsers = "List of users with this NNID:";
             public static string CheckBan_NNIDNotBanned = "This user's NNID isn't banned.";
 
-            public static string CheckBan_NNIDFriendcodeNotBanned = "This user's Friendcode or NNID isn't banned.";
+            public static string CheckBan_NNIDFriendcodeNotBanned = "This user's friend code/NNID isn't banned.";
 
 
             // Leaderboard
@@ -367,7 +367,7 @@ namespace TextStrings
             public static string ErrorCustom = "If your customizations are not legal, the bot will cancel the trade and remove you from the queue. You can try to fix your command in the #command_testing channel or ask for help in the #support channel in our Discord server!";
 
             public static string Mythicals = "Specify what game you're on: '!help mythicals8' for Gen 8 (SWSH), '!help mythicals7' for Gen 7 (SUMO/USUM), '!help mythicals6' for Gen 6 (XY/ORAS), or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
-            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon can be requested from the Gen 6 (XY/ORAS) GTS trades as long as the customizations are possible on a mythical event distributed in Gen 6";
+            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon can be requested from the Gen 6 (XY/ORAS) GTS trades as long as the customizations are for a mythical event distributed in Gen 6.";
             public static string Mythicals7 = "[SUMO/USUM] Mythical Pokémon can't be requested from the Gen 7 (SUMO/USUM) GTS trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
             public static string Mythicals8 = "[SWSH] Mythical Pokémon can be requested from the Gen 8 (SWSH) Link Trades as long as they are in the game // Mythical Pokémon not in SWSH: Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Meloetta, Hoopa";
 
@@ -407,7 +407,7 @@ namespace TextStrings
         public static class RegularTextCommands
         {
             public static string Info = "This is a 24/7 Pokémon giveaway stream that offers trades for Gens 6-8 (XY/ORAS, SUMO/USUM, SWSH)! Try your luck at winning legendary/mythical Pokémon via Wonder Trade (Gen 6/7) or Link Trade using Link Code 7562-7562 (Gen 8) by following the countdown timer! Request customized Pokémon via the GTS (Gen 6/7) or Link Trade (Gen 8) using trade commands! Type !help for more info on requesting Pokémon!";
-            public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Zacian, Zamazenta, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude";
+            public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude";
             public static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude";
             public static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
             public static string CommandsListURL = "List of available commands: https://bit.ly/2m9qcwN";
