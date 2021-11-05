@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using static TextStrings.Chatbot_TextStrings;
 
 namespace TextStrings
@@ -71,7 +72,7 @@ namespace TextStrings
                 "jackpot" or "jp" or "jack" or "bank" => HelpCommandsStrings.Jackpot,
                 "raffle" or "raff" => HelpCommandsStrings.Raffle,
                 "roulette" or "roul" or "bet" => HelpCommandsStrings.Roulette,
-                "sounds" or "sound" => HelpCommandsStrings.Sounds,
+                "sounds" or "sound" => string.Format(HelpCommandsStrings.Sounds,GetSoundFilesString()),
                 "trivia" => HelpCommandsStrings.Trivia,
 
                 // Options
@@ -83,5 +84,16 @@ namespace TextStrings
         }
 
         public static string HungryString() => Food.List[ran.Next(0, Food.List.Count)];
+
+        public static string GetSoundFilesString()
+        {
+            var sounds = Directory.GetFiles(Directory.GetCurrentDirectory() + "\\Sounds\\", "*.wav", SearchOption.AllDirectories);
+            string result = string.Empty;
+            foreach (var sound in sounds)
+                result += $"{Path.GetFileName(sound).Replace(".wav", "")}, ";
+
+            return result.TrimEnd(' ').TrimEnd(',');
+        }
+
     }
 }
