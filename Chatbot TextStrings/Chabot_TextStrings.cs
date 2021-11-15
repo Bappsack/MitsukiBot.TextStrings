@@ -123,7 +123,7 @@ namespace TextStrings
 
             // Transfer Pcoins
             public static string Give_Success = "{0} transferred {1} Pcoins to {2}";
-            public static string Give_NegativeAmount = "You can't transfer a negative amount Kappa";
+            public static string Give_NegativeAmount = "You can't transfer a negative amount or gibberish Kappa";
             public static string Give_Error = "Failed to transfer Pcoins";
             public static string Give_SameUser = "You can't transfer Pcoins to yourself!";
 
