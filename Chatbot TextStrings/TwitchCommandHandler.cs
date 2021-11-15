@@ -72,7 +72,7 @@ namespace TextStrings
                 "jackpot" or "jp" or "jack" or "bank" => HelpCommandsStrings.Jackpot,
                 "raffle" or "raff" => HelpCommandsStrings.Raffle,
                 "roulette" or "roul" or "bet" => HelpCommandsStrings.Roulette,
-                "sounds" or "sound" => string.Format(HelpCommandsStrings.Sounds,GetSoundFilesString()),
+                "sounds" or "sound" => string.Format(HelpCommandsStrings.Sounds, GetSoundFilesString()),
                 "trivia" => HelpCommandsStrings.Trivia,
 
                 // Options
