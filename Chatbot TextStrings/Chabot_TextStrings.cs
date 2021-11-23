@@ -57,6 +57,7 @@ namespace TextStrings
             public static string NoRequest = "no wanted Pokémon specified!";
             public static string NoDeposit = "no deposit Pokémon specified!";
             public static string NotInGalar = "This Pokémon doesn't exist in Galar!";
+            public static string NotInSinnoh = "This Pokémon doesn't exist in Sinnoh!";
             public static string SID5Digit = "Invalid: SID can only be 5 digits!";
             public static string Level_to_high = "Level too high ({0}/100)";
             public static string MythicalsGen7GTS = "You can't use this deposit Pokémon, this is a mythical Pokémon and can't be traded via the GTS in Gen 7!";
@@ -90,6 +91,7 @@ namespace TextStrings
             public static string NoticedNameChange = "We noticed a name change, so we transferred your stats! Welcome back!";
             public static string NewUserJoined = "Welcome to the stream, make sure you read the rules! Check how to trade with !help";
             public static string Gen8TradesDisabled = "Sword and Shield trades are currently disabled because the Switch bots are offline, please wait until they are enabled again.";
+            public static string BDSPTradesDisabled = "Diamand and Pearl trades are currently disabled because the Switch bots are offline, please wait until they are enabled again.";
 
             public static string NonSubTrainerInfoError = "Sorry, only subscribers can check their trainer information!";
 
@@ -104,6 +106,10 @@ namespace TextStrings
 
             public static string SWSH_TradesBlocked = "Sword and Shield trades are now blocked until enabled again.";
             public static string SWSH_TradesUnblocked = "Sword and Shield trades are now enabled.";
+
+            public static string BDSP_TradesBlocked = "BDSP trades are now blocked until enabled again.";
+            public static string BDSP_TradesUnblocked = "BDSP trades are now enabled.";
+
 
             public static string FakeBan_Success = "{0} has been banned from chat, friend code: {1} has been banned globally.";
             public static string FakeBan_Error = "Wrong format!";
