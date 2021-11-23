@@ -68,6 +68,10 @@ namespace TextStrings
             public static string Exception = "Wrong/bad command usage! Make sure you didn't forget the commas!";
             public static string NoGameDetect = "Invalid command usage!";
 
+
+            //Temporary unreleased in BDSP
+            public static string BDSP_Unreleased = "This Pokémon isn't released in in BDSP, wait until it gets released."; 
+
         }
 
         public static class TradeResponseStrings
