@@ -70,7 +70,7 @@ namespace TextStrings
 
 
             //Temporary unreleased in BDSP
-            public static string BDSP_Unreleased = "This Pokémon isn't released yet in BDSP, wait until it gets released."; 
+            public static string BDSP_Unreleased = "This Pokémon isn't released yet in BDSP, wait until it gets released.";
 
         }
 
@@ -339,9 +339,9 @@ namespace TextStrings
             public static string TriviaUnBan_UserNotFound = "User not found.";
 
             // Queue
-            public static string Queue_SubSuccess = "{0} The sub queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} minutes and {5} seconds.";
+            public static string Queue_SubSuccess = "{0} The sub queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} hours, {5} minutes, and {6} seconds.";
             public static string Queue_SubSQLFlood = "{0} The sub queue currently has: {1} people, you are not in the sub queue.";
-            public static string Queue_Success = "{0} The queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} minutes and {5} seconds.";
+            public static string Queue_Success = "{0} The queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} hours, {5} minutes, and {6} seconds.";
             public static string Queue_SQLFlood = "{0} The queue currently has: {1} people, you are not in the queue.";
             public static string Queue_All = "{0} The queue currently has a total of: {1} people.";
             public static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
@@ -370,7 +370,7 @@ namespace TextStrings
             public static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving the Gender and Level set to 'Any', 3) Request a trade using '!tradeORAS Deposit: [Pokémon Deposited]', 4) Wait for MitsukiBot to say your Pokémon has been traded!";
             public static string TradeHelp7 = "[SUMO/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving the Gender and Level set to 'Any', 3) Request a trade using '!trade Deposit: [Pokémon Deposited]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
             public static string TradeHelp8 = "[SWSH] 1) Save a custom 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!strade Request: [Pokémon Wanted]', 3) Wait for swsh_linkbot to ping you to start searching with your saved Link Code!";
-            public static string TradeHelpBDSP = "[BDSP] 1) Save a custom 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon Wanted]', 3) Enter the Global Room using your saved Link Code, 4) Wait for the bot to join the Global Room, 5) Interact with the bot after it calls for a trade!";
+            public static string TradeHelpBDSP = "[BDSP] 1) Save a custom 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon Wanted]', 3) Wait for bdsp_linkbot to say it's your turn, 4) Enter the Global Room using your saved Link Code, 5) Find the bot in the center of the room, 6) Interact with the bot after it calls for a trade!";
 
             public static string Error = "Specify what error you're getting: '!help link' for Gen 8 (SWSH) Link Trade, '!help gts' for Gen 7 (SUMO/USUM) or Gen 6 (XY/ORAS) GTS, '!help custom' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public static string ErrorLink = "[Switch] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Searching with saved Link Code? (Link Trade -> Set Link Code), 3) Try saving a new Link Code, 4) Try restarting your Switch";
