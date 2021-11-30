@@ -33,7 +33,7 @@ namespace TextStrings
                 // Game Specific Trade Help
                 "gen6" or "xy" or "oras" => HelpCommandsStrings.TradeHelp6,
                 "gen7" or "sumo" or "usum" => HelpCommandsStrings.TradeHelp7,
-                "gen8" or "swsh" => HelpCommandsStrings.TradeHelp8,
+                "swsh" => HelpCommandsStrings.TradeHelpSWSH,
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
 
                 // Trade Error Help

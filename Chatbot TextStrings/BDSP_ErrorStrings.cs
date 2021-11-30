@@ -14,7 +14,7 @@
             public static string FatalErrorException = "Fatal error occurred, please request again!";
 
             public static string InvalidChangesAbortTrade = "@{0} Your provided customizations were invalid. Trade cancelled!";
-            public static string InvalidChangesTradeDefault = "@{0} Your provided customizations were invalid. Trading Default Set!";
+            public static string InvalidChangesTradeDefault = "@{0} Your provided customizations were invalid. Trading default set!";
 
             public static string BANNED_NNID = "Your trade was rejected because your Nintendo Network ID was banned.";
         }
