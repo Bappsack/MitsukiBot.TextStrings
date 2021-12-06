@@ -152,6 +152,7 @@ namespace TextStrings
             public static string Ban_SuccessWithFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, friend code/NNID: {2} has been banned globally.";
             public static string Ban_SuccessWithoutFriendcode = "[Ban Message] User: {0} has been banned from chat, reason: {1}, user didn't save a friend code/NNID yet, no friend code/NNID was banned.";
             public static string BanFriendcode_Success = "@{0} has banned the friend code/NNID: {1} from user: {2}";
+            public static string Ban_Success = "[Ban Message] User: {0} has been banned from Chat, reason: {1}, Friendcode/NNID will be blocked from now on if saved.";
             public static string BanFriendcode_NotFound = "Nobody has this friend code/NNID saved.";
 
 
