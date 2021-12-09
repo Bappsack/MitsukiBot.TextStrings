@@ -9,12 +9,19 @@ namespace TextStrings
         private static Random ran = new Random();
 
 
+        public enum Source
+        {
+            Twitch,
+            Discord,
+            All
+        };
+
         /// <summary>
         /// Returns a Help String for the wanted Argument
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
-        public static string HandleHelpCommands(string context, int GeneralTradeCooldown = -1)
+        public static string HandleHelpCommands(string context, Source source = Source.All, int GeneralTradeCooldown = -1)
         {
 
             if (GeneralTradeCooldown is -1)
