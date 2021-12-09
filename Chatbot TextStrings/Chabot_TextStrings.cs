@@ -52,6 +52,7 @@ namespace TextStrings
             public static string Invalid_Event_ID_TooLong = "Invalid: Event_ID too long!";
             public static string Invalid_TID_TooLong = "Invalid: TID too long!";
             public static string Invalid_SID_TooLong = "Invalid: SID too long!";
+            public static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled!";
 
             public static string FusedForm = "Invalid: Fused forms can't be traded!";
             public static string NoRequest = "no wanted Pokémon specified!";
