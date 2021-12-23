@@ -39,7 +39,7 @@ namespace TextStrings
             {
                 // Game Specific Trade Help
                 "gen6" or "xy" or "oras" => HelpCommandsStrings.TradeHelp6,
-                "gen7" or "sumo" or "usum" => HelpCommandsStrings.TradeHelp7,
+                "gen7" or "sm" or "sumo" or "usum" => HelpCommandsStrings.TradeHelp7,
                 "swsh" => HelpCommandsStrings.TradeHelpSWSH,
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
 
@@ -47,7 +47,15 @@ namespace TextStrings
                 "error" or "errors" => HelpCommandsStrings.Error,
                 "errorgts" or "gts" => HelpCommandsStrings.ErrorGTS,
                 "errorlink" or "link" => HelpCommandsStrings.ErrorLink,
-                "errorcustom" or "custom" or "invalid" => HelpCommandsStrings.ErrorCustom,
+                "errorunion" or "union" => HelpCommandsStrings.ErrorUnion,
+                "errorinvalid" or "invalid" => HelpCommandsStrings.ErrorInvalid,
+
+                // Mythicals Help
+                "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
+                "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
+                "mythicals7" or "mythical7" => HelpCommandsStrings.Mythicals7,
+                "mythicals8" or "mythical8" => HelpCommandsStrings.MythicalsSWSH,
+                "mythicals8b" or "mythical8b" => HelpCommandsStrings.MythicalsBDSP,
 
                 // Trade Command Help
                 "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
@@ -60,12 +68,7 @@ namespace TextStrings
                 "format" or "example" => HelpCommandsStrings.Format,
                 "forms" or "form" => HelpCommandsStrings.FormList,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
-                "linkcode" or "lc" => HelpCommandsStrings.LinkCode,
                 "mark" or "marks" => HelpCommandsStrings.Marks,
-                "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
-                "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
-                "mythicals7" or "mythical7" => HelpCommandsStrings.Mythicals7,
-                "mythicals8" or "mythical8" => HelpCommandsStrings.Mythicals8,
                 "origin" or "origins" => HelpCommandsStrings.Origin,
                 "shiny" or "shinylock" or "shinylocked" => HelpCommandsStrings.ShinyState,
                 "showdown" or "smogon" => HelpCommandsStrings.Showdown,
