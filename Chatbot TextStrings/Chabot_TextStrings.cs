@@ -57,6 +57,8 @@ namespace TextStrings
             public static string FusedForm = "Invalid: Fused forms can't be traded!";
             public static string NoRequest = "no wanted Pokémon specified!";
             public static string NoDeposit = "no deposit Pokémon specified!";
+            public static string NotInGen6 = "This Pokémon doesn't exist in Generation 6!";
+            public static string NotInGen7 = "This Pokémon doesn't exist in Generation 7!";
             public static string NotInGalar = "This Pokémon doesn't exist in Galar!";
             public static string NotInSinnoh = "This Pokémon doesn't exist in Sinnoh!";
             public static string SID5Digit = "Invalid: SID can only be 5 digits!";
