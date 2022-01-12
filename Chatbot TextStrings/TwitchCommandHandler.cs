@@ -42,6 +42,7 @@ namespace TextStrings
                 "gen7" or "sm" or "sumo" or "usum" => HelpCommandsStrings.TradeHelp7,
                 "swsh" => HelpCommandsStrings.TradeHelpSWSH,
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
+                "pla" => HelpCommandsStrings.TradeHelpPLA,
 
                 // Trade Error Help
                 "error" or "errors" => HelpCommandsStrings.Error,
