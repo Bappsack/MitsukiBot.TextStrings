@@ -45,6 +45,11 @@ namespace TextStrings
             public static string Invalid_Event = "Invalid Event State!";
             public static string Invalid_Egg = "Invalid Egg State!";
             public static string Invalid_TakeOwn = "Invalid TakeOwn State!";
+            public static string Invalid_Alpha = "Invalid Alpha State!";
+
+            public static string NonExist_Move_PLA = "Move{0} is not available in PLA!";
+            public static string NonExist_Move_BDSP = "Move{0} is not available in BDSP!";
+
 
             public static string Invalid_Form_TooLong = "Invalid: Form too long!";
             public static string Invalid_Nickname_TooLong = "Invalid: Nickname too long!";
@@ -61,6 +66,7 @@ namespace TextStrings
             public static string NotInGen7 = "This Pokémon doesn't exist in Generation 7!";
             public static string NotInGalar = "This Pokémon doesn't exist in Galar!";
             public static string NotInSinnoh = "This Pokémon doesn't exist in Sinnoh!";
+            public static string NotInHisui = "This Pokémon doesn't exist in Hisui!";
             public static string SID5Digit = "Invalid: SID can only be 5 digits!";
             public static string Level_to_high = "Level too high ({0}/100)";
             public static string MythicalsGen7GTS = "You can't use this deposit Pokémon, this is a mythical Pokémon which can't be traded via the GTS in Gen 7!";
@@ -75,6 +81,9 @@ namespace TextStrings
             //Temporary unreleased in BDSP
             public static string BDSP_Unreleased = "This Pokémon hasn't been released yet in BDSP, wait until it gets released.";
 
+
+            // PLA
+            public static string PLA_NoHeldItemsAllowed = "Pokémon Legend Arceus don't have Held Items!";
         }
 
         public static class TradeResponseStrings
@@ -99,6 +108,7 @@ namespace TextStrings
             public static string NewUserJoined = "Welcome to the stream, make sure you read the rules! Check how to trade with !help";
             public static string Gen8TradesDisabled = "SWSH trades are currently disabled.";
             public static string BDSPTradesDisabled = "BDSP trades are currently disabled.";
+            public static string PLATradesDisabled = "PLA trades are currently disabled.";
 
             public static string NonSubTrainerInfoError = "Sorry, only subscribers can check their trainer information!";
 
@@ -116,6 +126,9 @@ namespace TextStrings
 
             public static string BDSP_TradesBlocked = "BDSP trades are now disabled.";
             public static string BDSP_TradesUnblocked = "BDSP trades are now enabled.";
+
+            public static string PLA_TradesBlocked = "PLA trades are now disabled.";
+            public static string PLA_TradesUnblocked = "PLA trades are now enabled.";
 
 
             public static string FakeBan_Success = "{0} has been banned from chat, friend code: {1} has been banned globally.";
@@ -375,7 +388,7 @@ namespace TextStrings
             public static string TradeHelp7 = "[SUMO/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!trade Deposit: [Pokémon]' OR '!trade [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
             public static string TradeHelpSWSH = "[SWSH] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!strade Request: [Pokémon]' OR '!strade [Showdown Set]', 3) Search with your saved Link Code!";
             public static string TradeHelpBDSP = "[BDSP] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon]' OR '!tradeBDSP [Showdown Set]', 3) Enter the Global Room with your saved Link Code, 4) Wait for the bot to join your room, 5) Talk to the bot after it calls for a trade!";
-            public static string TradeHelpPLA = "[PLA] TBD (on the next episode of Pokimanz Adventures)";
+            public static string TradeHelpPLA = "[PLA] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradePLA Request: [Pokémon]' OR '!tradePLA [Showdown Set]', 3) Open the Trading Post and Search with your saved Link Code!";
 
             public static string Error = "Specify what error you're getting: '!help union' for BDSP Union Room, '!help link' for SWSH Link Trade, '!help gts' for Gen 6/7 GTS, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public static string ErrorUnion = "[BDSP] 1) Using correct trade command? (!tradeBDSP), 2) Sending commands in correct order? (!setcode first, then !tradeBDSP), 3) Using Global Room?, 4) Searching with saved Link Code? (Global Room -> Yes, with a Link Code), 5) Try saving a more unique Link Code, 6) Try waiting in the room early before your turn is announced, 7) Try restarting your Switch";
