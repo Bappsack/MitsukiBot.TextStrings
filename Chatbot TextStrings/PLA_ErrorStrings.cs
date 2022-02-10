@@ -5,8 +5,8 @@
         public static class ErrorStrings
         {
             public static string NotOnOverworldAfterStart = "We had trouble starting the search, please request again!";
-            public static string NoTradePartnerFound = "No trade partner found! Check '!help Link' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
-            public static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help PLA' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
+            public static string NoTradePartnerFound = "No trade partner found! Check '!help linkpla' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
+            public static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help linkpla' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
             public static string WaitedTooLong = "You waited too long, trade aborted!";
             public static string NoBoxVisible = "Box was never shown, please request again!";
             public static string FailedTradePIDMatch = "Something is wrong with your Pokémon or you declined the trade!";

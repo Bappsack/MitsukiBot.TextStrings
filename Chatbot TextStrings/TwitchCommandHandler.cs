@@ -39,24 +39,24 @@ namespace TextStrings
             {
                 // Game Specific Trade Help
                 "gen6" or "xy" or "oras" => HelpCommandsStrings.TradeHelp6,
-                "gen7" or "sm" or "sumo" or "usum" => HelpCommandsStrings.TradeHelp7,
+                "gen7" or "sm" or "usum" => HelpCommandsStrings.TradeHelp7,
                 "swsh" => HelpCommandsStrings.TradeHelpSWSH,
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
                 "pla" => HelpCommandsStrings.TradeHelpPLA,
 
                 // Trade Error Help
                 "error" or "errors" => HelpCommandsStrings.Error,
-                "errorgts" or "gts" => HelpCommandsStrings.ErrorGTS,
-                "errorlink" or "link" => HelpCommandsStrings.ErrorLink,
-                "errorunion" or "union" => HelpCommandsStrings.ErrorUnion,
-                "errorinvalid" or "invalid" => HelpCommandsStrings.ErrorInvalid,
+                "gts" => HelpCommandsStrings.ErrorGTS,
+                "linkswsh" => HelpCommandsStrings.ErrorLinkSWSH,
+                "linkbdsp" => HelpCommandsStrings.ErrorLinkBDSP,
+                "linkpla" => HelpCommandsStrings.ErrorLinkPLA,
+                "invalid" => HelpCommandsStrings.ErrorInvalid,
 
                 // Mythicals Help
                 "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
                 "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
                 "mythicals7" or "mythical7" => HelpCommandsStrings.Mythicals7,
-                "mythicals8" or "mythical8" => HelpCommandsStrings.MythicalsSWSH,
-                "mythicals8b" or "mythical8b" => HelpCommandsStrings.MythicalsBDSP,
+                "mythicals8" or "mythical8" => HelpCommandsStrings.Mythicals8,
 
                 // Trade Command Help
                 "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
@@ -71,7 +71,7 @@ namespace TextStrings
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
                 "mark" or "marks" => HelpCommandsStrings.Marks,
                 "origin" or "origins" => HelpCommandsStrings.Origin,
-                "shiny" or "shinylock" or "shinylocked" => HelpCommandsStrings.ShinyState,
+                "shiny" or "shinylock" or "shinylocks" or "shinylocked" => HelpCommandsStrings.ShinyState,
                 "showdown" or "smogon" => HelpCommandsStrings.Showdown,
                 "sub" or "subs" or "subscribe" or "subscriber" => HelpCommandsStrings.Sub,
                 "takeown" or "mydetails" or "trainerid" or "trainer" => HelpCommandsStrings.Takeown,

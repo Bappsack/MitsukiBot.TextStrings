@@ -57,7 +57,7 @@ namespace TextStrings
             public static string Invalid_Event_ID_TooLong = "Invalid: Event_ID too long!";
             public static string Invalid_TID_TooLong = "Invalid: TID too long!";
             public static string Invalid_SID_TooLong = "Invalid: SID too long!";
-            public static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled!";
+            public static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
 
             public static string FusedForm = "Invalid: Fused forms can't be traded!";
             public static string NoRequest = "no wanted Pokémon specified!";
@@ -83,7 +83,7 @@ namespace TextStrings
 
 
             // PLA
-            public static string PLA_NoHeldItemsAllowed = "Pokémon Legend Arceus don't have Held Items!";
+            public static string PLA_NoHeldItemsAllowed = "Pokémon can't hold items in PLA!";
         }
 
         public static class TradeResponseStrings
@@ -200,13 +200,13 @@ namespace TextStrings
 
 
             // Trades
-            public static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code! If you are on a 3DS game, use '!trade' (SUMO/USUM) or '!tradeORAS' (XY/ORAS) instead!";
+            public static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code! If you are on a 3DS game, use '!trade' (SM/USUM) or '!tradeORAS' (XY/ORAS) instead!";
             public static string Trade_FriendcodeBanned = "So you're trying to trade? Too bad, your friend code is banned! mitsukiLUL";
             public static string Trade_NNIDBanned = "So you're trying to trade? Too bad, your Nintendo Network ID is banned! mitsukiLUL";
             public static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
             public static string Trade_AlreadyInQueue = "You're already in the queue, please wait a bit!";
             public static string Trade_Cooldown = "You currently have a trade cooldown! Remaining time:";
-            public static string Trade_NoFriendCodeSaved = "[3DS] You haven't saved your friend code yet! Use '!savefc ####-####-####' to save your friend code! If you are on a Switch game, use '!tradeBDSP' (BDSP) or '!strade' (SWSH) instead!";
+            public static string Trade_NoFriendCodeSaved = "[3DS] You haven't saved your friend code yet! Use '!savefc ####-####-####' to save your friend code! If you are on a Switch game, use '!strade' (SWSH), '!tradeBDSP' (BDSP), or '!tradePLA' (PLA) instead!";
             public static string Trade_ShowdownConvertError = "Wrong command usage!";
             public static string Trade_Failed_Error = "Trade request failed! Reason(s): {0}";
             public static string Trade_Success_Normal = "Your trade has been accepted!";
@@ -368,15 +368,15 @@ namespace TextStrings
                 "Join our Discord: mitsukiLUL https://discord.gg/5mdVKq9 mitsukiWink",
                 "Follow us on Twitter: https://twitter.com/ThatChrisWhite mitsukiSmug",
                 "Win the trivia to earn some sweet Pcoins!",
-                "Friendly reminder, Mega Stones and TrainerID customizations are sub-only, so don't wait and sub today with Prime Gaming for free! mitsukiHappy",
+                "Friendly reminder, Mega Stones, Eggs, and TrainerID customizations are sub-only, so don't wait and sub today with Prime Gaming for free! mitsukiHappy",
                 "This stream will always be updated and improved! Enjoy our future projects and updates! mitsukiWoah",
                 "What did you guys win from Wonder Trade? Some sweet mythical Pokémon from us? Don't be shy and spread the love in chat! mitsukiKiss",
-                "Friendly reminder, mythical Pokémon can't be requested from the Gen 7 (SUMO/USUM) GTS trades! mitsukiAngry",
+                "Friendly reminder, mythical Pokémon can't be requested from the Gen 7 (SM/USUM) GTS trades! mitsukiAngry",
                 "You can cheer Bits to give non-subs extra customizations! 50 Bits = 25 cparty trades for non-subs, first come first served! mitsukiOof",
                 "[SUBS ONLY] Use '!unlockdetails' and '!lockdetails' for un/locking your TID/SID!",
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
-                "If you're stuck in the queue, use '!canceltrade' to remove yourself from the queue, however this command only works if you've been stuck in the queue for at least 15 minutes!",
-                "Remember to use the correct command for your trade system: !tradeORAS (XY/ORAS), !trade (SUMO/USUM), !strade (SWSH), !tradeBDSP (BDSP)",
+                "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
+                "Remember to use the correct command for your game: !tradeORAS (XY/ORAS), !trade (SM/USUM), !strade (SWSH), !tradeBDSP (BDSP), !tradePLA (PLA)",
                 "———————————————————————— TwitchVotes You have been gifted a subscription. Type !dad to activate————————————————————————"
             };
         }
@@ -384,37 +384,37 @@ namespace TextStrings
 
         public static class HelpCommandsStrings
         {
-            public static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!tradeORAS Deposit: [Pokémon]' OR '!tradeORAS [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded!";
-            public static string TradeHelp7 = "[SUMO/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!trade Deposit: [Pokémon]' OR '!trade [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
-            public static string TradeHelpSWSH = "[SWSH] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!strade Request: [Pokémon]' OR '!strade [Showdown Set]', 3) Search with your saved Link Code!";
-            public static string TradeHelpBDSP = "[BDSP] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon]' OR '!tradeBDSP [Showdown Set]', 3) Enter the Global Room with your saved Link Code, 4) Wait for the bot to join your room, 5) Talk to the bot after it calls for a trade!";
+            public static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!tradeORAS Deposit: [Pokémon]' or '!tradeORAS [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded!";
+            public static string TradeHelp7 = "[SM/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!trade Deposit: [Pokémon]' or '!trade [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
+            public static string TradeHelpSWSH = "[SWSH] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!strade Request: [Pokémon]' or '!strade [Showdown Set]', 3) Search with your saved Link Code!";
+            public static string TradeHelpBDSP = "[BDSP] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon]' or '!tradeBDSP [Showdown Set]', 3) Enter the Global Room with your saved Link Code, 4) Wait for the bot to join your room, 5) Talk to the bot after it calls for a trade!";
             public static string TradeHelpPLA = "[PLA] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradePLA Request: [Pokémon]' or '!tradePLA [Showdown Set]', 3) Search with your saved Link Code!";
 
-            public static string Error = "Specify what error you're getting: '!help union' for BDSP Union Room, '!help link' for SWSH Link Trade, '!help gts' for Gen 6/7 GTS, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
-            public static string ErrorUnion = "[BDSP] 1) Using correct trade command? (!tradeBDSP), 2) Sending commands in correct order? (!setcode first, then !tradeBDSP), 3) Using Global Room?, 4) Searching with saved Link Code? (Global Room -> Yes, with a Link Code), 5) Try saving a more unique Link Code, 6) Try waiting in the room early before your turn is announced, 7) Try restarting your Switch";
-            public static string ErrorLink = "[SWSH/PLA] 1) (SWSH ONLY) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Using correct trade command? (!strade/!tradePLA), 3) Sending commands in correct order? (!setcode first, then !strade/!tradePLA), 4) Try saving a more unique Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
-            public static string ErrorGTS = "[3DS] 1) Using correct trade command? (!tradeORAS for Gen 6, !trade for Gen 7), 2) Saved correct friend code? (!myfc), 3) Specified correct Pokémon in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Specified deposit Pokémon if using Showdown set? (Add 'Deposit: [Pokémon]' after first line), 5) Spelled name of wanted Pokémon correctly?, 6) Try using a different deposit Pokémon, 7) Make sure you aren't requesting a mythical Pokémon in Gen 7 (SUMO/USUM)";
+            public static string Error = "Specify what error you're getting: '!help linkpla' for PLA Link Trade, '!help linkbdsp' for BDSP Link Trade, '!help linkswsh' for SWSH Link Trade, '!help gts' for Gen 6/7 GTS, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
+            public static string ErrorGTS = "[3DS] 1) Using correct trade command? (!tradeORAS for Gen 6, !trade for Gen 7), 2) Saved correct friend code? (!myfc), 3) Specified correct Pokémon in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Specified deposit Pokémon if using Showdown set? (Add 'Deposit: [Pokémon]' after first line), 5) Spelled name of wanted Pokémon correctly?, 6) Try using a different deposit Pokémon, 7) Make sure you aren't requesting a mythical Pokémon in Gen 7 (SM/USUM)";
+            public static string ErrorLinkSWSH = "[SWSH] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Using correct in-game trade method? (Link Trade -> Set Link Code), 3) Using correct trade command? (!strade), 4) Sending commands in correct order? (!setcode first, then !strade), 5) Try saving a more unique Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
+            public static string ErrorLinkBDSP = "[BDSP] 1) Using correct in-game trade method? (Global Room -> Yes, with a Link Code), 2) Using correct trade command? (!tradeBDSP), 3) Sending commands in correct order? (!setcode first, then !tradeBDSP), 4) Try saving a more unique Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
+            public static string ErrorLinkPLA = "[PLA] 1) Using correct in-game trade method? (Trading Post -> Someone far away), 2) Using correct trade command? (!tradePLA), 3) Sending commands in correct order? (!setcode first, then !tradePLA), 4) Try saving a more unique Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
             public static string ErrorInvalid = "If your customizations are not legal, the bot will cancel the trade. Common issues include requesting an invalid ability, ball, level, and/or moveset, so try changing/removing these customizations first. If you require further assistance, ask for help in the #support channel in our Discord server!";
 
-            public static string Mythicals = "Specify what game you're on: '!help mythicals8b' for BDSP, '!help mythicals8' for SWSH, '!help mythicals7' for SUMO/USUM, '!help mythicals6' for XY/ORAS, or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
-            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon can be requested from the Gen 6 GTS trades as long as the customizations are for a mythical event distributed in Gen 6.";
-            public static string Mythicals7 = "[SUMO/USUM] Mythical Pokémon CANNOT be requested from the Gen 7 GTS trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
-            public static string MythicalsSWSH = "[SWSH] Mythical Pokémon can be requested from the SWSH link trades as long as they are in the game // Mythical Pokémon in SWSH: Mew, Celebi, Jirachi, Victini, Keldeo, Genesect, Diancie, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude";
-            public static string MythicalsBDSP = "[BDSP] Mythical Pokémon can be requested from the BDSP Union Room trades as long as they are in the game // Mythical Pokémon currently available in BDSP: Mew, Jirachi, Phione, Manaphy (all shiny locked)";
+            public static string Mythicals = "Specify what game you're on: '!help mythicals8' for SWSH/BDSP/PLA, '!help mythicals7' for SM/USUM, '!help mythicals6' for XY/ORAS, or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
+            public static string Mythicals6 = "[XY/ORAS] Mythical Pokémon CAN be requested from the Gen 6 GTS Trades as long as the customizations are for a mythical event distributed in Gen 6. Only Jirachi, Arceus, and Diancie can be requested shiny.";
+            public static string Mythicals7 = "[SM/USUM] Mythical Pokémon CANNOT be requested from the Gen 7 GTS Trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
+            public static string Mythicals8 = "[SWSH/BDSP/PLA] Mythical Pokémon CAN be requested from the Gen 8 Link Trades as long as they are in the game. Mythical Pokémon in BDSP and PLA are shiny locked.";
 
             public static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
             public static string Cparty = "Community Party is activated whenever someone cheers Bits and allows non-subs to use extra customizations (OT, Event, Event_ID, Pokerus, Ribbons, Mark, Language, Origin), check if a cparty is active and the number of remaining trades using '!cparty'";
             public static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
             public static string Eggs = "[SUBS ONLY] [SWSH/BDSP] Eggs can be requested on SWSH/BDSP by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus, Language // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
             public static string Events = "[CPARTY/SUBS ONLY] Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event) // Event database: https://www.serebii.net/events/";
-            public static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
+            public static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsAlpha: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public static string FriendCode = "[3DS] How to find your friend code: Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
             public static string Language = "List of languages: JPN/Japanese, ENG/English, FRE/French, ITA/Italian, GER/German, ESP/Spanish, KOR/Korean, CHS/ChineseS, CHT/ChineseT";
             public static string Marks = "[SWSH] List of marks: https://www.serebii.net/swordshield/marks.shtml";
             public static string Origin = "List of origins: Red, Blue, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, Fire Red, Leaf Green, Col, XD, Diamond, Pearl, Platinum, Heart Gold, Soul Silver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, Brilliant Diamond, Shining Pearl, GO";
             public static string ShinyState = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check this link for a list of shiny locked Pokémon: https://www.serebii.net/games/shiny.shtml";
             public static string Showdown = "Showdown/Smogon sets are supported, do not put 'Request:' in your command  // [3DS] 'Deposit: xxx' can be added after the first line to specify a deposit Pokémon for Gen 6/7 GTS (defaults to Trubbish if deposit not specified)";
-            public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8), sub-only chat commands";
+            public static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (SWSH/BDSP), sub-only chat commands";
             public static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Request a trade and send the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
             public static string WonderTrade = "[3DS] Trade when the countdown timer from MitsukiBot says 'Go Wonder Trade!' to try your luck at winning a mythical Pokémon!";
 
@@ -430,14 +430,14 @@ namespace TextStrings
             public static string FormList = "List of available forms: https://bit.ly/2OYRzUm";
             public static string CommandList = "List of available commands: https://bit.ly/2m9qcwN";
 
-            public static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, cooldown, cparty, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
-            public static string InvalidArgsMessage = "Specify what help you're looking for: '!help bdsp' for BDSP Union Room, '!help swsh' for SWSH Link Trade, '!help gen7' for SUMO/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
+            public static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, cooldown, cparty, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
+            public static string InvalidArgsMessage = "Specify what help you're looking for: '!help pla' for PLA Link Trade, !help bdsp' for BDSP Link Trade, '!help swsh' for SWSH Link Trade, '!help gen7' for SM/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
         public static class RegularTextCommands
         {
-            public static string Info = "The stream runs 24/7 and offers Pokémon trades for XY/ORAS, SUMO/USUM, SWSH, and BDSP! Type !help for more info on requesting Pokémon!";
-            public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
+            public static string Info = "The stream runs 24/7 and offers Pokémon trades for XY/ORAS, SM/USUM, SWSH, BDSP, and PLA! Type !help for more info on requesting Pokémon!";
+            public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
             public static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
             public static string CommandsListURL = "List of available commands: https://bit.ly/2m9qcwN";
