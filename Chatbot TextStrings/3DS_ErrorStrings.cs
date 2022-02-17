@@ -12,6 +12,8 @@
         public static string InvalidChangesDefault = "Invalid customizations, trading default Pokémon if no level was set, otherwise see this as a failed trade!";
         public static string LegalityIssuesAfterbuild = "Something is wrong with your request!";
 
+        public static string Mythicals6PastGen = "Your requested mythical Pokémon is not from a Gen 6 event, so it cannot be traded via the GTS! Trade cancelled!";
+
         public static string TradeCanceledGenderLevelNotAny = ", Trade cancelled, you selected Gender: {0} and Level: {1} in the GTS, but the Gender and Level should be set to Any!";
         public static string TradeCanceledLevelNotAny = ", Trade cancelled, you selected Level: {0} in the GTS, but the Level should be set to Any!";
         public static string TradeCanceledGenderNotAny = ", Trade cancelled, you selected Gender: {0} in the GTS, but the Gender should be set to Any!";
