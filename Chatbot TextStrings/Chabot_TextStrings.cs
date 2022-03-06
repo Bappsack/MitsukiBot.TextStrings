@@ -427,8 +427,8 @@ namespace TextStrings
             public static string Sounds = "[SUBS ONLY] List of sounds: {0}.";
             public static string Trivia = "Trivia happens every 2 minutes and gives you 1000 Pcoins if you guess the correct answer first, get a hint if you're stuck using '!hint'";
 
-            public static string FormList = "List of available forms: https://bit.ly/2OYRzUm";
-            public static string CommandList = "List of available commands: https://bit.ly/2m9qcwN";
+            public static string FormList = "Check the available forms for a Pokémon using '!getforms Pokémon'";
+            public static string CommandList = "Check the stream description for a list of available customizations!";
 
             public static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, cooldown, cparty, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
             public static string InvalidArgsMessage = "Specify what help you're looking for: '!help pla' for PLA Link Trade, !help bdsp' for BDSP Link Trade, '!help swsh' for SWSH Link Trade, '!help gen7' for SM/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
@@ -440,16 +440,15 @@ namespace TextStrings
             public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
             public static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
-            public static string CommandsListURL = "List of available commands: https://bit.ly/2m9qcwN";
-            public static string RulesURL = "Stream rules: https://bit.ly/3wDHp00";
-            public static string FormListURL = "List of available forms: https://bit.ly/2OYRzUm";
+            
             public static string TwitterURL = "Twitter account: https://twitter.com/ThatChrisWhite";
             public static string DiscordURL = "Discord server: https://discordapp.com/invite/5mdVKq9";
+           
             public static string SubscribeMessage = "You can support us with only $4.99 and gain awesome subscriber-only perks! (Check '!help sub' for a list of perks) - https://www.twitch.tv/products/mitsuki_tv/ticket - If you have Amazon Prime it's completely free (or a 30-day free trial) - https://twitch.amazon.com/prime";
             public static string FreeTrialSub = "Start your 30-day free trial with Amazon Prime - https://twitch.amazon.com/prime";
             public static string BigShaq = "The ting goes skrrrahh, PAP, PAP, ka-ka-ka, Skidiki-pap-pap-pap. QUICK MATH, SKRRRAHH, MANS NOT HOT, No Ketchup, just sauce.";
             public static string PoGoFriendcode = "Add me on Pokémon GO! Friend code: 3816-5046-0159";
-            public static string ClaimCommandMessage = $"/me MitsukiBot gifted a Tier 1337 Subscription to @SouthrnJedi!";
+            public static string ClaimCommandMessage = $"/me MitsukiBot gifted a Tier 1337 Subscription to @TerrysaurusRex18!";
             public static string Hungry = "You should try {0} with {1} and {2}!";
         }
     }
