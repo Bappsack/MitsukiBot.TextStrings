@@ -440,10 +440,10 @@ namespace TextStrings
             public static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
             public static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
-            
+
             public static string TwitterURL = "Twitter account: https://twitter.com/ThatChrisWhite";
             public static string DiscordURL = "Discord server: https://discordapp.com/invite/5mdVKq9";
-           
+
             public static string SubscribeMessage = "You can support us with only $4.99 and gain awesome subscriber-only perks! (Check '!help sub' for a list of perks) - https://www.twitch.tv/products/mitsuki_tv/ticket - If you have Amazon Prime it's completely free (or a 30-day free trial) - https://twitch.amazon.com/prime";
             public static string FreeTrialSub = "Start your 30-day free trial with Amazon Prime - https://twitch.amazon.com/prime";
             public static string BigShaq = "The ting goes skrrrahh, PAP, PAP, ka-ka-ka, Skidiki-pap-pap-pap. QUICK MATH, SKRRRAHH, MANS NOT HOT, No Ketchup, just sauce.";
