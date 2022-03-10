@@ -142,7 +142,7 @@ namespace TextStrings
             public static string StreamOffline = "@{0} The stream is currently offline, but the bots should still be working. The stream will be back soon!";
 
             // Save Trade Code
-            public static string SetCode_BlacklistedCode = "Your wanted Link Code is blacklisted, this Link Code is used by other people already! Please save a different Link Code!";
+            public static string SetCode_BlacklistedCode = "This Link Code is used by other people already! Please save a different Link Code!";
             public static string SetCode_Success = "Your Link Code is now saved!";
             public static string SetCode_Error = "Your wanted Link Code is the wrong length (8 digits) or contains non-digits! If you are trying to save a 3DS friend code, use '!savefc' instead!";
 
