@@ -364,7 +364,8 @@ namespace TextStrings
             public static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
 
             // Every 5min Random Text
-            public static List<string> SpamMessages = new List<string> {
+            public static List<string> SpamMessages = new()
+            {
                 "Join our Discord: mitsukiLUL https://discord.gg/5mdVKq9 mitsukiWink",
                 "Follow us on Twitter: https://twitter.com/ThatChrisWhite mitsukiSmug",
                 "Win the trivia to earn some sweet Pcoins!",

@@ -6,8 +6,7 @@ namespace TextStrings
 {
     public static class TwitchCommandHandler
     {
-        private static Random ran = new Random();
-
+        private static Random ran = new();
 
         public enum Source
         {

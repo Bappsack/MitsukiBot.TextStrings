@@ -4,7 +4,7 @@ namespace TextStrings
 {
     public static class Food
     {
-        public static List<string> List = new List<string>
+        public readonly static List<string> List = new()
         {
             "abalone",
             "acorn squash",
