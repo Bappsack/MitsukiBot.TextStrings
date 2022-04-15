@@ -15,13 +15,62 @@ namespace Chatbot_TextStrings
         {
             try
             {
-                var formFile = NicknameForms[Nickname];
+                var FormFile = NicknameForms[Nickname];
 
-                var pk = PKMConverter.GetPKMfromBytes(File.ReadAllBytes(formFile));
-
-                return (Path.GetFileName(formFile).Replace(".pk8", string.Empty), ((Species)pk.Species).ToString(), pk.Form);
+                PKM? pk = EntityFormat.GetFromBytes(File.ReadAllBytes(FormFile));
+                if (pk != null)
+                    return (Path.GetFileName(FormFile).Replace($".pk8", string.Empty), ((Species)pk.Species).ToString(), pk.Form);
+                return (string.Empty, string.Empty, -1);
             }
-            catch { return (null, null, -1); }
+
+            catch { return (string.Empty, string.Empty, -1); }
+        }
+
+        public static (string, string, int) GetFormIdentifier2(int game, int species, string Nickname)
+        {
+            try
+            {
+                string FolderName = "";
+                string Extension = "";
+
+                switch (game)
+                {
+                    case 6:
+                        FolderName = "Pokemon6";
+                        Extension = "pk6";
+                        break;
+                    case 7:
+                        FolderName = "Pokemon";
+                        Extension = "pk7";
+                        break;
+                    case 8:
+                        FolderName = "Pokemon8";
+                        Extension = "pk8";
+                        break;
+                    case 88:
+                        FolderName = "Pokemon8b";
+                        Extension = "pb8";
+                        break;
+                    case 888:
+                        FolderName = "Pokemon8a";
+                        Extension = "pa8";
+                        break;
+                    default:
+                        break;
+                }
+
+                if (!Nickname.StartsWith(((Species)species).ToString(), System.StringComparison.OrdinalIgnoreCase))
+                    Nickname = (Species)species + Nickname;
+
+                var FormFile = $"C:\\{FolderName}\\{(Species)species}\\{NicknameForms[Nickname]}.{Extension}";
+
+                PKM? pk = EntityFormat.GetFromBytes(File.ReadAllBytes(FormFile));
+                if (pk != null)
+                    return (Path.GetFileName(FormFile).Replace($".{Extension}", string.Empty), ((Species)pk.Species).ToString(), pk.Form);
+                return (string.Empty, string.Empty, -1);
+            }
+
+            catch { return (string.Empty, string.Empty, -1); }
         }
 
         private readonly static Dictionary<string, string> NicknameForms = new()

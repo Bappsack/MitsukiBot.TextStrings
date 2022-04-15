@@ -2,7 +2,7 @@
 {
     public static class YT_Items
     {
-        public static int[] trade_items = {
+        public readonly static int[] trade_items = {
        1,
        2,
        3,

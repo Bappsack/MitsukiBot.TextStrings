@@ -14,7 +14,7 @@ namespace Chatbot_TextStrings
                 return true;
             return false;
         }
-        public static HashSet<Species> TradeEvolutions = new HashSet<Species>()
+        public readonly static HashSet<Species> TradeEvolutions = new()
         {
             Species.Kadabra,
             Species.Machoke,

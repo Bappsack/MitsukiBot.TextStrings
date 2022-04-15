@@ -6,7 +6,7 @@ namespace TextStrings
 {
     public static class TwitchCommandHandler
     {
-        private static Random ran = new();
+        private readonly static Random ran = new();
 
         public enum Source
         {
@@ -26,7 +26,7 @@ namespace TextStrings
             if (GeneralTradeCooldown is -1)
                 GeneralTradeCooldown = 10;
 
-            if (!context.Contains(" "))
+            if (!context.Contains(' '))
                 return HelpCommandsStrings.InvalidArgsMessage;
 
             string[] args = context.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
@@ -65,8 +65,8 @@ namespace TextStrings
                 "eggs" or "egg" => HelpCommandsStrings.Eggs,
                 "events" or "event" => HelpCommandsStrings.Events,
                 "friendcode" or "fc" => HelpCommandsStrings.FriendCode,
-                "format" or "example" => HelpCommandsStrings.Format,
-                "forms" or "form" => HelpCommandsStrings.FormList,
+                "Format" or "example" => HelpCommandsStrings.Format,
+                "Forms" or "Form" => HelpCommandsStrings.FormList,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
                 "mark" or "marks" => HelpCommandsStrings.Marks,
                 "origin" or "origins" => HelpCommandsStrings.Origin,
