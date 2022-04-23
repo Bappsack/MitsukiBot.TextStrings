@@ -12,7 +12,7 @@
     <IsPublishable>False</IsPublishable>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
 	<PublishSingleFile>true</PublishSingleFile>
-	<PlatFormTarget>AnyCPU</PlatFormTarget>
+	<PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   
   <ItemGroup>

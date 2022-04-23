@@ -12,7 +12,7 @@ namespace TextStrings
             public readonly static string Jobs_Done = "All Jobs done.";
             public readonly static string Restart_Complete = "Restart complete!";
             public readonly static string Cant_connect = "Can't connect to Stream! Try again in one second...";
-            public readonly static string Restart_now = "PerForming a restart...";
+            public readonly static string Restart_now = "Performing a restart...";
             public readonly static string PuBSub_Failed = "Failed to Start PubSubService";
             public readonly static string FollowerService_Failed = "Failed to Start FollowerService.";
             public readonly static string PubSub_Disconnected = "PubSub Disconnected.";
@@ -59,7 +59,7 @@ namespace TextStrings
             public readonly static string Invalid_SID_TooLong = "Invalid: SID too long!";
             public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
 
-            public readonly static string FusedForm = "Invalid: Fused Forms can't be traded!";
+            public readonly static string FusedForm = "Invalid: Fused forms can't be traded!";
             public readonly static string NoRequest = "no wanted Pokémon specified!";
             public readonly static string NoDeposit = "no deposit Pokémon specified!";
             public readonly static string NotInGen6 = "This Pokémon doesn't exist in Generation 6!";
@@ -103,14 +103,14 @@ namespace TextStrings
         public static class ResponseStrings
         {
             // Diverse Stuff
-            public readonly static string RestartMessage = "PerForming a restart...";
+            public readonly static string RestartMessage = "Performing a restart...";
             public readonly static string NoticedNameChange = "We noticed a name change, so we transferred your stats! Welcome back!";
             public readonly static string NewUserJoined = "Welcome to the stream, make sure you read the rules! Check how to trade with !help";
             public readonly static string Gen8TradesDisabled = "SWSH trades are currently disabled.";
             public readonly static string BDSPTradesDisabled = "BDSP trades are currently disabled.";
             public readonly static string PLATradesDisabled = "PLA trades are currently disabled.";
 
-            public readonly static string NonSubTrainerInfoError = "Sorry, only subscribers can check their trainer inFormation!";
+            public readonly static string NonSubTrainerInfoError = "Sorry, only subscribers can check their trainer information!";
 
             public readonly static string Friendcode3DS = "Your 3DS friend code is:";
             public readonly static string FriendcodeSwitch = "Your Switch friend code is:";
@@ -132,7 +132,7 @@ namespace TextStrings
 
 
             public readonly static string FakeBan_Success = "{0} has been banned from chat, friend code: {1} has been banned globally.";
-            public readonly static string FakeBan_Error = "Wrong Format!";
+            public readonly static string FakeBan_Error = "Wrong format!";
 
             public readonly static string Bits_ReceivedMessage = "{0} cheered {1} Bits! Community Party has been extended to {2} trades!";
 
@@ -226,9 +226,9 @@ namespace TextStrings
 
 
             // Forms
-            public readonly static string Form_Success = "Available Forms:";
-            public readonly static string Form_Alcremie_List = "Available Alcremie Forms: [Cream/Swirl] Vanilla Cream, Ruby Cream, Matcha Cream, Mint Cream, Lemon Cream, Salted Cream, Ruby Swirl, Caramel Swirl, Rainbow Swirl // [Sweet] Strawberry, Berry, Love, Star, Clover, Flower, Ribbon // [Format] Form: [Cream/Swirl] [Sweet] // [Example] Form: Ruby Swirl Ribbon";
-            public readonly static string Form_NonExist = "No special Forms available.";
+            public readonly static string Form_Success = "Available forms:";
+            public readonly static string Form_Alcremie_List = "Available Alcremie forms: [Cream/Swirl] Vanilla Cream, Ruby Cream, Matcha Cream, Mint Cream, Lemon Cream, Salted Cream, Ruby Swirl, Caramel Swirl, Rainbow Swirl // [Sweet] Strawberry, Berry, Love, Star, Clover, Flower, Ribbon // [Format] Form: [Cream/Swirl] [Sweet] // [Example] Form: Ruby Swirl Ribbon";
+            public readonly static string Form_NonExist = "No special forms available.";
             public readonly static string Form_Error = "This species is unknown, must be too QT for this world!";
 
 
@@ -401,7 +401,7 @@ namespace TextStrings
             public readonly static string Mythicals = "Specify what game you're on: '!help mythicals8' for SWSH/BDSP/PLA, '!help mythicals7' for SM/USUM, '!help mythicals6' for XY/ORAS, or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
             public readonly static string Mythicals6 = "[XY/ORAS] Mythical Pokémon CAN be requested from the Gen 6 GTS Trades as long as the customizations are for a mythical event distributed in Gen 6. Only Jirachi, Arceus, and Diancie can be requested shiny.";
             public readonly static string Mythicals7 = "[SM/USUM] Mythical Pokémon CANNOT be requested from the Gen 7 GTS Trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
-            public readonly static string Mythicals8 = "[SWSH/BDSP/PLA] Mythical Pokémon CAN be requested from the Gen 8 Link Trades as long as they are in the game. Mythical Pokémon in BDSP and PLA are shiny locked.";
+            public readonly static string Mythicals8 = "[SWSH/BDSP/PLA] Mythical Pokémon CAN be requested from the Gen 8 Link Trades as long as they are in the game. Mew, Jirachi, and Manaphy are shiny locked in BDSP. All mythical (and legendary) Pokémon are shiny locked in PLA.";
 
             public readonly static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
             public readonly static string Cparty = "Community Party is activated whenever someone cheers Bits and allows non-subs to use extra customizations (OT, Event, Event_ID, Pokerus, Ribbons, Mark, Language, Origin), check if a cparty is active and the number of remaining trades using '!cparty'";
@@ -428,17 +428,17 @@ namespace TextStrings
             public readonly static string Sounds = "[SUBS ONLY] List of sounds: {0}.";
             public readonly static string Trivia = "Trivia happens every 2 minutes and gives you 1000 Pcoins if you guess the correct answer first, get a hint if you're stuck using '!hint'";
 
-            public readonly static string FormList = "Check the available Forms for a Pokémon using '!getForms Pokémon'";
+            public readonly static string FormList = "Check the available forms for a Pokémon using '!getforms Pokémon'";
             public readonly static string CommandList = "Check the stream description for a list of available customizations!";
 
-            public readonly static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, cooldown, cparty, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, Format, showdown, deposit, eggs, events, Forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
+            public readonly static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, cooldown, cparty, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
             public readonly static string InvalidArgsMessage = "Specify what help you're looking for: '!help pla' for PLA Link Trade, !help bdsp' for BDSP Link Trade, '!help swsh' for SWSH Link Trade, '!help gen7' for SM/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
         public static class RegularTextCommands
         {
             public readonly static string Info = "The stream runs 24/7 and offers Pokémon trades for XY/ORAS, SM/USUM, SWSH, BDSP, and PLA! Type !help for more info on requesting Pokémon!";
-            public readonly static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Articuno-Galar, Zapdos-Galar, Moltres-Galar, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
+            public readonly static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
             public readonly static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public readonly static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
 
