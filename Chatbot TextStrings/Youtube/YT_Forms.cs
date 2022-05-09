@@ -10,7 +10,7 @@ namespace Chatbot_TextStrings
         public class FormIdentifier
         {
             public bool Valid { get; set; }
-            public string FormFileName { get; set; }
+            public string? FormFileName { get; set; }
             public int FormID { get; set; }
             public PKM? PK { get; set; }
         }

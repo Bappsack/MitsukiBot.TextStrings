@@ -20,6 +20,20 @@ namespace TextStrings
             public readonly static string Chatbot_Disconnected = "Chatbot disconnected, Connection lost! Trying to Reconnect...";
             public readonly static string Collect_Subscriber_List = "Collecting Subscriber List...";
             public readonly static string Bot_Disconnected_Successfull = "Bot Stopped Successfully, disconnecting from Chat!";
+            public readonly static string KeepAliveThreadText = "";
+            public readonly static string Announcement_Event = "a new Announcement was published: {1}";
+            public readonly static string EmoteOnlyTrigger = "Channel State Updated: Emote Only {1}";
+            public readonly static string ChannelLeft = "Channel left, trying to rejoin...";
+            public readonly static string Reconnect_PubSubEvents = "Reconnecting PubSub Events...";
+            public readonly static string TradeRequest = "Received Trade Request from: {1}";
+            public readonly static string RaffleStarted = "Raffle started.";
+            public readonly static string RaffleEnded = "Raffle ended, Winner: {1}";
+        }
+
+        public static class ChannelPointRewardStrings
+        {
+            public static readonly string Pcoins = "250.000 Pcoins";
+            public static readonly string Debug = "Mitsuki is cool";
         }
 
         public static class TradeRequestString
@@ -109,6 +123,7 @@ namespace TextStrings
             public readonly static string Gen8TradesDisabled = "SWSH trades are currently disabled.";
             public readonly static string BDSPTradesDisabled = "BDSP trades are currently disabled.";
             public readonly static string PLATradesDisabled = "PLA trades are currently disabled.";
+            public readonly static string GTSTradesDisabled = "GTS trades are currently disabled.";
 
             public readonly static string NonSubTrainerInfoError = "Sorry, only subscribers can check their trainer information!";
 
@@ -129,6 +144,9 @@ namespace TextStrings
 
             public readonly static string PLA_TradesBlocked = "PLA trades are now disabled.";
             public readonly static string PLA_TradesUnblocked = "PLA trades are now enabled.";
+
+            public readonly static string GTS_TradesBlocked = "GTS trades are now disabled.";
+            public readonly static string GTS_TradesUnblocked = "GTS trades are now enabled.";
 
 
             public readonly static string FakeBan_Success = "{0} has been banned from chat, friend code: {1} has been banned globally.";
@@ -362,6 +380,10 @@ namespace TextStrings
             public readonly static string Queue_SQLFlood = "{0} The queue currently has: {1} people, you are not in the queue.";
             public readonly static string Queue_All = "{0} The queue currently has a total of: {1} people.";
             public readonly static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
+
+            public readonly static string PLA_Levels_NotFound = "{0} Species not found!";
+            public readonly static string PLA_Levels_Success = "{0} [PLA] Minimum levels for {1}: {2}, {3}, {4}";
+
 
             // Every 5min Random Text
             public readonly static List<string> SpamMessages = new()
