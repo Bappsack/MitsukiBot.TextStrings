@@ -21,13 +21,13 @@ namespace TextStrings
             public readonly static string Collect_Subscriber_List = "Collecting Subscriber List...";
             public readonly static string Bot_Disconnected_Successfull = "Bot Stopped Successfully, disconnecting from Chat!";
             public readonly static string KeepAliveThreadText = "";
-            public readonly static string Announcement_Event = "a new Announcement was published: {1}";
-            public readonly static string EmoteOnlyTrigger = "Channel State Updated: Emote Only {1}";
+            public readonly static string Announcement_Event = "a new Announcement was published: {0}";
+            public readonly static string EmoteOnlyTrigger = "Channel State Updated: Emote Only Mode: {0}";
             public readonly static string ChannelLeft = "Channel left, trying to rejoin...";
             public readonly static string Reconnect_PubSubEvents = "Reconnecting PubSub Events...";
-            public readonly static string TradeRequest = "Received Trade Request from: {1}";
+            public readonly static string TradeRequest = "Received Trade Request from: {0}";
             public readonly static string RaffleStarted = "Raffle started.";
-            public readonly static string RaffleEnded = "Raffle ended, Winner: {1}";
+            public readonly static string RaffleEnded = "Raffle ended, Winner: {0}";
         }
 
         public static class ChannelPointRewardStrings
