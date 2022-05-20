@@ -53,7 +53,7 @@ namespace Chatbot_TextStrings
 
                 bool containsDigitForm = int.TryParse(Nickname[..1], out int _);
 
-                var form = GetForm(Nickname);
+                FormInfo? form = GetForm(Nickname);
 
                 if (form is null)
                 {
@@ -123,21 +123,21 @@ namespace Chatbot_TextStrings
         // TODO: Remove once Home gets released
         public readonly static HashSet<Species> LockedHisuiForms = new()
         {
-            PKHeX.Core.Species.Decidueye,
-            PKHeX.Core.Species.Typhlosion,
-            PKHeX.Core.Species.Samurott,
-            PKHeX.Core.Species.Arcanine,
-            PKHeX.Core.Species.Growlithe,
-            PKHeX.Core.Species.Avalugg,
-            PKHeX.Core.Species.Braviary,
-            PKHeX.Core.Species.Electrode,
-            PKHeX.Core.Species.Voltorb,
-            PKHeX.Core.Species.Goodra,
-            PKHeX.Core.Species.Sliggoo,
-            PKHeX.Core.Species.Qwilfish,
-            PKHeX.Core.Species.Zoroark,
-            PKHeX.Core.Species.Zorua,
-            PKHeX.Core.Species.Lilligant,
+            Species.Decidueye,
+            Species.Typhlosion,
+            Species.Samurott,
+            Species.Arcanine,
+            Species.Growlithe,
+            Species.Avalugg,
+            Species.Braviary,
+            Species.Electrode,
+            Species.Voltorb,
+            Species.Goodra,
+            Species.Sliggoo,
+            Species.Qwilfish,
+            Species.Zoroark,
+            Species.Zorua,
+            Species.Lilligant,
         };
 
 
