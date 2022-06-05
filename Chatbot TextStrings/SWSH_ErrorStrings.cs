@@ -16,6 +16,8 @@
 
             public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
 
+            public readonly static string CrashingExploit2022 = "@{0} Your offered Pokémon is not accepted for trading!";
+
             public readonly static string BANNED_NNID = "Your trade was rejected because your Nintendo Network ID was banned.";
         }
 
