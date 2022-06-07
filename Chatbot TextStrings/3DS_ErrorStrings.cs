@@ -13,11 +13,11 @@
 
         public readonly static string Mythicals6PastGen = "Your requested mythical Pokémon is not from a Gen 6 event, so it cannot be traded via the GTS! Trade cancelled!";
 
-        public readonly static string TradeCanceledGenderLevelNotAny = "Trade cancelled, your wanted Details are invalid! Level & Gender should be set to Any!";
-        public readonly static string TradeCanceledLevelNotAny = "Trade cancelled, your wanted Details are invalid! Level should be set to Any!";
-        public readonly static string TradeCanceledGenderNotAny = "Trade cancelled, your wanted Details are invalid! Gender should be set to Any!";
+        public readonly static string TradeCanceledGenderLevelNotAny = "You set the Level & Gender in the GTS, but the Level & Gender should be left at 'Any'! Trade cancelled!";
+        public readonly static string TradeCanceledLevelNotAny = "You set the Level in the GTS, but the Level should be left at 'Any'! Trade cancelled!";
+        public readonly static string TradeCanceledGenderNotAny = "You set the Gender in the GTS, but the Gender should be left at 'Any'! Trade cancelled!";
 
-        public readonly static string TradeCancelBannedFriendcode = "Trade cancelled, your Friendcode is banned!";
+        public readonly static string TradeCancelBannedFriendcode = "Your friend code is banned. Trade cancelled!";
 
         public readonly static string AlreadyTradedOrInvalidException = "Pokémon has already been traded by another person or you probably made invalid customizations!";
         public readonly static string FatalErrorException = "Fatal error occurred, please request again!";

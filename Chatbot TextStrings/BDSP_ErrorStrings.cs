@@ -18,7 +18,7 @@
 
             public readonly static string CrashingExploit2022 = "@{0} Your offered Pokémon is not accepted for trading!";
 
-            public readonly static string BANNED_NNID = "Your trade was rejected because your Nintendo Network ID was banned.";
+            public readonly static string BANNED_NNID = "Your Nintendo Network ID is banned. Trade cancelled!";
         }
 
         public static class ResponseStrings
