@@ -15,6 +15,25 @@ namespace Chatbot_TextStrings
             public PKM? PK { get; set; }
         }
 
+        private static EntityContext GetEntityContext(int Generation)
+        {
+            return Generation switch
+            {
+                1 => EntityContext.Gen1,
+                2 => EntityContext.Gen2,
+                3 => EntityContext.Gen3,
+                4 => EntityContext.Gen4,
+                5 => EntityContext.Gen5,
+                6 => EntityContext.Gen6,
+                7 => EntityContext.Gen7,
+                77 => EntityContext.Gen7b,
+                8 => EntityContext.Gen8,
+                88 => EntityContext.Gen8b,
+                888 => EntityContext.Gen8a,
+                _ => EntityContext.Gen8
+            };
+        }
+
         /// <summary>
         /// Returns the Form Identifier and the Species Name.
         /// </summary>
@@ -71,7 +90,7 @@ namespace Chatbot_TextStrings
 
                 if (File.Exists(FormFile))
                 {
-                    PKM? pk = EntityFormat.GetFromBytes(File.ReadAllBytes(FormFile), game);
+                    PKM? pk = EntityFormat.GetFromBytes(File.ReadAllBytes(FormFile), GetEntityContext(game));
                     if (pk != null)
                     {
                         return new FormIdentifier()
