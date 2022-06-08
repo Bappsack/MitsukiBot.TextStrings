@@ -83,7 +83,7 @@ namespace TextStrings
             public readonly static string NotInHisui = "This Pokémon doesn't exist in Hisui!";
             public readonly static string SID5Digit = "Invalid: SID can only be 5 digits!";
             public readonly static string Level_to_high = "Level too high ({0}/100)";
-            public readonly static string MythicalsGen7GTS = "You can't use this deposit Pokémon, this is a mythical Pokémon which can't be traded via the GTS in Gen 7!";
+            public readonly static string MythicalGTSDeposit = "You can't use a mythical as the deposit Pokémon!";
             public readonly static string EvolvingDepositMon = "You can't use this deposit Pokémon, this Pokémon will evolve during trade!";
             public readonly static string MegaStonesSubOnly = "Mega Stones are sub-only!";
 
