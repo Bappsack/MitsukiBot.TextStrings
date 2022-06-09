@@ -61,9 +61,11 @@ namespace TextStrings
             public readonly static string Invalid_TakeOwn = "Invalid TakeOwn State!";
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
 
+            public readonly static string ORASExclusive_Move = "Move{0} is an ORAS-exclusive move and cannot be traded via the GTS!";
+            public readonly static string ORASExclusive_MegaStone = "Your requested Mega Stone is an ORAS-exclusive Mega Stone and cannot be traded via the GTS!";
+
             public readonly static string NonExist_Move_PLA = "Move{0} is not available in PLA!";
             public readonly static string NonExist_Move_BDSP = "Move{0} is not available in BDSP!";
-
 
             public readonly static string Invalid_Form_TooLong = "Invalid: Form too long!";
             public readonly static string Invalid_Nickname_TooLong = "Invalid: Nickname too long!";
