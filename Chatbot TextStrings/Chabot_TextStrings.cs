@@ -242,7 +242,7 @@ namespace TextStrings
 
             // Wondertrade Winner Message
             public readonly static string Wondertrade_Winner_Block = "";
-            public readonly static string Wondertrade_Winner = "Was lucky and has won a {0} via Wonder Trade! mitsukiPlsRNG SabaPing , total wins: {1}";
+            public readonly static string Wondertrade_Winner = "Was lucky and has won a {0} via Wonder Trade on {1}! mitsukiPlsRNG SabaPing , total wins: {2}";
 
 
             // Forms
