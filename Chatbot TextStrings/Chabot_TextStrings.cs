@@ -384,7 +384,8 @@ namespace TextStrings
             public readonly static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
 
             public readonly static string PLA_Levels_NotFound = "{0} Species not found!";
-            public readonly static string PLA_Levels_Success = "{0} [PLA] Minimum levels for {1}: {2}, {3}, {4}";
+            public readonly static string PLA_Levels_Success = "{0} [PLA] Minimum levels for {1} (does not include HOME transfers): {2}, {3}, {4}. {5}";
+            public readonly static string SerebiiNetBallLevelsLink = "For minimum levels in other games, check https://www.serebii.net/games/pokeball.shtml";
 
 
             // Every 5min Random Text
