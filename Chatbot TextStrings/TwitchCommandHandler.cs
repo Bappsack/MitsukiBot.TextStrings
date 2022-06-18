@@ -60,7 +60,6 @@ namespace TextStrings
                 // Trade Command Help
                 "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
                 "cooldown" or "cd" or "cap" or "timecapsule" => string.Format(HelpCommandsStrings.Cooldown, GeneralTradeCooldown),
-                "cparty" or "cp" or "communityparty" => HelpCommandsStrings.Cparty,
                 "deposit" or "deposited" => HelpCommandsStrings.Deposit,
                 "eggs" or "egg" => HelpCommandsStrings.Eggs,
                 "events" or "event" => HelpCommandsStrings.Events,

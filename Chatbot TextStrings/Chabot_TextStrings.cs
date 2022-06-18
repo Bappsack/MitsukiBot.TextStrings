@@ -154,7 +154,7 @@ namespace TextStrings
             public readonly static string FakeBan_Success = "{0} has been banned from chat, friend code: {1} has been banned globally.";
             public readonly static string FakeBan_Error = "Wrong format!";
 
-            public readonly static string Bits_ReceivedMessage = "{0} cheered {1} Bits! Community Party has been extended to {2} trades!";
+            public readonly static string Bits_ReceivedMessage = "{0} cheered {1} Bits!";
 
             public readonly static string UpTime = "The stream has been running for {0} days, {1} hours, and {2} minutes.";
             public readonly static string FollowAge = "@{0} You have been following this channel for {1} days, {2} hours, and {3} minutes.";
@@ -230,7 +230,6 @@ namespace TextStrings
             public readonly static string Trade_ShowdownConvertError = "Wrong command usage!";
             public readonly static string Trade_Failed_Error = "Trade request failed! Reason(s): {0}";
             public readonly static string Trade_Success_Normal = "Your trade has been accepted!";
-            public readonly static string Trade_Success_Cparty = "Your community party trade has been accepted!";
             public readonly static string Trade_Success_Subscriber = "Your subscriber trade has been accepted!";
 
             public readonly static string TradeCancel_Success = "You've been removed from the queue!";
@@ -262,7 +261,6 @@ namespace TextStrings
             // Rewards
             public readonly static string RewardPcoinsMessage = "{0} redeemed {1} UwU's and got rewarded with {2}!";
             public readonly static string RewardTestMessage = "{0} Ok Boomer.";
-            public readonly static string RewardCparty = "{0} redeemed {1} and extended the Community Party by {2}";
             public readonly static string RewardUserSuccess = "@{0} rewarded @{1} with {2} Pcoins!";
             public readonly static string RewardUserFail = "@{0} failed to reward '{1}', user not found.";
 
@@ -314,12 +312,6 @@ namespace TextStrings
             // Global Cooldown
             public readonly static string GlobalCooldown_Success = "Updated the general trade cooldown to:";
             public readonly static string GlobalCooldown_ToLow = "This trade cooldown is way too low, please apply a minimum of 10 minutes.";
-
-
-            // Cparty
-            public readonly static string CPartyActive = "It's Community Party time! Extra customization is available for non-subs! mitsukiLUL Remaining Community Party trades:";
-            public readonly static string CpartyNotAktive = "There currently isn't a Community Party running! Cheer now to get 25 trades for 50 Bits!";
-
 
             // Sound play
             public readonly static string SoundPlaySuccess = "Paid 5000 Pcoins to play the sound:";
@@ -398,7 +390,6 @@ namespace TextStrings
                 "This stream will always be updated and improved! Enjoy our future projects and updates! mitsukiWoah",
                 "What did you guys win from Wonder Trade? Some sweet mythical Pokémon from us? Don't be shy and spread the love in chat! mitsukiKiss",
                 "Friendly reminder, mythical Pokémon can't be requested from the Gen 7 (SM/USUM) GTS trades! mitsukiAngry",
-                "You can cheer Bits to give non-subs extra customizations! 50 Bits = 25 cparty trades for non-subs, first come first served! mitsukiOof",
                 "[SUBS ONLY] Use '!unlockdetails' and '!lockdetails' for un/locking your TID/SID!",
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
@@ -429,10 +420,9 @@ namespace TextStrings
             public readonly static string Mythicals8 = "[SWSH/BDSP/PLA] Mythical Pokémon CAN be requested from the Gen 8 Link Trades as long as they are in the game. Mythical (and legendary) Pokémon cannot be alpha in PLA.";
 
             public readonly static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
-            public readonly static string Cparty = "Community Party is activated whenever someone cheers Bits and allows non-subs to use extra customizations (OT, Event, Event_ID, Pokerus, Ribbons, Mark, Language, Origin), check if a cparty is active and the number of remaining trades using '!cparty'";
             public readonly static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
             public readonly static string Eggs = "[SUBS ONLY] [SWSH/BDSP] Eggs can be requested on SWSH/BDSP by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus, Language // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
-            public readonly static string Events = "[CPARTY/SUBS ONLY] Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event) // Event database: https://www.serebii.net/events/";
+            public readonly static string Events = "Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event) // Event database: https://www.serebii.net/events/";
             public readonly static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsAlpha: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public readonly static string FriendCode = "[3DS] How to find your friend code: Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
             public readonly static string Language = "List of languages: JPN/Japanese, ENG/English, FRE/French, ITA/Italian, GER/German, ESP/Spanish, KOR/Korean, CHS/ChineseS, CHT/ChineseT";
@@ -456,7 +446,7 @@ namespace TextStrings
             public readonly static string FormList = "Check the available forms for a Pokémon using '!getforms Pokémon'";
             public readonly static string CommandList = "Check the stream description for a list of available customizations!";
 
-            public readonly static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, cooldown, cparty, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
+            public readonly static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, cooldown, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, takeown // [Pcoins] pcoins, bandit, gamble, jackpot, raffle, roulette, sounds, trivia";
             public readonly static string InvalidArgsMessage = "Specify what help you're looking for: '!help pla' for PLA Link Trade, !help bdsp' for BDSP Link Trade, '!help swsh' for SWSH Link Trade, '!help gen7' for SM/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
