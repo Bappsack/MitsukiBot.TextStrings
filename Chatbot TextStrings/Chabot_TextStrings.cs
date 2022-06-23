@@ -60,6 +60,11 @@ namespace TextStrings
             public readonly static string Invalid_Egg = "Invalid Egg State!";
             public readonly static string Invalid_TakeOwn = "Invalid TakeOwn State!";
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
+            public readonly static string Invalid_Contest = "Invalid Contest State!";
+            public readonly static string Invalid_Date = "Invalid Met Date! (ex. 12/31/2022 )";
+            public readonly static string Invalid_Dynamax = "Invalid MaxDynamax State";
+            public readonly static string Invalid_Heigth = "Invalid Heigth!";
+            public readonly static string Invalid_Weigth = "Invalid Weigth";
 
             public readonly static string ORASExclusive_Move = "Move{0} is an ORAS-exclusive move and cannot be traded via the GTS!";
             public readonly static string ORASExclusive_MegaStone = "Your requested Mega Stone is an ORAS-exclusive Mega Stone and cannot be traded via the GTS!";
