@@ -62,13 +62,15 @@ namespace TextStrings
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
             public readonly static string Invalid_Contest = "Invalid Contest State!";
             public readonly static string Invalid_Date = "Invalid Met Date!";
-            public readonly static string Invalid_Dynamax = "Invalid MaxDynamax State!";
+            public readonly static string Invalid_Dynamax = "Invalid Dynamax State!";
             public readonly static string Invalid_Height = "Invalid Height!";
             public readonly static string Invalid_Weight = "Invalid Weight!";
-            public readonly static string Invalid_MaxPP = "Invalid MaxPP State";
-            public readonly static string Invalid_MaxEL = "Invalid MaxEL State";
+            public readonly static string Invalid_MaxPP = "Invalid PP State!";
+            public readonly static string Invalid_MaxEL = "Invalid EL State!";
 
-            public readonly static string Invalid_Height_Weight_Alpha_to_Low = "Invalid: Height/Weight is to low to be Alpha (255)!";
+
+            public readonly static string Mythicals6PastGen = "Your requested mythical Pokémon is not from a Gen 6 event, so it cannot be traded via the GTS in Gen 6! Trade cancelled!";
+            public readonly static string MythicalsGen7 = "Your requested Pokémon is a mythical Pokémon and cannot be traded via the GTS in Gen 7! Trade cancelled!";
 
             public readonly static string ORASExclusive_Move = "Move{0} is an ORAS-exclusive move and cannot be traded via the GTS!";
             public readonly static string ORASExclusive_MegaStone = "Your requested Mega Stone is an ORAS-exclusive Mega Stone and cannot be traded via the GTS!";
