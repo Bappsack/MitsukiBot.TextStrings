@@ -61,10 +61,10 @@ namespace TextStrings
             public readonly static string Invalid_TakeOwn = "Invalid TakeOwn State!";
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
             public readonly static string Invalid_Contest = "Invalid Contest State!";
-            public readonly static string Invalid_Date = "Invalid Met Date! (ex. 12/31/2022 )";
-            public readonly static string Invalid_Dynamax = "Invalid MaxDynamax State";
-            public readonly static string Invalid_Heigth = "Invalid Heigth!";
-            public readonly static string Invalid_Weigth = "Invalid Weigth";
+            public readonly static string Invalid_Date = "Invalid Met Date!";
+            public readonly static string Invalid_Dynamax = "Invalid MaxDynamax State!";
+            public readonly static string Invalid_Heigth = "Invalid Height!";
+            public readonly static string Invalid_Weigth = "Invalid Weight!";
 
             public readonly static string ORASExclusive_Move = "Move{0} is an ORAS-exclusive move and cannot be traded via the GTS!";
             public readonly static string ORASExclusive_MegaStone = "Your requested Mega Stone is an ORAS-exclusive Mega Stone and cannot be traded via the GTS!";
@@ -90,9 +90,9 @@ namespace TextStrings
             public readonly static string NotInHisui = "This Pokémon doesn't exist in Hisui!";
             public readonly static string SID5Digit = "Invalid: SID can only be 5 digits!";
             public readonly static string Level_to_high = "Level too high ({0}/100)";
-            public readonly static string MythicalGTSDeposit = "You can't use a mythical as the deposit Pokémon!";
-            public readonly static string EvolvingDepositMon = "You can't use this deposit Pokémon, this Pokémon will evolve during trade!";
-            public readonly static string MegaStonesSubOnly = "Mega Stones are sub-only!";
+            public readonly static string MythicalGTSDeposit = "You can't use a mythical Pokémon as the deposit Pokémon!";
+            public readonly static string EvolvingDepositMon = "You can't use a Pokémon that evolves via trade as the deposit Pokémon!";
+            public readonly static string MegaStonesSubOnly = "Only subscribers can request Mega Stones!";
 
             public readonly static string TooManyErrorsToPrint = "Too many invalid commands! Make sure you didn't forget the commas!";
             public readonly static string Exception = "Wrong/bad command usage! Make sure you didn't forget the commas!";
@@ -225,7 +225,7 @@ namespace TextStrings
 
 
             // Trades
-            public readonly static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code! If you are on a 3DS game, use '!trade' (SM/USUM) or '!tradeORAS' (XY/ORAS) instead!";
+            public readonly static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code! If you are on a 3DS game, use '!tradeUSUM' (SM/USUM) or '!tradeORAS' (XY/ORAS) instead!";
             public readonly static string Trade_FriendcodeBanned = "So you're trying to trade? Too bad, your friend code is banned! mitsukiLUL";
             public readonly static string Trade_NNIDBanned = "So you're trying to trade? Too bad, your Nintendo Network ID is banned! mitsukiLUL";
             public readonly static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
@@ -398,7 +398,7 @@ namespace TextStrings
                 "[SUBS ONLY] Use '!unlockdetails' and '!lockdetails' for un/locking your TID/SID!",
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
-                "Remember to use the correct command for your game: !tradeORAS (XY/ORAS), !trade (SM/USUM), !tradeSWSH (SWSH), !tradeBDSP (BDSP), !tradePLA (PLA)",
+                "Remember to use the correct command for your game: !tradeORAS (XY/ORAS), !tradeUSUM (SM/USUM), !tradeSWSH (SWSH), !tradeBDSP (BDSP), !tradePLA (PLA)",
                 "———————————————————————— TwitchVotes You have been gifted a subscription. Type !dad to activate————————————————————————"
             };
         }
@@ -406,14 +406,14 @@ namespace TextStrings
 
         public static class HelpCommandsStrings
         {
-            public readonly static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!tradeORAS Deposit: [Pokémon]' or '!tradeORAS [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded!";
-            public readonly static string TradeHelp7 = "[SM/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!trade Deposit: [Pokémon]' or '!trade [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
+            public readonly static string TradeHelp6 = "[XY/ORAS] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!tradeORAS Deposit: [Pokémon], Request: [Pokémon]' or '!tradeORAS [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded!";
+            public readonly static string TradeHelp7 = "[SM/USUM] 1) Save your 12-digit 3DS friend code using '!savefc ####-####-####', 2) Deposit a Pokémon in the GTS leaving Gender and Level at the default settings, 3) Request a trade using '!tradeUSUM Deposit: [Pokémon], Request: [Pokémon]' or '!tradeUSUM [Showdown Set]', 4) Wait for MitsukiBot to say your Pokémon has been traded! (MYTHICAL POKÉMON CAN'T BE REQUESTED FROM THE GEN 7 GTS TRADES!)";
             public readonly static string TradeHelpSWSH = "[SWSH] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeSWSH Request: [Pokémon]' or '!tradeSWSH [Showdown Set]', 3) Search with your saved Link Code!";
             public readonly static string TradeHelpBDSP = "[BDSP] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon]' or '!tradeBDSP [Showdown Set]', 3) Enter the Global Room with your saved Link Code, 4) Wait for the bot to join your room, 5) Talk to the bot after it calls for a trade!";
             public readonly static string TradeHelpPLA = "[PLA] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradePLA Request: [Pokémon]' or '!tradePLA [Showdown Set]', 3) Search with your saved Link Code!";
 
             public readonly static string Error = "Specify what error you're getting: '!help linkpla' for PLA Link Trade, '!help linkbdsp' for BDSP Link Trade, '!help linkswsh' for SWSH Link Trade, '!help gts' for Gen 6/7 GTS, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
-            public readonly static string ErrorGTS = "[3DS] 1) Using correct trade command? (!tradeORAS for Gen 6, !trade for Gen 7), 2) Saved correct friend code? (!myfc), 3) Specified correct Pokémon in 'Deposit: [Pokémon]' command? (Pokémon deposited, not Pokémon wanted), 4) Specified deposit Pokémon if using Showdown set? (Add 'Deposit: [Pokémon]' after first line), 5) Spelled name of wanted Pokémon correctly?, 6) Left Gender and Level at default settings?, 7) Try using a different deposit Pokémon, 8) Make sure you aren't requesting a mythical Pokémon in Gen 7 (SM/USUM)";
+            public readonly static string ErrorGTS = "[3DS] 1) Using correct trade command? (!tradeORAS for Gen 6, !tradeUSUM for Gen 7), 2) Saved correct friend code? (!myfc), 3) Specified correct Pokémon in Deposit and Request commands? (Deposit is Pokémon deposited, Request is Pokémon wanted), 4) Specified deposit Pokémon if using Showdown set? (Add 'Deposit: [Pokémon]' after first line), 5) Spelled name of wanted Pokémon correctly?, 6) Left Gender and Level at default settings?, 7) Try using a different deposit Pokémon, 8) Make sure you aren't requesting a mythical Pokémon in Gen 7 (SM/USUM)";
             public readonly static string ErrorLinkSWSH = "[SWSH] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Using correct in-game trade method? (Link Trade -> Set Link Code), 3) Using correct trade command? (!tradeSWSH), 4) Sending commands in correct order? (!setcode first, then !tradeSWSH), 5) Try saving a more unique Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
             public readonly static string ErrorLinkBDSP = "[BDSP] 1) Using correct in-game trade method? (Global Room -> Yes, with a Link Code), 2) Using correct trade command? (!tradeBDSP), 3) Sending commands in correct order? (!setcode first, then !tradeBDSP), 4) Try saving a more unique Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
             public readonly static string ErrorLinkPLA = "[PLA] 1) Using correct in-game trade method? (Trading Post -> Someone far away), 2) Using correct trade command? (!tradePLA), 3) Sending commands in correct order? (!setcode first, then !tradePLA), 4) Try saving a more unique Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
