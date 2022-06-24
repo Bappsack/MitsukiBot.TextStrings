@@ -386,6 +386,8 @@ namespace TextStrings
             public readonly static string Queue_All = "{0} The queue currently has a total of: {1} people.";
             public readonly static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
 
+            public readonly static string Queue_Game_Success = "{0} The {1} queue currently has {2} people, your position: {3}/{4}, estimated wait time: {5} hours, {6} minutes, and {7} seconds.";
+
             public readonly static string PLA_Levels_NotFound = "{0} Species not found!";
             public readonly static string PLA_Levels_Success = "{0} [PLA] Minimum levels for {1} (does not include HOME transfers): {2}, {3}, {4}. {5}";
             public readonly static string SerebiiNetBallLevelsLink = "For minimum levels in other games, check https://www.serebii.net/games/pokeball.shtml";
