@@ -249,6 +249,7 @@ namespace TextStrings
 
             public readonly static string Trade_Showdown_Gen67_Disclaimer = "(The deposit Pokémon defaults to Trubbish for Gen 6/7 Showdown sets if not specified!)";
 
+            public readonly static string ObsoleteTradeHandlers = "{0} !trade and !strade are now obsolete, use !tradeUSUM for SM/USUM and !tradeSWSH for SWSH!";
 
             // Wondertrade Winner Message
             public readonly static string Wondertrade_Winner_Block = "";
