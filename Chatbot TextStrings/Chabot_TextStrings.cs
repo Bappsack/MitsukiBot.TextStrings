@@ -113,7 +113,7 @@ namespace TextStrings
             public readonly static string PLA_NoHeldItemsAllowed = "Pokémon can't hold items in PLA!";
         }
 
-        public static class TradeResponseStrings
+        public static class TradeResponseStrings_Twitch
         {
             public readonly static string RequestNotFoundGameDefault = "({0}) @{1} We couldn't trade your Pokémon!";
             public readonly static string RequestNotFoundGameDefaultMessage = "({0}) @{1} We couldn't trade your Pokémon! Error message: {2}";
@@ -125,6 +125,20 @@ namespace TextStrings
             public readonly static string RequestWasTraded = "@{0} Your Pokémon {1} has been traded!";
             public readonly static string RequestWasTradedSubscriberGame = "[Subscriber Trade] ({0}) @{1} Your Pokémon {2} has been traded!";
             public readonly static string RequestWasTradedSubscriber = "[Subscriber Trade] @{0} Your Pokémon {1} has been traded!";
+        }
+
+        public static class TradeResponseStrings_Discord
+        {
+            public readonly static string RequestNotFoundGameDefault = "({0}) <@{1}> We couldn't trade your Pokémon!";
+            public readonly static string RequestNotFoundGameDefaultMessage = "({0}) <@{1}> We couldn't trade your Pokémon! Error message: {2}";
+            public readonly static string RequestNotFoundDefault = "<@{0}> We couldn't trade your Pokémon! Error message: {1}";
+            public readonly static string RequestNotFoundMessage = "({0}) <@{1}> We couldn't trade your Pokémon {2}!";
+            public readonly static string RequestInvalid = "<@{0}> Your request seems invalid: {1}";
+
+            public readonly static string RequestWasTradedGame = "({0}) <@{1}> Your Pokémon {2} has been traded!";
+            public readonly static string RequestWasTraded = "<@{0}> Your Pokémon {1} has been traded!";
+            public readonly static string RequestWasTradedSubscriberGame = "[Subscriber Trade] ({0}) <@{1}> Your Pokémon {2} has been traded!";
+            public readonly static string RequestWasTradedSubscriber = "[Subscriber Trade] <@{0}> Your Pokémon {1} has been traded!";
         }
 
         public static class ResponseStrings
