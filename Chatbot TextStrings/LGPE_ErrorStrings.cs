@@ -1,20 +1,25 @@
-﻿namespace TextStrings
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TextStrings
 {
-    public static class BDSP_TextStrings
+    public static class LGPE_TextStrings
     {
         public static class ErrorStrings
         {
             public readonly static string NotOnOverworldAfterStart = "We had trouble starting the search, please request again!";
-            public readonly static string NoTradePartnerFound = "No trade partner found! Check '!help linkbdsp' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
-            public readonly static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help linkbdsp' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
+            public readonly static string NoTradePartnerFound = "No trade partner found! Check '!help linkswsh' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
+            public readonly static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help linkswsh' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
             public readonly static string WaitedTooLong = "You waited too long, trade aborted!";
             public readonly static string NoBoxVisible = "Box was never shown, please request again!";
             public readonly static string FailedTradePIDMatch = "Something is wrong with your Pokémon or you declined the trade!";
 
             public readonly static string FatalErrorException = "Fatal error occurred, please request again!";
 
-            public readonly static string InvalidChangesAbortTrade = "@{0} Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
-            public readonly static string InvalidChangesTradeDefault = "@{0} Your provided customizations were invalid. Trading default set!";
+            public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
 
             public readonly static string CrashingExploit2022 = "@{0} Your offered Pokémon is not accepted for trading!";
 
