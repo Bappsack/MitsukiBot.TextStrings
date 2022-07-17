@@ -4,7 +4,7 @@
     {
         public static class ErrorStrings
         {
-            public readonly static string IllegalFileProvided = "{0} your prodived File is illegal, trade aborted!";
+            public readonly static string IllegalFileProvided = "{0} your provided File is illegal, trade aborted!";
 
             public readonly static string InvalidFileTypeGeneral = "{0} your provided file is not supported. Trade cancelled!";
             public readonly static string InvalidFileTypePK6 = "{0} your provided file is not supported in XY/ORAS, please use a .PK6 file. Trade cancelled!";
