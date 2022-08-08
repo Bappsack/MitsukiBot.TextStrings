@@ -11,8 +11,8 @@ namespace TextStrings
         public static class ErrorStrings
         {
             public readonly static string NotOnOverworldAfterStart = "We had trouble starting the search, please request again!";
-            public readonly static string NoTradePartnerFound = "No trade partner found! Check '!help linkswsh' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
-            public readonly static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help linkswsh' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
+            public readonly static string NoTradePartnerFound = "No trade partner found! Check '!help linklgpe' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
+            public readonly static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help linklgpe' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
             public readonly static string WaitedTooLong = "You waited too long, trade aborted!";
             public readonly static string NoBoxVisible = "Box was never shown, please request again!";
             public readonly static string FailedTradePIDMatch = "Something is wrong with your Pokémon or you declined the trade!";
