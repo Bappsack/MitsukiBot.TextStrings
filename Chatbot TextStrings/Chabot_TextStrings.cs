@@ -250,6 +250,7 @@ namespace TextStrings
             public readonly static string Trade_NNIDBanned = "So you're trying to trade? Too bad, your Nintendo Network ID is banned! mitsukiLUL";
             public readonly static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
             public readonly static string Trade_AlreadyInQueue = "You're already in the queue, please wait a bit!";
+            public readonly static string Trade_ALT_AlreadyInQueue = "You're already in the queue with another account, trade rejected!";
             public readonly static string Trade_Cooldown = "You currently have a trade cooldown! Remaining time:";
             public readonly static string Trade_NoFriendCodeSaved = "[3DS] You haven't saved your friend code yet! Use '!savefc ####-####-####' to save your friend code! If you are on a Switch game, use '!tradeSWSH' (SWSH), '!tradeBDSP' (BDSP), or '!tradePLA' (PLA) instead!";
             public readonly static string Trade_ShowdownConvertError = "Wrong command usage!";
