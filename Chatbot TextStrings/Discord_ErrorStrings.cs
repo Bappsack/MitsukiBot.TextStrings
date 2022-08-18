@@ -13,5 +13,11 @@
             public readonly static string InvalidFileTypePB8 = "{0} your provided file is not supported in BDSP, please use a .PB8 file. Trade cancelled!";
             public readonly static string InvalidFileTypePA8 = "{0} your provided file is not supported in PLA, please use a .PA8 file. Trade cancelled!";
         }
+
+        public static class ResponseStrings
+        {
+            public readonly static string DumpMessageLegal = "This is what you sent me(Legal!):\n\n {0}";
+            public readonly static string DumpMessageIllegal = "This is what you sent me(Illegal!):\n\n {0}";
+        }
     }
 }
