@@ -16,8 +16,8 @@
 
         public static class ResponseStrings
         {
-            public readonly static string DumpMessageLegal = "This is what you sent me(Legal!):\n\n{0}";
-            public readonly static string DumpMessageIllegal = "This is what you sent me(Illegal!):\n\n{0}";
+            public readonly static string DumpMessageLegal = "This is what you traded to me. This Pokémon is legal!\n\n{0}";
+            public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
         }
     }
 }
