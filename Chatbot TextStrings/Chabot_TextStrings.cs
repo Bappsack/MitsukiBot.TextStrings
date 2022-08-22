@@ -99,7 +99,7 @@ namespace TextStrings
             public readonly static string MythicalGTSDeposit = "You can't use a mythical Pokémon as the deposit Pokémon!";
             public readonly static string EvolvingDepositMon = "You can't use a Pokémon that evolves via trade as the deposit Pokémon!";
             public readonly static string MegaStonesSubOnly = "Only subscribers can request Mega Stones!";
-
+            public readonly static string MegaStones_NonExistPastGen7 = "Mega Stones do not exist in this game!";
             public readonly static string TooManyErrorsToPrint = "Too many invalid commands! Make sure you didn't forget the commas!";
             public readonly static string Exception = "Wrong/bad command usage! Make sure you didn't forget the commas!";
             public readonly static string NoGameDetect = "Invalid command usage!";
