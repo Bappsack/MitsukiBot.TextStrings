@@ -18,6 +18,7 @@ namespace Chatbot_TextStrings
         {
             Species.Kadabra,
             Species.Machoke,
+            Species.Graveler,
             Species.Haunter,
             Species.Poliwhirl,
             Species.Slowpoke,
@@ -39,7 +40,7 @@ namespace Chatbot_TextStrings
             Species.Pumpkaboo,
         };
 
-        public static int GetTradeEvoItem(Species species, int Form)
+        public static int GetTradeEvoItem(Species species, int Form, bool BDSP)
         {
             return species switch
             {
@@ -50,7 +51,7 @@ namespace Chatbot_TextStrings
                 Species.Seadra => 235,
                 Species.Porygon => 252,
                 Species.Porygon2 => 324,
-                Species.Feebas => 537,
+                Species.Feebas when !BDSP => 537,
                 Species.Rhydon => 321,
                 Species.Electabuzz => 322,
                 Species.Magmar => 323,
