@@ -76,7 +76,7 @@ namespace Chatbot_TextStrings
 
                 if (form is null)
                 {
-                    Console.WriteLine("Unable to get specific Form");
+                    //Console.WriteLine("Unable to get specific Form");
                     return new FormIdentifier()
                     {
                         Valid = false,
