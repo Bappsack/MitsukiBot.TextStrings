@@ -68,6 +68,7 @@ namespace TextStrings
             public readonly static string Invalid_MaxPP = "Invalid PP State!";
             public readonly static string Invalid_MaxEL = "Invalid EL State!";
 
+            public readonly static string Invalid_Moves_GameSpecific = "{0} doesn't learn these Moves in {1} : {2}";
 
             public readonly static string Mythicals6PastGen = "Your requested mythical Pokémon is not from a Gen 6 event, so it cannot be traded via the GTS in Gen 6! Trade cancelled!";
             public readonly static string MythicalsGen7 = "Your requested Pokémon is a mythical Pokémon and cannot be traded via the GTS in Gen 7! Trade cancelled!";
