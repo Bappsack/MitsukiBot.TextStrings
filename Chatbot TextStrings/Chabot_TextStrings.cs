@@ -260,6 +260,7 @@ namespace TextStrings
             public readonly static string Trade_Success_Subscriber = "Your subscriber trade has been accepted!";
 
             public readonly static string TradeCancel_Success = "You've been removed from the queue!";
+            public readonly static string TradeCancel_Processing = "Your trade is already being processed!";
             public readonly static string TradeCancel_Error = "You're not in the queue!";
             public readonly static string TradeCancel_ToEarly = "No need to hurry, wait a minimum of 15 minutes!";
 
