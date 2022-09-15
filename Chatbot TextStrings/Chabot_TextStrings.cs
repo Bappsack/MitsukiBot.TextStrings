@@ -484,7 +484,7 @@ namespace TextStrings
         public static class RegularTextCommands
         {
             public readonly static string Info = "The stream runs 24/7 and offers Pokémon trades for XY/ORAS, SM/USUM, SWSH, BDSP, and PLA! Type !help for more info on requesting Pokémon!";
-            public readonly static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Eternatus, Kubfu, Urshifu, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
+            public readonly static string ShinyLockedPokemon = "Shiny locked Pokémon: Cosmog, Cosmoem, Kubfu, Urshifu, Glastrier, Spectrier, Calyrex, Enamorus, Victini, Keldeo, Meloetta, Hoopa, Volcanion, Magearna, Marshadow, Zarude (https://www.serebii.net/games/shiny.shtml)";
             public readonly static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public readonly static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
 
