@@ -165,6 +165,9 @@ namespace TextStrings
             public readonly static string SubHype = "mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE Thank you for subscribing {0}";
             public readonly static string ReSubHype = "mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL Thank you for re-subscribing {0}";
 
+            public readonly static string ALL_TradesBlocked = "all trade channels are now disabled.";
+            public readonly static string ALL_TradesUnblocked = "all trade channels are now enabled.";
+
             public readonly static string SWSH_TradesBlocked = "SWSH trades are now disabled.";
             public readonly static string SWSH_TradesUnblocked = "SWSH trades are now enabled.";
 
