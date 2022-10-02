@@ -25,6 +25,7 @@
         public readonly static string AlreadyTradedOrInvalidException = "Pokémon has already been traded by another person or you probably made invalid customizations!";
         public readonly static string FatalErrorException = "Fatal error occurred, please request again!";
 
+        public readonly static string USUMExclusivePokémon = "Your wanted Pokémon cannot exist in your Game, only in Ultra Sun/Moon !";
         public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
     }
 }
