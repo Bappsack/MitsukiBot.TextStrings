@@ -380,7 +380,7 @@ namespace TextStrings
             public readonly static string Leaderboard_Wondertrade = "Wonder Trade Leaderboard: ";
             public readonly static string Leaderboard_Level_Watchtime = "Level / Watch Time Leaderboard: ";
             public readonly static string Leaderboard_Pcoins = "Pcoin Leaderboard: ";
-
+            public readonly static string Top_Invalid = "{0} Specify a leaderboard: pcoin, time, trade, trivia, wt";
 
             // Current Song / Skip Song
             public readonly static string CurrentSong = "Current song: {0} - {1}";
