@@ -91,11 +91,11 @@ namespace TextStrings
             public readonly static string FusedForm = "Invalid: Fused forms can't be traded!";
             public readonly static string NoRequest = "no wanted Pokémon specified!";
             public readonly static string NoDeposit = "no deposit Pokémon specified!";
-            public readonly static string NotInGen6 = "This Pokémon doesn't exist in Generation 6!";
-            public readonly static string NotInGen7 = "This Pokémon doesn't exist in Generation 7!";
-            public readonly static string NotInGalar = "This Pokémon doesn't exist in Galar!";
-            public readonly static string NotInSinnoh = "This Pokémon doesn't exist in Sinnoh!";
-            public readonly static string NotInHisui = "This Pokémon doesn't exist in Hisui!";
+            public readonly static string NotInGen6 = "This Pokémon isn't in XY/ORAS!";
+            public readonly static string NotInGen7 = "This Pokémon isn't in SM/USUM!";
+            public readonly static string NotInGalar = "This Pokémon isn't in SWSH!";
+            public readonly static string NotInSinnoh = "This Pokémon isn't in BDSP!";
+            public readonly static string NotInHisui = "This Pokémon isn't in PLA!";
             public readonly static string SID5Digit = "Invalid: SID can only be 5 digits!";
             public readonly static string Level_to_high = "Level too high ({0}/100)";
             public readonly static string MythicalGTSDeposit = "You can't use a mythical Pokémon as the deposit Pokémon!";
@@ -165,8 +165,8 @@ namespace TextStrings
             public readonly static string SubHype = "mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE mitsukiLUL SUB HYPE Thank you for subscribing {0}";
             public readonly static string ReSubHype = "mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL RE-SUB HYPE mitsukiLUL Thank you for re-subscribing {0}";
 
-            public readonly static string ALL_TradesBlocked = "all trade channels are now disabled.";
-            public readonly static string ALL_TradesUnblocked = "all trade channels are now enabled.";
+            public readonly static string ALL_TradesBlocked = "All trade channels are now disabled.";
+            public readonly static string ALL_TradesUnblocked = "All trade channels are now enabled.";
 
             public readonly static string SWSH_TradesBlocked = "SWSH trades are now disabled.";
             public readonly static string SWSH_TradesUnblocked = "SWSH trades are now enabled.";
@@ -456,7 +456,7 @@ namespace TextStrings
 
             public readonly static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
             public readonly static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
-            public readonly static string Eggs = "[SUBS ONLY] [SWSH/BDSP] Eggs can be requested on SWSH/BDSP by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
+            public readonly static string Eggs = "[SUBS ONLY] [SWSH/BDSP] Eggs can be requested on SWSH/BDSP by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: IsShiny, Gender, Ball, Ability, Nature, Moves, IVs, Form, Pokerus, Language // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
             public readonly static string Events = "Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event) // Event database: https://www.serebii.net/events/";
             public readonly static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Gmax: xxx, IsAlpha: xxx, IsShiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public readonly static string FriendCode = "[3DS] How to find your friend code: Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
@@ -464,7 +464,7 @@ namespace TextStrings
             public readonly static string Marks = "[SWSH] List of marks: https://www.serebii.net/swordshield/marks.shtml";
             public readonly static string Origin = "List of origins: Red, Blue, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed, LeafGreen, Colosseum, XD, Diamond, Pearl, Platinum, HeartGold, SoulSilver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, Brilliant Diamond, Shining Pearl, Legends Arceus, GO";
             public readonly static string ShinyState = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check this link for a list of shiny locked Pokémon: https://www.serebii.net/games/shiny.shtml";
-            public readonly static string Showdown = "Showdown/Smogon sets are supported, do not put 'Request:' in your command  // [3DS] 'Deposit: xxx' can be added after the first line to specify a deposit Pokémon for Gen 6/7 GTS (defaults to Trubbish if deposit not specified)";
+            public readonly static string Showdown = "When using Showdown sets, do not include 'Request:' in your command // [3DS] If you do not specify a deposit Pokémon by adding 'Deposit: xxx' to your command, the bot will search for Trubbish by default // Showdown Teambuilder: https://play.pokemonshowdown.com/teambuilder";
             public readonly static string Sub = "Sub perks: no trade cooldown, trade priority, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (SWSH/BDSP), sub-only chat commands";
             public readonly static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Request a trade and send the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
             public readonly static string WonderTrade = "[3DS] Trade when the countdown timer from MitsukiBot says 'Go Wonder Trade!' to try your luck at winning a mythical Pokémon!";
