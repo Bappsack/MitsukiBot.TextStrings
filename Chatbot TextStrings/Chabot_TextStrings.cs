@@ -59,6 +59,7 @@ namespace TextStrings
             public readonly static string Invalid_Event = "Invalid Event State!";
             public readonly static string Invalid_Egg = "Invalid Egg State!";
             public readonly static string Invalid_TakeOwn = "Invalid TakeOwn State!";
+            public readonly static string Invalid_OTGender = "Invalid OTGender State!";
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
             public readonly static string Invalid_Contest = "Invalid Contest State!";
             public readonly static string Invalid_Date = "Invalid Met Date!";
