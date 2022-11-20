@@ -69,7 +69,7 @@ namespace TextStrings
             public readonly static string Invalid_MaxPP = "Invalid PP State!";
             public readonly static string Invalid_MaxEL = "Invalid EL State!";
             public readonly static string Invalid_DynamaxLevel = "Invalid Dynamax Level!";
-            public readonly static string Invalid_Tera = "Invalid Tera State!";
+            public readonly static string Invalid_Tera = "Invalid Tera Type!";
 
             public readonly static string Invalid_Moves_GameSpecific = "{0} doesn't learn these Moves in {1} : {2}";
 
@@ -450,7 +450,7 @@ namespace TextStrings
             public readonly static string TradeHelpSWSH = "[SWSH] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeSWSH Request: [Pokémon]' or '!tradeSWSH [Showdown Set]', 3) Search with your saved Link Code!";
             public readonly static string TradeHelpBDSP = "[BDSP] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeBDSP Request: [Pokémon]' or '!tradeBDSP [Showdown Set]', 3) Enter the Global Room with your saved Link Code, 4) Wait for the bot to join your room, 5) Talk to the bot after it calls for a trade!";
             public readonly static string TradeHelpPLA = "[PLA] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradePLA Request: [Pokémon]' or '!tradePLA [Showdown Set]', 3) Search with your saved Link Code!";
-            public readonly static string TradeHelpSV = "[SV] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeSV Request: [Pokémon]' or '!tradeSV [Showdown Set]', 3) Search with your saved Link Code!";
+            public readonly static string TradeHelpSV = "We are currently only doing random distribution trades, no requests yet. Try your luck using Link Code: 7562-7562 to match with the bots (IGN: Mitsuki) to get shiny 6IV starters, version-exclusives, pseudo-legendaries, and other cool Pokémon! Distribution list: https://pastebin.com/2m4kGxp3";
 
             public readonly static string Error = "Specify what error you're getting: '!help linkpla' for PLA Link Trade, '!help linkbdsp' for BDSP Link Trade, '!help linkswsh' for SWSH Link Trade, '!help gts' for Gen 6/7 GTS, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public readonly static string ErrorGTS = "[3DS] 1) Correct trade prefix? (Gen 6 = !tradeORAS, Gen 7 = !tradeUSUM), 2) Correct friend code? (!myfc), 3) Correct Pokémon for Deposit & Request? (Deposit = Pokémon deposited, Request = Pokémon wanted), 4) Specified Deposit in Showdown set? (Add 'Deposit: Pokémon' after 1st line), 5) Correct spelling of wanted Pokémon?, 6) Gender & Level left at Any?, 7) Try a different deposit Pokémon, 8) Make sure you aren't requesting a mythical Pokémon in SM/USUM";

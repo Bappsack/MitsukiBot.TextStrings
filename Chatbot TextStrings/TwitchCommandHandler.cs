@@ -42,6 +42,7 @@ namespace TextStrings
                 "swsh" => HelpCommandsStrings.TradeHelpSWSH,
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
                 "pla" => HelpCommandsStrings.TradeHelpPLA,
+                "sv" => HelpCommandsStrings.TradeHelpSV,
 
                 // Trade Error Help
                 "error" or "errors" => HelpCommandsStrings.Error,
@@ -49,6 +50,7 @@ namespace TextStrings
                 "linkswsh" => HelpCommandsStrings.ErrorLinkSWSH,
                 "linkbdsp" => HelpCommandsStrings.ErrorLinkBDSP,
                 "linkpla" => HelpCommandsStrings.ErrorLinkPLA,
+                "linksv" => HelpCommandsStrings.ErrorLinkSV,
                 "invalid" => HelpCommandsStrings.ErrorInvalid,
 
                 // Mythicals Help
@@ -56,6 +58,7 @@ namespace TextStrings
                 "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
                 "mythicals7" or "mythical7" => HelpCommandsStrings.Mythicals7,
                 "mythicals8" or "mythical8" => HelpCommandsStrings.Mythicals8,
+                "mythicals9" or "mythical9" => HelpCommandsStrings.Mythicals9,
 
                 // Trade Command Help
                 "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
