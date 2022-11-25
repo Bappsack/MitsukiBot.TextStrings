@@ -30,6 +30,7 @@ namespace Chatbot_TextStrings
                 8 => EntityContext.Gen8,
                 88 => EntityContext.Gen8b,
                 888 => EntityContext.Gen8a,
+                9 => EntityContext.Gen9,
                 _ => EntityContext.Gen8
             };
         }
