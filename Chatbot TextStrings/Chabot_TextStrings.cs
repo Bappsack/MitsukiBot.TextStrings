@@ -70,6 +70,7 @@ namespace TextStrings
             public readonly static string Invalid_MaxEL = "Invalid EL State!";
             public readonly static string Invalid_DynamaxLevel = "Invalid Dynamax Level!";
             public readonly static string Invalid_Tera = "Invalid Tera Type!";
+            public readonly static string Invalid_Scale = "Invalid Scale Size!";
 
             public readonly static string Invalid_Moves_GameSpecific = "{0} doesn't learn these Moves in {1} : {2}";
 
