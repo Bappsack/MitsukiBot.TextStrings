@@ -30,7 +30,7 @@
 
         public static class ResponseStrings_Discord
         {
-            public readonly static string UserTurnStarted = "<@{0}> It's your turn now, please start searching, you have 60 seconds to match with me!";
+            public readonly static string UserTurnStarted = "<@{0}> It's your turn now, please start searching, you have 40~ seconds to match with me!";
             public readonly static string UserFound = "<@{0}> I found you, Trainer Name: {1}, waiting until you select a Pokémon! If that isn't you, please change your Link Code to a harder one!";
         }
     }
