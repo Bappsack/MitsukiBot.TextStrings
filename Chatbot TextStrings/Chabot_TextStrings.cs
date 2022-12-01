@@ -414,6 +414,7 @@ namespace TextStrings
             public readonly static string Queue_SubSuccess = "{0} The sub queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} hours, {5} minutes, and {6} seconds.";
             public readonly static string Queue_SubSQLFlood = "{0} The sub queue currently has: {1} people, you are not in the sub queue.";
             public readonly static string Queue_Success = "{0} The queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} hours, {5} minutes, and {6} seconds.";
+            public readonly static string Queue_Individual = "{0} The queue currently has: Gen6: {1}, Gen7: {2}, SWSH: {3}, BDSP: {4}, PLA: {5}, SV: {6} people.";
             public readonly static string Queue_SQLFlood = "{0} The queue currently has: {1} people, you are not in the queue.";
             public readonly static string Queue_All = "{0} The queue currently has a total of: {1} people.";
             public readonly static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
