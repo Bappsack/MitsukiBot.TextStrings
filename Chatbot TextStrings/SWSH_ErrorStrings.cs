@@ -18,6 +18,7 @@
 
             public readonly static string CrashingExploit2022 = "@{0} Your offered Pokémon is not accepted for trading!";
 
+            public readonly static string TRY_TO_USE_NEW_ALT_NNID = "You are trying to trade with multiple Accounts at the same time. Trade cancelled!";
             public readonly static string BANNED_NNID = "Your Nintendo Network ID is banned. Trade cancelled!";
         }
 
