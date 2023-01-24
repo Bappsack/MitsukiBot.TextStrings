@@ -47,6 +47,7 @@ namespace TextStrings
             public readonly static string Invalid_Language = "Invalid Language!";
             public readonly static string Invalid_Origin = "Invalid Origin!";
             public readonly static string Invalid_Mark = "Invalid Mark!";
+            public readonly static string Invalid_Marks = "Invalid Marks State!";
             public readonly static string Invalid_Nature = "Invalid Nature!";
             public readonly static string Invalid_Deposit = "Invalid Deposit Pokémon!";
             public readonly static string Invalid_Move = "Invalid Move{0}!";
