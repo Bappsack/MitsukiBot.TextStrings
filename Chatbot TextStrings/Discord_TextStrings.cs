@@ -51,10 +51,10 @@ namespace Chatbot_TextStrings
                 internal static readonly string AshGrenina = "blablabla trade dum dum no ash greninja";
             }
 
-            public static string? GetResponderString(string Haystack) => Haystack.ToLower() switch
+            public static string? GetResponderString(string Haystack) => Haystack switch
             {
-                var n when Needles.TradeRespondList.All(h => n.Contains(n)) => RespondStrings.Trade,
-                var n when Needles.AshGreninjaList.All(h => n.Contains(n)) => RespondStrings.AshGrenina,
+                var n when Needles.TradeRespondList.All(h => n.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.Trade,
+                var n when Needles.AshGreninjaList.All(h => n.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.AshGrenina,
                 _ => null,
             };
         }
