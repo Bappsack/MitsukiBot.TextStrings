@@ -1,4 +1,10 @@
-﻿namespace Chatbot_TextStrings
+﻿using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text.RegularExpressions;
+
+namespace Chatbot_TextStrings
 {
     public static class Discord_TextStrings
     {
@@ -24,6 +30,33 @@
             public readonly static string ShinyLockedCommand = "These Pokémon cannot be shiny under any circumstances. More info can be found on Serebii: https://www.serebii.net/games/shiny.shtml";
             public readonly static string DumpMessageLegal = "This is what you traded to me. This Pokémon is legal!\n\n{0}";
             public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
+        }
+
+        // Example: This will return AshGreninja String
+        //          fuck fuck fuck fuck fuck fuck fuck fuck fuck ash fuck fuck fuck fuck fuck fuck fuck greninja fuck fuck fuck
+        //          fuck fuck fuck fuck fuck fuck request fuck fuck fuck fuck fuck fuck fuck fuck ash fuck fuck fuck fuck fuck
+        //          fuck fuck fuck fuck fuck fuck fuck fuck how????
+        
+        public static class DumbassResponder
+        {
+            internal static class HayStacks
+            {
+                internal static readonly string[] TradeRespondList = { "how", "trade", "bot", "code", "request" };
+                internal static readonly string[] AshGreninjaList = { "how", "ash", "greninja", "request" };
+            }
+
+            internal static class RespondStrings
+            {
+                internal static readonly string Trade = "blablabla trade dum dum";
+                internal static readonly string AshGrenina = "blablabla trade dum dum no ash greninja";
+            }
+
+            public static string? GetResponderString(string Input) => Input.ToLower() switch
+            {
+                var h when HayStacks.TradeRespondList.All(n => h.Contains(n)) => RespondStrings.Trade,
+                var h when HayStacks.AshGreninjaList.All(n => h.Contains(n)) => RespondStrings.AshGrenina,
+                _ => null,
+            };
         }
     }
 }
