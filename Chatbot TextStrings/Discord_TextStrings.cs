@@ -39,7 +39,7 @@ namespace Chatbot_TextStrings
         
         public static class DumbassResponder
         {
-            internal static class HayStacks
+            internal static class Needles
             {
                 internal static readonly string[] TradeRespondList = { "how", "trade", "bot", "code", "request" };
                 internal static readonly string[] AshGreninjaList = { "how", "ash", "greninja", "request" };
@@ -51,10 +51,10 @@ namespace Chatbot_TextStrings
                 internal static readonly string AshGrenina = "blablabla trade dum dum no ash greninja";
             }
 
-            public static string? GetResponderString(string Input) => Input.ToLower() switch
+            public static string? GetResponderString(string Haystack) => Haystack.ToLower() switch
             {
-                var h when HayStacks.TradeRespondList.All(n => h.Contains(n)) => RespondStrings.Trade,
-                var h when HayStacks.AshGreninjaList.All(n => h.Contains(n)) => RespondStrings.AshGrenina,
+                var n when Needles.TradeRespondList.All(h => n.Contains(n)) => RespondStrings.Trade,
+                var n when Needles.AshGreninjaList.All(h => n.Contains(n)) => RespondStrings.AshGrenina,
                 _ => null,
             };
         }
