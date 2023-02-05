@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Specialized;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text.RegularExpressions;
 
 namespace Chatbot_TextStrings
 {
@@ -32,29 +29,32 @@ namespace Chatbot_TextStrings
             public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
         }
 
-        // Example: This will return AshGreninja String
-        //          fuck fuck fuck fuck fuck fuck fuck fuck fuck ash fuck fuck fuck fuck fuck fuck fuck greninja fuck fuck fuck
-        //          fuck fuck fuck fuck fuck fuck request fuck fuck fuck fuck fuck fuck fuck fuck ash fuck fuck fuck fuck fuck
-        //          fuck fuck fuck fuck fuck fuck fuck fuck how????
-        
         public static class DumbassResponder
         {
             internal static class Needles
             {
+                internal static readonly string[] BotQuestionList_NonSupport = { "how", "can", "bot" };
+                internal static readonly string[] BotQuestionList_NonSupport2 = { "can", "get", "bot" };
+                internal static readonly string[] BotQuestionList_NonSupport3 = { "how", "do", "i", "bot" };
+
                 internal static readonly string[] TradeRespondList = { "how", "trade", "bot", "code", "request" };
                 internal static readonly string[] AshGreninjaList = { "how", "ash", "greninja", "request" };
             }
 
             internal static class RespondStrings
             {
+                internal static readonly string BotQuestionNonSupport = "Bot questions need to be asked in <#629335412141195264>";
                 internal static readonly string Trade = "blablabla trade dum dum";
                 internal static readonly string AshGrenina = "blablabla trade dum dum no ash greninja";
             }
 
-            public static string? GetResponderString(string Haystack) => Haystack switch
+            public static string? GetResponderString(string Haystack, bool IsInSupportChannel) => Haystack switch
             {
-                var n when Needles.TradeRespondList.All(h => n.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.Trade,
-                var n when Needles.AshGreninjaList.All(h => n.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.AshGrenina,
+                var h when (!IsInSupportChannel && Needles.BotQuestionList_NonSupport.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase))) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Needles.BotQuestionList_NonSupport2.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase))) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Needles.BotQuestionList_NonSupport3.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase))) => RespondStrings.BotQuestionNonSupport,
+                var h when Needles.TradeRespondList.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.Trade,
+                var h when Needles.AshGreninjaList.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.AshGrenina,
                 _ => null,
             };
         }
