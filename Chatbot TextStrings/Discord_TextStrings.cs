@@ -28,6 +28,7 @@ namespace Chatbot_TextStrings
             public readonly static string DumpMessageLegal = "This is what you traded to me. This Pokémon is legal!\n\n{0}";
             public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
             public readonly static string ReadRulesFirst = "{0} you haven’t read the rules yet! In order to use the bots in this Discord server, you have to read and accept the <#317414882821799937>!";
+            public readonly static string HelpTriggerInTradeChannels = "{0} if you need help with the bots, ask in <#629335412141195264>";
         }
 
         public static class DumbassResponder
