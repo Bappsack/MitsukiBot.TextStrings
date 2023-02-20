@@ -40,7 +40,7 @@ namespace Chatbot_TextStrings
         /// </summary>
         /// <param name="Nickname">Nicknamed Pokemon from User</param>
         /// <returns>Formated Nickname Identifier and PKHEX Formated Species Name</returns>
-        public static FormIdentifier GetFormIdentifier(int game, string Nickname)
+        public static FormIdentifier GetFormIdentifier(int game, string Nickname, bool RequesterIsSumo)
         {
             try
             {
@@ -75,7 +75,7 @@ namespace Chatbot_TextStrings
 
                 FormInfo? form = GetForm(Nickname);
 
-                if (form is null)
+                if (form is null || (form.Species is Species.Pikachu && form.FormName is "partner" && RequesterIsSumo))
                 {
                     //Console.WriteLine("Unable to get specific Form");
                     return new FormIdentifier()
