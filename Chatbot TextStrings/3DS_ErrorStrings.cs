@@ -26,6 +26,8 @@
         public readonly static string FatalErrorException = "Fatal error occurred, please request again!";
 
         public readonly static string USUMExclusivePokémon = "Your requested Pokémon/form only exists in Ultra Sun & Ultra Moon. Trade cancelled!";
+        public readonly static string USUMExclusiveMoves = "Your requested Pokémon has a move that only exists in Ultra Sun & Ultra Moon. Trade cancelled!";
+
         public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
     }
 }
