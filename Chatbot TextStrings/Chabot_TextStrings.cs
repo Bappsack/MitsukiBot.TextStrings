@@ -64,6 +64,7 @@ namespace TextStrings
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
             public readonly static string Invalid_Contest = "Invalid Contest State!";
             public readonly static string Invalid_Date = "Invalid Met Date!";
+
             public readonly static string Invalid_Dynamax = "Invalid Dynamax State!";
             public readonly static string Invalid_Height = "Invalid Height!";
             public readonly static string Invalid_Weight = "Invalid Weight!";
@@ -85,6 +86,8 @@ namespace TextStrings
             public readonly static string NonExist_Move_PLA = "Move{0} is not available in PLA!";
             public readonly static string NonExist_Move_SV = "Move{0} is not available in SV!";
 
+            public readonly static string Invalid_Date_Past = "Invalid: Met Date must be >= 2000!";
+            public readonly static string Invalid_Date_Future = "Invalid: Met Date must be <= 2099!";
             public readonly static string Invalid_Form_TooLong = "Invalid: Form too long!";
             public readonly static string Invalid_Nickname_TooLong = "Invalid: Nickname too long!";
             public readonly static string Invalid_OT_TooLong = "Invalid: OT too long!";
