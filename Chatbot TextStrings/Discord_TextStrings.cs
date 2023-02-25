@@ -32,6 +32,8 @@ namespace Chatbot_TextStrings
 
         public static class DumbassResponder
         {
+            internal static RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.NonBacktracking;
+
             internal static class Needles
             {
                 internal static readonly string BotQuestionList_NonSupport = "";
@@ -51,9 +53,9 @@ namespace Chatbot_TextStrings
 
             public static string? GetResponderString(string Haystack, bool IsInSupportChannel) => Haystack switch
             {
-                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, RegexOptions.IgnoreCase)) => RespondStrings.BotQuestionNonSupport,
-                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport2, RegexOptions.IgnoreCase)) => RespondStrings.BotQuestionNonSupport,
-                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport3, RegexOptions.IgnoreCase)) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport2, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport3, options)) => RespondStrings.BotQuestionNonSupport,
                 var h when Regex.IsMatch(h, Needles.TradeRespondList, RegexOptions.IgnoreCase) => RespondStrings.Trade,
                 var h when Regex.IsMatch(h, Needles.AshGreninjaList, RegexOptions.IgnoreCase) => RespondStrings.AshGrenina,
                 _ => null,
