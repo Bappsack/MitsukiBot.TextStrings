@@ -26,8 +26,8 @@ namespace Chatbot_TextStrings
             public readonly static string ShinyLockedCommand = "These Pokémon cannot be shiny under any circumstances. More info can be found on Serebii: https://www.serebii.net/games/shiny.shtml";
             public readonly static string DumpMessageLegal = "This is what you traded to me. This Pokémon is legal!\n\n{0}";
             public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
-            public readonly static string ReadRulesFirst = "{0} you haven’t read the rules yet! In order to use the bots in this Discord server, you have to read and accept the <#317414882821799937>!";
-            public readonly static string HelpTriggerInTradeChannels = "{0} if you need help with the bots, ask in <#629335412141195264>";
+            public readonly static string ReadRulesFirst = "{0} You have to read and accept the <#317414882821799937> to use the bots!";
+            public readonly static string HelpTriggerInTradeChannels = "{0} If you need help with the bots, ask in <#629335412141195264>!";
         }
 
         public static class DumbassResponder
@@ -36,28 +36,17 @@ namespace Chatbot_TextStrings
 
             internal static class Needles
             {
-                internal static readonly string BotQuestionList_NonSupport = "";
-                internal static readonly string BotQuestionList_NonSupport2 = "";
-                internal static readonly string BotQuestionList_NonSupport3 = "";
-
-                internal static readonly string TradeRespondList = "";
-                internal static readonly string AshGreninjaList = "";
+                internal static readonly string BotQuestionList_NonSupport = @"^(?=.*\b(what|when|where|why|how|can|need)\b)(?=.*\b(help|bot|request|trade|code|command|form|invalid|work|pcoins|online|offline)\b).*$";
             }
 
             internal static class RespondStrings
             {
-                internal static readonly string BotQuestionNonSupport = "Bot questions need to be asked in <#629335412141195264>";
-                internal static readonly string Trade = "blablabla trade dum dum";
-                internal static readonly string AshGrenina = "blablabla trade dum dum no ash greninja";
+                internal static readonly string BotQuestionNonSupport = "Bot questions should be asked in <#629335412141195264>!";
             }
 
             public static string? GetResponderString(string Haystack, bool IsInSupportChannel) => Haystack switch
             {
                 var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
-                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport2, options)) => RespondStrings.BotQuestionNonSupport,
-                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport3, options)) => RespondStrings.BotQuestionNonSupport,
-                var h when Regex.IsMatch(h, Needles.TradeRespondList, RegexOptions.IgnoreCase) => RespondStrings.Trade,
-                var h when Regex.IsMatch(h, Needles.AshGreninjaList, RegexOptions.IgnoreCase) => RespondStrings.AshGrenina,
                 _ => null,
             };
         }
