@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Text.RegularExpressions;
 
 namespace Chatbot_TextStrings
 {
@@ -35,12 +34,12 @@ namespace Chatbot_TextStrings
         {
             internal static class Needles
             {
-                internal static readonly string[] BotQuestionList_NonSupport = { "how", "can", "bot" };
-                internal static readonly string[] BotQuestionList_NonSupport2 = { "can", "get", "bot" };
-                internal static readonly string[] BotQuestionList_NonSupport3 = { "how", "do", "i", "bot" };
+                internal static readonly string BotQuestionList_NonSupport = "";
+                internal static readonly string BotQuestionList_NonSupport2 = "";
+                internal static readonly string BotQuestionList_NonSupport3 = "";
 
-                internal static readonly string[] TradeRespondList = { "how", "trade", "bot", "code", "request" };
-                internal static readonly string[] AshGreninjaList = { "how", "ash", "greninja", "request" };
+                internal static readonly string TradeRespondList = "";
+                internal static readonly string AshGreninjaList = "";
             }
 
             internal static class RespondStrings
@@ -52,11 +51,11 @@ namespace Chatbot_TextStrings
 
             public static string? GetResponderString(string Haystack, bool IsInSupportChannel) => Haystack switch
             {
-                var h when (!IsInSupportChannel && Needles.BotQuestionList_NonSupport.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase))) => RespondStrings.BotQuestionNonSupport,
-                var h when (!IsInSupportChannel && Needles.BotQuestionList_NonSupport2.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase))) => RespondStrings.BotQuestionNonSupport,
-                var h when (!IsInSupportChannel && Needles.BotQuestionList_NonSupport3.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase))) => RespondStrings.BotQuestionNonSupport,
-                var h when Needles.TradeRespondList.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.Trade,
-                var h when Needles.AshGreninjaList.All(n => h.Contains(n, StringComparison.OrdinalIgnoreCase)) => RespondStrings.AshGrenina,
+                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, RegexOptions.IgnoreCase)) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport2, RegexOptions.IgnoreCase)) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport3, RegexOptions.IgnoreCase)) => RespondStrings.BotQuestionNonSupport,
+                var h when Regex.IsMatch(h, Needles.TradeRespondList, RegexOptions.IgnoreCase) => RespondStrings.Trade,
+                var h when Regex.IsMatch(h, Needles.AshGreninjaList, RegexOptions.IgnoreCase) => RespondStrings.AshGrenina,
                 _ => null,
             };
         }
