@@ -32,7 +32,7 @@ namespace Chatbot_TextStrings
 
         public static class DumbassResponder
         {
-            internal static RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.Multiline | RegexOptions.NonBacktracking;
+            internal static readonly RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.Multiline;
 
             internal static class Needles
             {
