@@ -27,7 +27,7 @@ namespace Chatbot_TextStrings
             public readonly static string DumpMessageLegal = "This is what you traded to me. This Pokémon is legal!\n\n{0}";
             public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
             public readonly static string ReadRulesFirst = "{0} You have to read and accept the <#317414882821799937> to use the bots!";
-            public readonly static string HelpTriggerInTradeChannels = "{0} If you need help with the bots, ask in <#629335412141195264>!";
+            public readonly static string HelpTriggerInTradeChannels = "{0} If you need help with the bots, please ask in <#629335412141195264>!";
         }
 
         public static class DumbassResponder
@@ -36,12 +36,12 @@ namespace Chatbot_TextStrings
 
             internal static class Needles
             {
-                internal static readonly string BotQuestionList_NonSupport = @"^(?=.*\b(what|when|where|why|how|can|need)\b)(?=.*\b(help|bot|request|code|command|form|invalid|work|pcoins|online|offline)\b)(?!.*\b(evolve|dex|raid)\b).*$";
+                internal static readonly string BotQuestionList_NonSupport = @"^(?=.*\b(what|when|where|why|how|can|need)\b)(?=.*\b(help|bots?|request(s|ing)?|code|commands?|forms?|invalid|work(s|ing)?|pcoins|online|offline)\b)(?!.*\b(evolv(e|ing)?|dex|raids?|sand?wh?it?ch)\b).*$";
             }
 
             internal static class RespondStrings
             {
-                internal static readonly string BotQuestionNonSupport = "Bot questions should be asked in <#629335412141195264>!";
+                internal static readonly string BotQuestionNonSupport = "Your message was flagged as a possible bot question. **If you need help with the bots, please ask in <#629335412141195264>!** If you did not ask a bot question, please disregard this message.";
             }
 
             public static string? GetResponderString(string Haystack, bool IsInSupportChannel) => Haystack switch
