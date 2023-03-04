@@ -66,6 +66,7 @@ namespace TextStrings
             public readonly static string Invalid_Date = "Invalid Met Date!";
 
             public readonly static string Invalid_Dynamax = "Invalid Dynamax State!";
+            public readonly static string Invalid_MoveFlags = "Invalid Move Flags State!";
             public readonly static string Invalid_Height = "Invalid Height!";
             public readonly static string Invalid_Weight = "Invalid Weight!";
             public readonly static string Invalid_MaxPP = "Invalid PP State!";
