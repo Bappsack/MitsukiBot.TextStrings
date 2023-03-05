@@ -36,7 +36,7 @@ namespace Chatbot_TextStrings
 
             internal static class Needles
             {
-                internal static readonly string BotQuestionList_NonSupport = @"^(?=.*\b(what|when|where|why|how|can[not]*|do[esnt]*|problems?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|forms?|roles?|cool\s?downs?|[link]*code|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|invalid|pcoins|online|offline)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
+                internal static readonly string BotQuestionList_NonSupport = @"^(?=.*\b(what|when|where|why|how|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|forms?|roles?|cool\s?downs?|[link]*code|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|invalid|pcoins|online|offline)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
             }
 
             internal static class RespondStrings
