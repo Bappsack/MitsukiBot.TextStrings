@@ -1,6 +1,7 @@
 ﻿using PKHeX.Core;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 namespace Chatbot_TextStrings
@@ -77,7 +78,6 @@ namespace Chatbot_TextStrings
 
                 if (form is null || (form.Species is Species.Pikachu && form.FormName is "partner" && RequesterIsSumo))
                 {
-                    //Console.WriteLine("Unable to get specific Form");
                     return new FormIdentifier()
                     {
                         Valid = false,
