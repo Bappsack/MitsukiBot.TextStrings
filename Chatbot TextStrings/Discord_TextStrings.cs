@@ -44,9 +44,9 @@ namespace Chatbot_TextStrings
                 internal static readonly string BotQuestionNonSupport = "Your message was flagged as a possible support question. **If you need help with the bots, streams, or server, please ask in <#629335412141195264>!** If you did not ask a support question, please disregard this message.";
             }
 
-            public static string? GetResponderString(string Haystack, bool IsInSupportChannel) => Haystack switch
+            public static string? GetResponderString(string Haystack, bool IsInSupportChannel, bool OnlyGeneral) => Haystack switch
             {
-                var h when (!IsInSupportChannel && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (!IsInSupportChannel && OnlyGeneral && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
                 _ => null,
             };
         }
