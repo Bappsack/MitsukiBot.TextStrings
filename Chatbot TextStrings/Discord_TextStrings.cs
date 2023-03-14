@@ -7,7 +7,7 @@ namespace Chatbot_TextStrings
         public static class ErrorStrings
         {
             public readonly static string IllegalFileProvided_Testing = "{0} your provided file is illegal! Report: \n\n```{1}```";
-            public readonly static string IllegalFileProvided_Trading = "{0} your provided file is illegal. Trade cancelled!";
+            public readonly static string IllegalFileProvided_Trading = "{0} your provided file is illegal. Trade cancelled! Report: \n\n```{1}```";
 
             public readonly static string InvalidFileTypeGeneral = "{0} your provided file is not supported. Trade cancelled!";
             public readonly static string InvalidFileTypePK6 = "{0} your provided file is not supported in XY/ORAS, please use a .PK6 file. Trade cancelled!";
@@ -48,10 +48,10 @@ namespace Chatbot_TextStrings
             {
                 internal static readonly string BotQuestionNonSupport = "Your message was flagged as a possible support question. **If you need help with the bots, streams, or server, please ask in <#629335412141195264>!** If you did not ask a support question, please disregard this message.";
             }
-            
+
             public static string? GetResponderString(string Haystack, ulong ChannelID) => Haystack switch
             {
-                var h when ( ChannelID == GeneralChat && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (ChannelID == GeneralChat && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
                 _ => null,
             };
         }
