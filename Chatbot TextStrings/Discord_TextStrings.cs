@@ -41,7 +41,8 @@ namespace Chatbot_TextStrings
 
             internal static class Needles
             {
-                internal static readonly string BotQuestionList_NonSupport = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|forms?|roles?|cool\s?downs?|[link]*code|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|invalid|pcoins|online|offline|banned)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
+                internal static readonly string BotQuestionGeneral = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|forms?|roles?|cool\s?downs?|[link]*code|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[^aes][a-z]*|invalid|pcoins|offline|banned|takeown)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
+                internal static readonly string BotQuestionTrade = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|forms?|roles?|cool\s?downs?|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[^aes][a-z]*|invalid|pcoins|offline|banned|takeown)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
             }
 
             internal static class RespondStrings
@@ -51,7 +52,8 @@ namespace Chatbot_TextStrings
 
             public static string? GetResponderString(string Haystack, ulong ChannelID) => Haystack switch
             {
-                var h when (ChannelID == GeneralChat && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionList_NonSupport, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (ChannelID == GeneralChat && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionGeneral, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (ChannelID == TradeRoom && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionTrade, options)) => RespondStrings.BotQuestionNonSupport,
                 _ => null,
             };
         }
