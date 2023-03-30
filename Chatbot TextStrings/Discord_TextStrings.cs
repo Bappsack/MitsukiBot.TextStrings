@@ -52,8 +52,8 @@ namespace Chatbot_TextStrings
 
             public static string? GetResponderString(string Haystack, ulong ChannelID) => Haystack switch
             {
-                var h when (ChannelID == GeneralChat && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionGeneral, options)) => RespondStrings.BotQuestionNonSupport,
-                var h when (ChannelID == TradeRoom && ChannelID != Support && Regex.IsMatch(h, Needles.BotQuestionTrade, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (ChannelID == GeneralChat && Regex.IsMatch(h, Needles.BotQuestionGeneral, options)) => RespondStrings.BotQuestionNonSupport,
+                var h when (ChannelID == TradeRoom && Regex.IsMatch(h, Needles.BotQuestionTrade, options)) => RespondStrings.BotQuestionNonSupport,
                 _ => null,
             };
         }
