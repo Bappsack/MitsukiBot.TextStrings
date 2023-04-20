@@ -60,13 +60,15 @@ namespace TextStrings
             public readonly static string Invalid_Event = "Invalid Event State!";
             public readonly static string Invalid_Egg = "Invalid Egg State!";
             public readonly static string Invalid_TakeOwn = "Invalid TakeOwn State!";
+            public readonly static string Invalid_TakeOwn_NotSavedProperly = "You didn't saved your Takeown Details properly";
             public readonly static string Invalid_OTGender = "Invalid OTGender State!";
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
             public readonly static string Invalid_Contest = "Invalid Contest State!";
             public readonly static string Invalid_Date = "Invalid Met Date!";
 
             public readonly static string Invalid_Dynamax = "Invalid Dynamax State!";
-            public readonly static string Invalid_MoveFlags = "Invalid Move Flags State!";
+            public readonly static string Invalid_MoveFlags = "Invalid Move Flag State!";
+            public readonly static string Invalid_HyperTrained = "Invalid HyperTrained Flag State!";
             public readonly static string Invalid_Height = "Invalid Height!";
             public readonly static string Invalid_Weight = "Invalid Weight!";
             public readonly static string Invalid_MaxPP = "Invalid PP State!";
