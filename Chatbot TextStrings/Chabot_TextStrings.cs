@@ -208,9 +208,6 @@ namespace TextStrings
             public readonly static string SV_TradesBlocked = "SV trades are now disabled.";
             public readonly static string SV_TradesUnblocked = "SV trades are now enabled.";
 
-            public readonly static string GTS_TradesBlocked = "GTS trades are now disabled.";
-            public readonly static string GTS_TradesUnblocked = "GTS trades are now enabled.";
-
 
             public readonly static string FakeBan_Success = "{0} has been banned from chat, friend code: {1} has been banned globally.";
             public readonly static string FakeBan_Error = "Wrong format!";
