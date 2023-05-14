@@ -168,11 +168,13 @@ namespace TextStrings
             public readonly static string RestartMessage = "Performing a restart...";
             public readonly static string NoticedNameChange = "We noticed a name change, so we transferred your stats! Welcome back!";
             public readonly static string NewUserJoined = "Welcome to the stream, make sure you read the rules! Check how to trade with !help";
-            public readonly static string Gen8TradesDisabled = "SWSH trades are currently disabled.";
+
+            public readonly static string Gen6TradesDisabled = "XY/ORAS trades are currently disabled.";
+            public readonly static string Gen7TradesDisabled = "SM/USUM trades are currently disabled.";
+            public readonly static string SWSHTradesDisabled = "SWSH trades are currently disabled.";
             public readonly static string BDSPTradesDisabled = "BDSP trades are currently disabled.";
             public readonly static string PLATradesDisabled = "PLA trades are currently disabled.";
             public readonly static string SVTradesDisabled = "SV trades are currently disabled.";
-            public readonly static string GTSTradesDisabled = "GTS trades are currently disabled.";
 
             public readonly static string NonSubTrainerInfoError = "Sorry, only subscribers can check their trainer information!";
 
@@ -187,6 +189,12 @@ namespace TextStrings
 
             public readonly static string ALL_TradesBlocked = "All trade channels are now disabled.";
             public readonly static string ALL_TradesUnblocked = "All trade channels are now enabled.";
+
+            public readonly static string Gen6_TradesBlocked = "XY/ORAS trades are now disabled.";
+            public readonly static string Gen6_TradesUnblocked = "XY/ORAS trades are now enabled.";
+
+            public readonly static string Gen7_TradesBlocked = "SM/USUM trades are now disabled.";
+            public readonly static string Gen7_TradesUnblocked = "SM/USUM trades are now enabled.";
 
             public readonly static string SWSH_TradesBlocked = "SWSH trades are now disabled.";
             public readonly static string SWSH_TradesUnblocked = "SWSH trades are now enabled.";
