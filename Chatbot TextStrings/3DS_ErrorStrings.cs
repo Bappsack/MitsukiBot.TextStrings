@@ -15,9 +15,9 @@
 
         public readonly static string Mythicals6PastGen = "Your requested mythical Pokémon is not from a Gen 6 event, so it cannot be traded via the GTS! Trade cancelled!";
 
-        public readonly static string TradeCanceledGenderLevelNotAny = "You set the Level & Gender in the GTS, but the Level & Gender should be left at Any! Trade cancelled!";
-        public readonly static string TradeCanceledLevelNotAny = "You set the Level in the GTS, but the Level should be left at Any! Trade cancelled!";
-        public readonly static string TradeCanceledGenderNotAny = "You set the Gender in the GTS, but the Gender should be left at Any! Trade cancelled!";
+        public readonly static string TradeCanceledGenderLevelNotMatch = "You set the Level & Gender in the GTS, but the Level & Gender don't match with your Requested Set! Trade cancelled!";
+        public readonly static string TradeCanceledLevelNotMatch = "You set the Level in the GTS, but the Level doesn't match with your Requested Set! Trade cancelled!";
+        public readonly static string TradeCanceledGenderNotMatch = "You set the Gender in the GTS, but the Gender doesn't match with your Requested Set! Trade cancelled!";
 
         public readonly static string TradeCancelBannedFriendcode = "Your friend code is banned. Trade cancelled!";
         public readonly static string TradeCancelGlobalBlocked = "You have been identified as a GTS troll. Trade cancelled!";
