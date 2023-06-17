@@ -75,6 +75,7 @@ namespace TextStrings
                 "shiny" or "shinylock" or "shinylocks" or "shinylocked" => HelpCommandsStrings.ShinyState,
                 "showdown" or "smogon" => HelpCommandsStrings.Showdown,
                 "sub" or "subs" or "subscribe" or "subscriber" => HelpCommandsStrings.Sub,
+                "tid" or "sid" => HelpCommandsStrings.TIDSID,
                 "takeown" or "mydetails" or "trainerid" or "trainer" => HelpCommandsStrings.Takeown,
                 "wt" or "wondertrade" => HelpCommandsStrings.WonderTrade,
 
