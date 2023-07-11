@@ -41,15 +41,15 @@ namespace Chatbot_TextStrings
 
             internal static class Needles
             {
-                internal static readonly string BotQuestionGeneral = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|[link]*code|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[^aes][a-z]*|form[sat]*|invalid|pcoins|offline|banned|takeown)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
-                internal static readonly string BotQuestionTrade = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[^aes][a-z]*|format|invalid|pcoins|offline|banned|takeown)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
+                internal static readonly string BotQuestionGeneral = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|[link]*code|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[^aes][a-z]*|[un]*ban[ned]*|form[sat]*|invalid|pcoins|offline|takeown)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
+                internal static readonly string BotQuestionTrade = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|problems?|issues?|is\sit\spossible)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[^aes][a-z]*|[un]*ban[ned]*|format|invalid|pcoins|offline|takeown)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
                 internal static readonly string TradePostGeneral = @"^(?=.*\b(any[onebdy]*|some[onebdy]*|help)\b)(?=.*\b(trade|evolv[eing]*)\b).*$";
             }
 
             internal static class RespondStrings
             {
-                internal static readonly string BotQuestionNonSupport = "Your message was flagged as a possible support question. **If you need help with the bots, streams, or server, please ask in <#629335412141195264>!** If you did not ask a support question, please disregard this message.";
-                internal static readonly string TradePostNonTradeRoom = "Your message was flagged as a possible trade post. **If you are looking to trade with other users, please post in <#313696378398310401>!** If you did not make a trade post, please disregard this message.";
+                internal static readonly string BotQuestionNonSupport = "Your message was flagged as a possible help post. **If you need help with the bots, streams, or server, please post in <#629335412141195264>!**";
+                internal static readonly string TradePostNonTradeRoom = "Your message was flagged as a possible trade post. **If you are looking to trade with other users, please post in <#313696378398310401>!**";
             }
 
             public static string? GetResponderString(string Haystack, ulong ChannelID) => Haystack switch
