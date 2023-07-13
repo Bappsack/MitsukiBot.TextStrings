@@ -527,7 +527,7 @@ namespace TextStrings
             public readonly static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public readonly static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
 
-            public readonly static string Guide = "This is a work in progress! In the meantime, check out the description for how to trade or ask for help in the #support channel in our Discord server!";
+            public readonly static string Guide = "Check out our trade guides at https://www.mitsuki.tv!";
 
             public readonly static string TwitterURL = "Twitter account: https://twitter.com/ThatChrisWhite";
             public readonly static string DiscordURL = "Discord server: https://discordapp.com/invite/5mdVKq9";
