@@ -15,5 +15,7 @@
         public static readonly string YT_FC_Banned = "@{0} Your friend code is banned, you aren't allowed to trade here anymore.";
         public static readonly string YT_NNID_Banned = "@{0} Your Nintendo Network ID is banned, you aren't allowed to trade here anymore.";
         public static readonly string YT_Fatal_Error = "@{0} Your custom Pokémon request triggered an unhandled exception, please report it in our Discord server to get it fixed.";
+
+        public static readonly string YT_Missing_HomeTracker = "[Note] This Pokémon does not originate from {0}. It might be blocked from being deposited into HOME due to missing the HOME tracker.";
     }
 }
