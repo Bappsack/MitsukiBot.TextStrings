@@ -67,6 +67,10 @@ namespace Chatbot_TextStrings
                         FolderName = "Pokemon8a";
                         Extension = "pa8";
                         break;
+                    case 9:
+                        FolderName = "Pokemon9";
+                        Extension = "pk9";
+                        break;
                     default:
                         break;
                 }
