@@ -462,7 +462,6 @@ namespace TextStrings
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
                 "Remember to use the correct command for your game: !tradeORAS (XY/ORAS), !tradeUSUM (SM/USUM), !tradeSWSH (SWSH), !tradeBDSP (BDSP), !tradePLA (PLA), !tradeSV (SV)",
-                "———————————————————————— TwitchVotes You have been gifted a subscription. Type !dad to activate————————————————————————"
             };
         }
 
