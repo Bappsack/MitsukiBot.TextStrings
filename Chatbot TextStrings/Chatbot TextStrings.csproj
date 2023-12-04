@@ -22,7 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PKHeX.Core">
-      <HintPath>..\..\PKHeX\PKHeX.Core\bin\Debug\net7.0\PKHeX.Core.dll</HintPath>
+      <HintPath>..\..\PKHeX\PKHeX.Core\bin\Debug\net8.0\PKHeX.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
