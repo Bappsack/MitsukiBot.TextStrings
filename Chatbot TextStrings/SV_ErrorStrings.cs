@@ -10,7 +10,7 @@
             public readonly static string WaitedTooLong = "You waited too long, trade aborted!";
             public readonly static string NoBoxVisible = "Box was never shown, please request again!";
             public readonly static string NeverAccepted = "You never accepted the offer, make sure you click through all the message boxes!";
-            public readonly static string FailedTradePIDMatch = "Something is wrong with your Pokémon or you declined the trade!";
+            public readonly static string FailedTradePIDMatch = "Something is wrong with your requested Pokémon or you declined the trade!\r\n";
 
             public readonly static string FatalErrorException = "Fatal error occurred, please request again!";
 

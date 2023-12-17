@@ -10,7 +10,7 @@
             public readonly static string NoTradePartnerFound2 = "No trade partner found, please request again! Check '!help linkswsh' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
             public readonly static string WaitedTooLong = "You waited too long, trade aborted!";
             public readonly static string NoBoxVisible = "Box was never shown, please request again!";
-            public readonly static string FailedTradePIDMatch = "Something is wrong with your Pokémon or you declined the trade!";
+            public readonly static string FailedTradePIDMatch = "Something is wrong with your requested Pokémon or you declined the trade!\r\n";
 
             public readonly static string FatalErrorException = "Fatal error occurred, please request again!";
 
