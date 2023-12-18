@@ -52,6 +52,7 @@ namespace TextStrings
             public readonly static string Invalid_Deposit = "Invalid Deposit Pokémon!";
             public readonly static string Invalid_Move = "Invalid Move{0}!";
             public readonly static string Invalid_Request = "Invalid Request Pokémon!";
+            public readonly static string Invalid_Ribbon = "Invalid Ribbon!";
             public readonly static string Invalid_Ribbons = "Invalid Ribbons State!";
             public readonly static string Invalid_Shiny = "Invalid Shiny State!";
             public readonly static string Invalid_PokeRus = "Invalid Pokérus State!";
@@ -92,6 +93,7 @@ namespace TextStrings
 
             public readonly static string Invalid_Date_Past = "Invalid: Met Date must be >= 2000!";
             public readonly static string Invalid_Date_Future = "Invalid: Met Date must be <= 2099!";
+            public readonly static string Invalid_Form = "Invalid Form!";
             public readonly static string Invalid_Form_TooLong = "Invalid: Form too long!";
             public readonly static string Invalid_Nickname_TooLong = "Invalid: Nickname too long!";
             public readonly static string Invalid_OT_TooLong = "Invalid: OT too long!";
