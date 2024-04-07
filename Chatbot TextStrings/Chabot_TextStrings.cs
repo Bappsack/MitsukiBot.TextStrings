@@ -449,6 +449,8 @@ namespace TextStrings
             public readonly static string SerebiiNetBallLevelsLink = "For minimum levels in other games, check https://www.serebii.net/games/pokeball.shtml";
             public readonly static string MissingHomeTrackerDisclaimer = " [Note] The origin game of this Pokémon does not match the destination game. This Pokémon may be blocked from being deposited into HOME due to missing the HOME tracker.";
 
+            public readonly static string Gen6_Offline = " 3DS Servers where shutdown so XY/ORAS Trades are offline.";
+            public readonly static string Gen7_Offline = " 3DS Servers where shutdown so SUMO/USUM Trades are offline.";
 
             // Every 5min Random Text
             public readonly static List<string> SpamMessages = new()
