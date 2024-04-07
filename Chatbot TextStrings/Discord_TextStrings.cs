@@ -27,6 +27,7 @@ namespace Chatbot_TextStrings
             public readonly static string DumpMessageLegal = "This is what you traded to me. This Pokémon is legal!\n\n{0}";
             public readonly static string DumpMessageIllegal = "This is what you traded to me. This Pokémon is illegal!\n\n{0}";
             public readonly static string ReadRulesFirst = "{0} You have to read and accept the <#317414882821799937> to use the bots!";
+            public readonly static string InvalidContentInBotChannel = "{0} Invalid input! You did not send a valid command or are missing the trade prefix!";
             public readonly static string HelpTriggerInTradeChannels = "{0} If you need help with the bots, please ask in <#629335412141195264>!";
             public readonly static string MissingHomeTrackerDisclaimer = "[Note] This Pokémon does not originate from {0}. It might be blocked from being deposited into HOME due to missing the HOME tracker.";
         }
