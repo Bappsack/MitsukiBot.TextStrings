@@ -37,8 +37,8 @@ namespace TextStrings
             return args[1].ToLower() switch
             {
                 // Game Specific Trade Help
-                "gen6" or "xy" or "oras" => HelpCommandsStrings.TradeHelp6,
-                "gen7" or "sm" or "usum" => HelpCommandsStrings.TradeHelp7,
+                // "gen6" or "xy" or "oras" => HelpCommandsStrings.TradeHelp6,
+                // "gen7" or "sm" or "usum" => HelpCommandsStrings.TradeHelp7,
                 "swsh" => HelpCommandsStrings.TradeHelpSWSH,
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
                 "pla" => HelpCommandsStrings.TradeHelpPLA,
@@ -46,7 +46,7 @@ namespace TextStrings
 
                 // Trade Error Help
                 "error" or "errors" => HelpCommandsStrings.Error,
-                "gts" => HelpCommandsStrings.ErrorGTS,
+                // "gts" => HelpCommandsStrings.ErrorGTS,
                 "linkswsh" => HelpCommandsStrings.ErrorLinkSWSH,
                 "linkbdsp" => HelpCommandsStrings.ErrorLinkBDSP,
                 "linkpla" => HelpCommandsStrings.ErrorLinkPLA,
@@ -55,18 +55,18 @@ namespace TextStrings
 
                 // Mythicals Help
                 "mythicals" or "mythical" => HelpCommandsStrings.Mythicals,
-                "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
-                "mythicals7" or "mythical7" => HelpCommandsStrings.Mythicals7,
-                "mythicals8" or "mythical8" => HelpCommandsStrings.Mythicals8,
-                "mythicals9" or "mythical9" => HelpCommandsStrings.Mythicals9,
+                // "mythicals6" or "mythical6" => HelpCommandsStrings.Mythicals6,
+                // "mythicals7" or "mythical7" => HelpCommandsStrings.Mythicals7,
+                // "mythicals8" or "mythical8" => HelpCommandsStrings.Mythicals8,
+                // "mythicals9" or "mythical9" => HelpCommandsStrings.Mythicals9,
 
                 // Trade Command Help
                 "commands" or "command" or "customizations" or "customization" => HelpCommandsStrings.CommandList,
                 "cooldown" or "cd" or "cap" or "timecapsule" => string.Format(HelpCommandsStrings.Cooldown, GeneralTradeCooldown),
-                "deposit" or "deposited" => HelpCommandsStrings.Deposit,
+                // "deposit" or "deposited" => HelpCommandsStrings.Deposit,
                 "eggs" or "egg" => HelpCommandsStrings.Eggs,
                 "events" or "event" => HelpCommandsStrings.Events,
-                "friendcode" or "fc" => HelpCommandsStrings.FriendCode,
+                // "friendcode" or "fc" => HelpCommandsStrings.FriendCode,
                 "format" or "example" => HelpCommandsStrings.Format,
                 "forms" or "form" => HelpCommandsStrings.FormList,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
@@ -77,7 +77,7 @@ namespace TextStrings
                 "sub" or "subs" or "subscribe" or "subscriber" => HelpCommandsStrings.Sub,
                 "tid" or "sid" => HelpCommandsStrings.TIDSID,
                 "takeown" or "mydetails" or "trainerid" or "trainer" => HelpCommandsStrings.Takeown,
-                "wt" or "wondertrade" => HelpCommandsStrings.WonderTrade,
+                // "wt" or "wondertrade" => HelpCommandsStrings.WonderTrade,
 
                 // Chat Command Help
                 "pcoins" or "pcoin" or "coins" or "points" => HelpCommandsStrings.PCoins,

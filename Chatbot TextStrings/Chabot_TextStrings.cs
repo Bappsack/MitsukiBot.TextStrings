@@ -66,18 +66,18 @@ namespace TextStrings
             public readonly static string Invalid_OTGender = "Invalid OTGender State!";
             public readonly static string Invalid_Alpha = "Invalid Alpha State!";
             public readonly static string Invalid_Contest = "Invalid Contest State!";
-            public readonly static string Invalid_Date = "Invalid Met Date!";
+            public readonly static string Invalid_Date = "Invalid Met Date! (dd-mm-yyyy)";
 
             public readonly static string Invalid_Dynamax = "Invalid Dynamax State!";
             public readonly static string Invalid_MoveFlags = "Invalid Move Flag State!";
             public readonly static string Invalid_HyperTrained = "Invalid HyperTrained Flag State!";
-            public readonly static string Invalid_Height = "Invalid Height!";
-            public readonly static string Invalid_Weight = "Invalid Weight!";
+            public readonly static string Invalid_Height = "Invalid Height! (0-255)";
+            public readonly static string Invalid_Weight = "Invalid Weight! (0-255)";
             public readonly static string Invalid_MaxPP = "Invalid PP State!";
             public readonly static string Invalid_MaxEL = "Invalid EL State!";
             public readonly static string Invalid_DynamaxLevel = "Invalid Dynamax Level!";
             public readonly static string Invalid_Tera = "Invalid Tera Type!";
-            public readonly static string Invalid_Scale = "Invalid Scale Size!";
+            public readonly static string Invalid_Scale = "Invalid Scale Size! (0-255)";
 
             public readonly static string Invalid_Moves_GameSpecific = "{0} doesn't learn these moves in {1} : {2}";
 
@@ -227,7 +227,7 @@ namespace TextStrings
             // Save Trade Code
             public readonly static string SetCode_BlacklistedCode = "This Link Code is used by other people already! Please save a different Link Code!";
             public readonly static string SetCode_Success = "Your Link Code is now saved!";
-            public readonly static string SetCode_Error = "Your wanted Link Code is the wrong length (8 digits) or contains non-digits! If you are trying to save a 3DS friend code, use '!savefc' instead!";
+            public readonly static string SetCode_Error = "Your wanted Link Code is the wrong length (8 digits) or contains non-digits!";
 
 
             // Transfer Pcoins
@@ -283,7 +283,7 @@ namespace TextStrings
 
 
             // Trades
-            public readonly static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code! If you are on a 3DS game, use '!tradeUSUM' (SM/USUM) or '!tradeORAS' (XY/ORAS) instead!";
+            public readonly static string Trade_CodeNotSaved = "[Switch] You haven't saved a Link Code yet! Use '!setcode ####-####' to save a Link Code!";
             public readonly static string Trade_FriendcodeBanned = "So you're trying to trade? Too bad, your friend code is banned! mitsukiLUL";
             public readonly static string Trade_NNIDBanned = "So you're trying to trade? Too bad, your Nintendo Network ID is banned! mitsukiLUL";
             public readonly static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
@@ -372,8 +372,8 @@ namespace TextStrings
             public readonly static string PcoinsMessage = "{0} You currently have: {1} Pcoins, are Level: {2}, and have actively watched the stream for: {3} days, {4} hours, and {4} minutes.";
 
             //Stats
-            public readonly static string Stats = "[Stats] Pcoins: {0}, Trivia Wins: {1}, Longest Trivia Streak: {2}, Watch Time: {3} days, {4} hours, and {5} minutes, Wonder Trade Wins: {6}, Total Trades: {7}";
-            public readonly static string CheckStats = "[Stats] User: @{0}, Pcoins: {1}, Trivia Wins: {2}, Longest Trivia Streak: {3}, Watch Time: {4} days, {5} hours, and {6} minutes, Wonder Trade Wins: {7}, Total Trades: {8}";
+            public readonly static string Stats = "[Stats] Pcoins: {0}, Trivia Wins: {1}, Longest Trivia Streak: {2}, Watch Time: {3} days, {4} hours, and {5} minutes, Total Trades: {7}";
+            public readonly static string CheckStats = "[Stats] User: @{0}, Pcoins: {1}, Trivia Wins: {2}, Longest Trivia Streak: {3}, Watch Time: {4} days, {5} hours, and {6} minutes, Total Trades: {8}";
 
             // Global Cooldown
             public readonly static string GlobalCooldown_Success = "Updated the general trade cooldown to:";
@@ -413,7 +413,7 @@ namespace TextStrings
             public readonly static string Leaderboard_Wondertrade = "Wonder Trade Leaderboard: ";
             public readonly static string Leaderboard_Level_Watchtime = "Level / Watch Time Leaderboard: ";
             public readonly static string Leaderboard_Pcoins = "Pcoin Leaderboard: ";
-            public readonly static string Top_Invalid = "{0} Specify a leaderboard: pcoin, time, trade, trivia, wt";
+            public readonly static string Top_Invalid = "{0} Specify a leaderboard: pcoin, time, trade, trivia";
 
             // Current Song / Skip Song
             public readonly static string CurrentSong = "Current song: {0} - {1}";
@@ -437,7 +437,7 @@ namespace TextStrings
             public readonly static string Queue_SubSuccess = "{0} The sub queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} hours and {5} minutes";
             public readonly static string Queue_SubSQLFlood = "{0} The sub queue currently has: {1} people, you are not in the sub queue.";
             public readonly static string Queue_Success = "{0} The queue currently has: {1} people, your position: {2}/{3}, estimated wait time: {4} hours and {5} minutes";
-            public readonly static string Queue_Individual = "{0} The queue currently has: Gen6: {1}, Gen7: {2}, SWSH: {3}, BDSP: {4}, PLA: {5}, SV: {6} people. You are not in the queue.";
+            public readonly static string Queue_Individual = "{0} The queue currently has: SWSH: {3}, BDSP: {4}, PLA: {5}, SV: {6} people. You are not in the queue.";
             public readonly static string Queue_SQLFlood = "{0} The queue currently has: {1} people, you are not in the queue.";
             public readonly static string Queue_All = "{0} The queue currently has a total of: {1} people.";
             public readonly static string Queue_NonSubSuccess = "{0} The queue currently has: {1} people.";
@@ -458,14 +458,13 @@ namespace TextStrings
                 "Join our Discord: mitsukiLUL https://discord.gg/5mdVKq9 mitsukiWink",
                 "Follow us on Twitter: https://twitter.com/ThatChrisWhite mitsukiSmug",
                 "Win the trivia to earn some sweet Pcoins!",
-                "Friendly reminder, Mega Stones, Eggs, and TrainerID customizations are sub-only, so don't wait and sub today with Prime Gaming for free! mitsukiHappy",
+                "Friendly reminder, eggs and TrainerID customizations are sub-only, so don't wait and sub today with Prime Gaming for free! mitsukiHappy",
                 "This stream will always be updated and improved! Enjoy our future projects and updates! mitsukiWoah",
-                "What did you guys win from Wonder Trade? Some sweet mythical Pokémon from us? Don't be shy and spread the love in chat! mitsukiKiss",
-                "Friendly reminder, mythical Pokémon can't be requested from the Gen 7 (SM/USUM) GTS trades! mitsukiAngry",
                 "[SUBS ONLY] Use '!unlockdetails' and '!lockdetails' for un/locking your TID/SID!",
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
-                "Remember to use the correct command for your game: !tradeORAS (XY/ORAS), !tradeUSUM (SM/USUM), !tradeSWSH (SWSH), !tradeBDSP (BDSP), !tradePLA (PLA), !tradeSV (SV)",
+                "Remember to use the correct command for your game: !tradeSWSH, !tradeBDSP , !tradePLA, or !tradeSV",
+                "Check out our trade guides at https://www.mitsuki.tv"
             };
         }
 
@@ -479,7 +478,7 @@ namespace TextStrings
             public readonly static string TradeHelpPLA = "[PLA] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradePLA Request: [Pokémon]' or '!tradePLA [Showdown Set]', 3) Search with your saved Link Code!";
             public readonly static string TradeHelpSV = "[SV] 1) Save an 8-digit Link Code using '!setcode ####-####', 2) Request a trade using '!tradeSV Request: [Pokémon]' or '!tradeSV [Showdown Set]', 3) Search with your saved Link Code!";
 
-            public readonly static string Error = "Specify what error you're getting: '!help linksv' for SV Link Trade, '!help linkpla' for PLA Link Trade, '!help linkbdsp' for BDSP Link Trade, '!help linkswsh' for SWSH Link Trade, '!help gts' for Gen 6/7 GTS, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
+            public readonly static string Error = "Specify what error you're getting: '!help linksv' for SV Link Trade, '!help linkpla' for PLA Link Trade, '!help linkbdsp' for BDSP Link Trade, '!help linkswsh' for SWSH Link Trade, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public readonly static string ErrorGTS = "[3DS] 1) Correct trade prefix? (Gen 6 = !tradeORAS, Gen 7 = !tradeUSUM), 2) Correct friend code? (!myfc), 3) Correct Pokémon for Deposit & Request? (Deposit = Pokémon deposited, Request = Pokémon wanted), 4) Specified Deposit in Showdown set? (Add 'Deposit: Pokémon' after 1st line), 5) Correct spelling of wanted Pokémon?, 6) Gender & Level left at Any?, 7) Try a different deposit Pokémon";
             public readonly static string ErrorLinkSWSH = "[SWSH] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Using correct in-game trade method? (Link Trade -> Set Link Code), 3) Using correct trade prefix? (!tradeSWSH), 4) Sending commands in correct order? (!setcode first, then !tradeSWSH), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
             public readonly static string ErrorLinkBDSP = "[BDSP] 1) Using correct in-game trade method? (Global Room -> Yes, with a Link Code), 2) Using correct trade prefix? (!tradeBDSP), 3) Sending commands in correct order? (!setcode first, then !tradeBDSP), 4) Try saving a new Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
@@ -487,7 +486,7 @@ namespace TextStrings
             public readonly static string ErrorLinkSV = "[SV] 1) Connected to the Internet? (Main Menu -> (L) Connect to Internet), 2) Using correct in-game trade method? (Poké Portal -> Link Trade -> Set Link Code), 3) Using correct trade prefix? (!tradeSV), 4) Sending commands in correct order? (!setcode first, then !tradeSV), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
             public readonly static string ErrorInvalid = "If your customizations are not legal, the bot will cancel the trade. Common issues include requesting an invalid ability, ball, level, and/or moveset, so try changing/removing these customizations first. If you require further assistance, ask for help in the #support channel in our Discord server!";
 
-            public readonly static string Mythicals = "Specify what game you're on: '!help mythicals9' for SV, !help mythicals8' for SWSH/BDSP/PLA, '!help mythicals7' for SM/USUM, '!help mythicals6' for XY/ORAS, or check this link for a list of mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
+            public readonly static string Mythicals = "Mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
             public readonly static string Mythicals6 = "[XY/ORAS] Mythical Pokémon CAN be requested from the Gen 6 GTS Trades as long as the customizations are for a mythical event distributed in Gen 6. Only Jirachi, Arceus, and Diancie can be requested shiny.";
             public readonly static string Mythicals7 = "[SM/USUM] Mythical Pokémon CANNOT be requested from the Gen 7 GTS Trades: Mew, Celebi, Jirachi, Deoxys, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora";
             public readonly static string Mythicals8 = "[SWSH/BDSP/PLA] Mythical Pokémon CAN be requested from the Gen 8 Link Trades as long as they are in the game. Mythical (and legendary) Pokémon cannot be alpha in PLA.";
@@ -495,44 +494,44 @@ namespace TextStrings
 
             public readonly static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
             public readonly static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
-            public readonly static string Eggs = "[SUBS ONLY] [Gen 8/9] Eggs can be requested by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: Ability, Ball, Form, Gender, IsShiny, IVs, Language, MetDate, Moves, Nature, Pokerus, TakeOwn, Tera Type, Height, Weight, Scale // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
-            public readonly static string Events = "Event Pokémon can be requested by adding 'Event: Yes, OT: [Event OT]' to your trade command (replace [Event OT] with the actual OT of the event) // Event database: https://www.serebii.net/events/";
-            public readonly static string Format = "Deposit: xxx, Request: xxx, Form: xxx, Shiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
+            public readonly static string Eggs = "[SUBS ONLY] [Gen 8/9] IsEgg: Yes // Eggs can be requested by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: Ability, Ball, Form, Gender, IsShiny, IVs, Language, MetDate, Moves, Nature, Pokerus, TakeOwn, Tera Type, Height, Weight, Scale // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
+            public readonly static string Events = "Event: Yes // Event Pokémon can be requested by adding 'Event: Yes' to your trade command. Specific events can be requested by adding 'OT: [Event OT]' and/or 'Event_ID: [Event TID]' to your trade command. // Event database: https://www.serebii.net/events";
+            public readonly static string Format = "Request: xxx, Form: xxx, Shiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public readonly static string FriendCode = "[3DS] How to find your friend code: Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
-            public readonly static string Language = "List of languages: JPN/Japanese, ENG/English, FRE/French, ITA/Italian, GER/German, ESP/Spanish, KOR/Korean, CHS/ChineseS, CHT/ChineseT";
-            public readonly static string Marks = "List of marks in SWSH: https://www.serebii.net/swordshield/marks.shtml // List of marks in SV: https://www.serebii.net/scarletviolet/marks.shtml";
-            public readonly static string Origin = "List of origins: Red, Blue, Blue JP, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed, LeafGreen, Colosseum, XD, Diamond, Pearl, Platinum, HeartGold, SoulSilver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, Brilliant Diamond, Shining Pearl, Legends Arceus, Scarlet, Violet, GO";
+            public readonly static string Language = "Language: xxx // List of languages: JPN/Japanese, ENG/English, FRE/French, ITA/Italian, GER/German, SPA/Spanish, KOR/Korean, CHS/ChineseS, CHT/ChineseT";
+            public readonly static string Marks = "Mark: xxx // List of marks in SWSH: https://www.serebii.net/swordshield/marks.shtml // List of marks in SV: https://www.serebii.net/scarletviolet/marks.shtml";
+            public readonly static string Origin = "Origin: xxx // List of origins: Red, Blue, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed, LeafGreen, Colosseum, XD, Diamond, Pearl, Platinum, HeartGold, SoulSilver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, Brilliant Diamond, Shining Pearl, Legends Arceus, Scarlet, Violet, GO";
             public readonly static string ShinyState = "Requested Pokémon are shiny by default unless shiny locked or only shiny via event, check this link for a list of shiny locked Pokémon: https://www.serebii.net/games/shiny.shtml";
-            public readonly static string Showdown = "When using Showdown sets, do not include 'Request:' in your command // [3DS] If you do not specify a deposit Pokémon by adding 'Deposit: xxx' to your command, the bot will search for Trubbish by default // Showdown Teambuilder: https://play.pokemonshowdown.com/teambuilder";
-            public readonly static string Sub = "Sub perks: no trade cooldown, shorter queue times, own trainer details on requested Pokémon, Mega Stones via GTS (Gen 6/7), eggs via Link Trade (Gen 8/9), sub-only chat commands";
+            public readonly static string Showdown = "When using Showdown sets, do not include 'Request:' in your command // Showdown Teambuilder: https://play.pokemonshowdown.com/teambuilder";
+            public readonly static string Sub = "Sub perks: no trade cooldown, shorter queue times, eggs, own trainer details on requested Pokémon";
             public readonly static string Takeown = "[SUBS ONLY] 1) '!unlockdetails', 2) Request a trade and send the bot a Pokémon caught/hatched by you, 3) '!trainer' to verify your IGN and TrainerID are correct, 4) '!lockdetails', 5) Add 'TakeOwn: Yes' to your trade command to apply your trainer details to requested Pokémon!";
             public readonly static string TIDSID = "Your TID and SID are 5-digit values. In Gen 7+, your Trainer ID No. is shown as a 6-digit DisplayTID with a 4-digit DisplaySID. The bot expects the 5-digit TID/SID combo, so entering your 6-digit DisplayTID will fail. It is recommended to use the TakeOwn command instead which automatically applies your trainer details to requested Pokémon. Check '!help takeown' for more info.";
             public readonly static string WonderTrade = "[3DS] Trade when the countdown timer from MitsukiBot says 'Go Wonder Trade!' to try your luck at winning a mythical Pokémon!";
 
-            public readonly static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username] [amount]', and earn Pcoins from the daily bonus (!daily), gambling (!gamble, !slots, !raffle, !jackpot, !roulette), trivia (1000 Pcoins per win), or by just being in chat!";
+            public readonly static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username] [amount]', and earn Pcoins from the daily bonus (!daily), gambling (!gamble, !slots, !jackpot, !roulette), trivia (1000 Pcoins per win), or by just being in chat!";
             public readonly static string Raffle = "Raffle happens every 10 minutes and gives you the chance to win the total Pcoins from all the entries, pay 5000 Pcoins to enter using '!raffle'";
             public readonly static string Bandit = "Slots/bandit multiplies your gamble if you match 3 emotes, try your luck using '!slots ###' // Allowed gamble amounts: 1-50000 | quarter | half | all // Multipliers: mitsukiWill (20x) | mitsukiLick (10x) | mitsukiLUL (8x) | mitsukiWhat (6x) | mitsukiFlirt (4x) | mitsukiThink (2x)";
             public readonly static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double your gamble if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";
             public readonly static string Jackpot = "Jackpot gives you a ~1% chance to win a large prize (500K+ Pcoins), pay 5000 Pcoins to try your luck using '!jackpot', check the prize amount using '!bank'";
             public readonly static string Roulette = "Roulette multiplies your bet if it matches the spin, place a bet using '!roulette [type] [amount]' // Allowed bet amounts: 1-50000 | quarter | half | all // Bet types: black/red (2x) | even/odd (2x) | high/low (2x) | first/second/third (3x) | 0-36 (36x)";
             public readonly static string Sounds = "[SUBS ONLY] List of sounds: {0}.";
-            public readonly static string Trivia = "Trivia happens every 2 minutes and gives you 1000 Pcoins if you guess the correct answer first, get a hint if you're stuck using '!hint'";
+            public readonly static string Trivia = "Trivia happens every minute and gives you 1000 Pcoins if you guess the correct answer first, get a hint if you're stuck using '!hint'";
 
-            public readonly static string FormList = "Check the available forms for a Pokémon using '!getforms Pokémon'";
+            public readonly static string FormList = "Form: xxx // Check the available forms for a Pokémon using '!getforms Pokémon'";
             public readonly static string CommandList = "Check the stream description for a list of available customizations!";
 
-            public readonly static string Options = "Help options: [Trading] gen6, gen7, swsh, bdsp, pla, sv, cooldown, error, friendcode, mythicals, sub, wondertrade // [Customizations] commands, format, showdown, deposit, eggs, events, forms, language, marks, origin, shiny, tid, sid, takeown // [Pcoins] pcoins, slots, gamble, jackpot, raffle, roulette, sounds, trivia";
-            public readonly static string InvalidArgsMessage = "Specify what help you're looking for: '!help sv' for SV Link Trade, '!help pla' for PLA Link Trade, !help bdsp' for BDSP Link Trade, '!help swsh' for SWSH Link Trade, '!help gen7' for SM/USUM GTS, '!help gen6' for XY/ORAS GTS, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
+            public readonly static string Options = "Help options: [Trading] swsh, bdsp, pla, sv, cooldown, error, sub // [Customizations] commands, format, showdown, eggs, events, forms, language, marks, origin, shiny, tid, sid, takeown // [Pcoins] pcoins, slots, gamble, jackpot, roulette, sounds, trivia";
+            public readonly static string InvalidArgsMessage = "Specify what help you're looking for: '!help sv' for SV Link Trade, '!help pla' for PLA Link Trade, !help bdsp' for BDSP Link Trade, '!help swsh' for SWSH Link Trade, '!help options' for other help options, or ask for help in the #support channel in our Discord server!";
         }
 
         public static class RegularTextCommands
         {
-            public readonly static string Info = "The stream runs 24/7 and offers Pokémon trades for XY/ORAS, SM/USUM, SWSH, BDSP, PLA, SV! Type !help for more info on requesting Pokémon!";
-            public readonly static string ShinyLockedPokemon = "Shiny locked Pokémon: Victini, Keldeo, Meloetta, Hoopa, Volcanion, Cosmog, Cosmoem, Magearna, Marshadow, Kubfu, Urshifu, Zarude, Glastrier, Spectrier, Calyrex, Enamorus, Ting-Lu, Chien-Pao, Wo-Chien, Chi-Yu, Koraidon, Miraidon (https://www.serebii.net/games/shiny.shtml)";
+            public readonly static string Info = "The stream runs 24/7 and offers Pokémon trades for SWSH, BDSP, PLA, SV! Type !help for more info on requesting Pokémon!";
+            public readonly static string ShinyLockedPokemon = "Shiny Locked Pokémon: https://www.serebii.net/games/shiny.shtml";
             public readonly static string UnobtainablePokemon7 = "Mythical Pokémon: Mew, Celebi, Jirachi, Deoxys, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Keldeo, Meloetta, Genesect, Diancie, Hoopa, Volcanion, Magearna, Marshadow, Zeraora, Meltan, Melmetal, Zarude (https://www.serebii.net/pokemon/legendary.shtml#mythical)";
             public readonly static string Hype = "SUB HYPE mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt mitsukiFlirt ";
 
-            public readonly static string Guide = "Check out our trade guides at https://www.mitsuki.tv!";
+            public readonly static string Guide = "Check out our trade guides at https://www.mitsuki.tv";
 
             public readonly static string TwitterURL = "Twitter account: https://twitter.com/ThatChrisWhite";
             public readonly static string DiscordURL = "Discord server: https://discordapp.com/invite/5mdVKq9";
@@ -541,7 +540,7 @@ namespace TextStrings
             public readonly static string FreeTrialSub = "Start your 30-day free trial with Amazon Prime - https://twitch.amazon.com/prime";
             public readonly static string BigShaq = "The ting goes skrrrahh, PAP, PAP, ka-ka-ka, Skidiki-pap-pap-pap. QUICK MATH, SKRRRAHH, MANS NOT HOT, No Ketchup, just sauce.";
             public readonly static string PoGoFriendcode = "Add me on Pokémon GO! Friend code: 3816-5046-0159";
-            public readonly static string ClaimCommandMessage = $"/me MitsukiBot gifted a Tier 1337 Subscription to @TerrysaurusRex18!";
+            public readonly static string ClaimCommandMessage = $"/me MitsukiBot gifted a Tier 1337 Subscription to @That1Orange!";
             public readonly static string Hungry = "You should try {0} with {1} and {2}!";
         }
     }

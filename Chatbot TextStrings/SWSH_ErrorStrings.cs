@@ -12,7 +12,7 @@
             public readonly static string NoBoxVisible = "Box was never shown, please request again!";
             public readonly static string FailedTradePIDMatch = "Something is wrong with your requested Pokémon or you declined the trade!\r\n";
 
-            public readonly static string FatalErrorException = "Fatal error occurred, please request again!";
+            public readonly static string FatalErrorException = "Fatal error occurred, please request again! If this issue persists, ask for help in the #support channel in our Discord server!";
 
             public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
 
