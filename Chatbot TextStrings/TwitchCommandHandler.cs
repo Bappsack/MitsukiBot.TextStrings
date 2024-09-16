@@ -69,6 +69,7 @@ namespace TextStrings
                 // "friendcode" or "fc" => HelpCommandsStrings.FriendCode,
                 "format" or "example" => HelpCommandsStrings.Format,
                 "forms" or "form" => HelpCommandsStrings.FormList,
+                "hometracker" or "ignorehometracker" => HelpCommandsStrings.HomeTracker,
                 "language" or "languages" or "lang" => HelpCommandsStrings.Language,
                 "mark" or "marks" => HelpCommandsStrings.Marks,
                 "origin" or "origins" => HelpCommandsStrings.Origin,

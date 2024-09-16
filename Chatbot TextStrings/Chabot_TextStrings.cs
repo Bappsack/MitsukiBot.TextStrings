@@ -273,7 +273,7 @@ namespace TextStrings
 
 
             // Cooldowns
-            public readonly static string TradeCooldownMessage = "You currently have a trade cooldown! Remaining time: {0} minutes and {1} seconds! mitsukiAngry";
+            public readonly static string TradeCooldownMessage = "You currently have a trade cooldown! Check '!help cooldown' for more info! Remaining time: {0} minutes and {1} seconds! mitsukiAngry";
             public readonly static string TradeCooldownOver = "You can request a trade!";
             public readonly static string TradeCooldownSubMessage = "As a sub you don't have a trade cooldown!";
             public readonly static string TimeCapsule_Success = @"You took a step into the future, there are over 5000 Pokémon now and it looks like here you don't have a trade cooldown ¯\_(ツ)_/¯";
@@ -289,7 +289,7 @@ namespace TextStrings
             public readonly static string Trade_TooLonginQueue = "It seems you've been in the queue for way too long, you will be removed from the queue! Please request again!";
             public readonly static string Trade_AlreadyInQueue = "You're already in the queue, please wait a bit!";
             public readonly static string Trade_ALT_AlreadyInQueue = "You're already in the queue with another account, trade rejected!";
-            public readonly static string Trade_Cooldown = "You currently have a trade cooldown! Remaining time:";
+            public readonly static string Trade_Cooldown = "You currently have a trade cooldown! Check '!help cooldown' for more info! Remaining time:";
             public readonly static string Trade_NoFriendCodeSaved = "[3DS] You haven't saved your friend code yet! Use '!savefc ####-####-####' to save your friend code! If you are on a Switch game, use '!tradeSWSH' (SWSH), '!tradeBDSP' (BDSP), '!tradePLA' (PLA), or '!tradeSV' (SV) instead!";
             public readonly static string Trade_ShowdownConvertError = "Wrong command usage!";
             public readonly static string Trade_Failed_Error = "Trade request failed! Reason(s): {0}";
@@ -313,8 +313,8 @@ namespace TextStrings
             // Forms
             public readonly static string Form_Success = "Available forms:";
             public readonly static string Form_Alcremie_List = "Available Alcremie forms: [Cream/Swirl] Vanilla Cream, Ruby Cream, Matcha Cream, Mint Cream, Lemon Cream, Salted Cream, Ruby Swirl, Caramel Swirl, Rainbow Swirl // [Sweet] Strawberry, Berry, Love, Star, Clover, Flower, Ribbon // [Format] Form: [Cream/Swirl] [Sweet] // [Example] Form: Ruby Swirl Ribbon";
-            public readonly static string Form_NonExist = "No special forms available.";
-            public readonly static string Form_Error = "This species is unknown, must be too QT for this world!";
+            public readonly static string Form_NonExist = "No forms available.";
+            public readonly static string Form_Error = "You didn't provide a valid Pokémon name!";
 
 
             // Trivia 
@@ -447,7 +447,7 @@ namespace TextStrings
             public readonly static string PLA_Levels_NotFound = "{0} Species not found!";
             public readonly static string PLA_Levels_Success = "{0} [PLA] Minimum levels for {1} (does not include HOME transfers): {2}, {3}, {4}. {5}";
             public readonly static string SerebiiNetBallLevelsLink = "For minimum levels in other games, check https://www.serebii.net/games/pokeball.shtml";
-            public readonly static string MissingHomeTrackerDisclaimer = " [Note] The origin game of this Pokémon does not match the destination game. This Pokémon may be blocked from being deposited into HOME due to missing the HOME tracker.";
+            public readonly static string MissingHomeTrackerDisclaimer = " [Note] The origin game of this Pokémon does not match the destination game. This Pokémon may be blocked from being deposited into HOME due to missing the HOME tracker. Check '!help hometracker' for more info.";
 
             public readonly static string Gen6_Offline = "Nintendo has ended 3DS online services. XY/ORAS trades are now offline.";
             public readonly static string Gen7_Offline = "Nintendo has ended 3DS online services. SM/USUM trades are now offline.";
@@ -464,6 +464,7 @@ namespace TextStrings
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
                 "Remember to use the correct command for your game: !tradeSWSH, !tradeBDSP , !tradePLA, or !tradeSV",
+                "Remember that you can use '!cap' to pay 5000 Pcoins to skip your cooldown!"
                 "Check out our trade guides at https://www.mitsuki.tv"
             };
         }
@@ -484,7 +485,7 @@ namespace TextStrings
             public readonly static string ErrorLinkBDSP = "[BDSP] 1) Using correct in-game trade method? (Global Room -> Yes, with a Link Code), 2) Using correct trade prefix? (!tradeBDSP), 3) Sending commands in correct order? (!setcode first, then !tradeBDSP), 4) Try saving a new Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
             public readonly static string ErrorLinkPLA = "[PLA] 1) Using correct in-game trade method? (Trading Post -> Someone far away), 2) Using correct trade prefix? (!tradePLA), 3) Sending commands in correct order? (!setcode first, then !tradePLA), 4) Try saving a new Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
             public readonly static string ErrorLinkSV = "[SV] 1) Connected to the Internet? (Main Menu -> (L) Connect to Internet), 2) Using correct in-game trade method? (Poké Portal -> Link Trade -> Set Link Code), 3) Using correct trade prefix? (!tradeSV), 4) Sending commands in correct order? (!setcode first, then !tradeSV), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
-            public readonly static string ErrorInvalid = "If your customizations are not legal, the bot will cancel the trade. Common issues include requesting an invalid ability, ball, level, and/or moveset, so try changing/removing these customizations first. If you require further assistance, ask for help in the #support channel in our Discord server!";
+            public readonly static string ErrorInvalid = "If your customizations are not legal, the bot will cancel the trade. Common issues include requesting an invalid shiny state, ball, level, and/or moveset, so try changing/removing these customizations first. If you require further assistance, ask for help in the #support channel in our Discord server!";
 
             public readonly static string Mythicals = "Mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
             public readonly static string Mythicals6 = "[XY/ORAS] Mythical Pokémon CAN be requested from the Gen 6 GTS Trades as long as the customizations are for a mythical event distributed in Gen 6. Only Jirachi, Arceus, and Diancie can be requested shiny.";
@@ -492,12 +493,13 @@ namespace TextStrings
             public readonly static string Mythicals8 = "[SWSH/BDSP/PLA] Mythical Pokémon CAN be requested from the Gen 8 Link Trades as long as they are in the game. Mythical (and legendary) Pokémon cannot be alpha in PLA.";
             public readonly static string Mythicals9 = "[SV] There are currently no mythical Pokémon in SV.";
 
-            public readonly static string Cooldown = "Non-subs have a {0}-min cooldown between trades, check the time remaining on your cooldown using '!cd', pay 5000 Pcoins to skip your cooldown using '!cap'";
+            public readonly static string Cooldown = "Non-subs have a {0}-min cooldown between trades. You can check the time remaining on your cooldown using '!cd'. Subs have no cooldown. // [TWITCH ONLY] You can pay 5000 Pcoins to skip your cooldown using '!cap'. Check '!help pcoins' for more info about Pcoins.";
             public readonly static string Deposit = "[3DS] The 'Deposit: [Pokémon]' command tells the bot what Pokémon to search for in the GTS, make sure to put the name of the Pokémon you left in the GTS, NOT the Pokémon you want to receive!";
             public readonly static string Eggs = "[SUBS ONLY] [Gen 8/9] IsEgg: Yes // Eggs can be requested by adding 'IsEgg: Yes' to your trade command // Supported egg customizations: Ability, Ball, Form, Gender, IsShiny, IVs, Language, MetDate, Moves, Nature, Pokerus, TakeOwn, Tera Type, Height, Weight, Scale // Move order: 1) Moves learned at level one, 2) Moves learned via level up, 3) Egg moves from parents, 4) Volt Tackle (Pichu only)";
             public readonly static string Events = "Event: Yes // Event Pokémon can be requested by adding 'Event: Yes' to your trade command. Specific events can be requested by adding 'OT: [Event OT]' and/or 'Event_ID: [Event TID]' to your trade command. // Event database: https://www.serebii.net/events";
             public readonly static string Format = "Request: xxx, Form: xxx, Shiny: xxx, Gender: xxx, Nickname: xxx, Ball: xxx, Level: xxx, Item: xxx, Ability: xxx, Nature: xxx, Move1: xxx, Move2: xxx, Move3: xxx, Move4: xxx, EV_HP: xxx, EV_ATK: xxx, EV_DEF: xxx, EV_SPA: xxx, EV_SPD: xxx, EV_SPE: xxx, etc.";
             public readonly static string FriendCode = "[3DS] How to find your friend code: Select the friend list icon (orange smiley) on the HOME Menu, your 12-digit friend code can be found at the bottom of your friend card (identified by a gold crown)";
+            public readonly static string HomeTracker = "Pokémon deposited into HOME are assigned a unique HOME tracker. Pokémon originating from other games are expected to have a HOME tracker from passing through HOME. By default, the bot only searches for Pokémon encounters from the request game/game pair, which do not need a HOME tracker. Adding 'IgnoreHomeTracker: Yes' to the trade command makes the bot search for encounters from other games, but these may be blocked from entering HOME due to missing the required HOME tracker.";
             public readonly static string Language = "Language: xxx // List of languages: JPN/Japanese, ENG/English, FRE/French, ITA/Italian, GER/German, SPA/Spanish, KOR/Korean, CHS/ChineseS, CHT/ChineseT";
             public readonly static string Marks = "Mark: xxx // List of marks in SWSH: https://www.serebii.net/swordshield/marks.shtml // List of marks in SV: https://www.serebii.net/scarletviolet/marks.shtml";
             public readonly static string Origin = "Origin: xxx // List of origins: Red, Blue, Yellow, Green, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed, LeafGreen, Colosseum, XD, Diamond, Pearl, Platinum, HeartGold, SoulSilver, Black, White, Black 2, White 2, X, Y, Omega Ruby, Alpha Sapphire, Sun, Moon, Ultra Sun, Ultra Moon, LGP, LGE, Sword, Shield, Brilliant Diamond, Shining Pearl, Legends Arceus, Scarlet, Violet, GO";
@@ -508,7 +510,7 @@ namespace TextStrings
             public readonly static string TIDSID = "Your TID and SID are 5-digit values. In Gen 7+, your Trainer ID No. is shown as a 6-digit DisplayTID with a 4-digit DisplaySID. The bot expects the 5-digit TID/SID combo, so entering your 6-digit DisplayTID will fail. It is recommended to use the TakeOwn command instead which automatically applies your trainer details to requested Pokémon. Check '!help takeown' for more info.";
             public readonly static string WonderTrade = "[3DS] Trade when the countdown timer from MitsukiBot says 'Go Wonder Trade!' to try your luck at winning a mythical Pokémon!";
 
-            public readonly static string PCoins = "Pcoins are this stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username] [amount]', and earn Pcoins from the daily bonus (!daily), gambling (!gamble, !slots, !jackpot, !roulette), trivia (1000 Pcoins per win), or by just being in chat!";
+            public readonly static string PCoins = "[TWITCH ONLY] Pcoins are this Twitch stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username] [amount]', and earn Pcoins from the daily bonus (!daily), gambling (!gamble, !slots, !jackpot, !roulette), trivia (1000 Pcoins per win), or by just being in chat!";
             public readonly static string Raffle = "Raffle happens every 10 minutes and gives you the chance to win the total Pcoins from all the entries, pay 5000 Pcoins to enter using '!raffle'";
             public readonly static string Bandit = "Slots/bandit multiplies your gamble if you match 3 emotes, try your luck using '!slots ###' // Allowed gamble amounts: 1-50000 | quarter | half | all // Multipliers: mitsukiWill (20x) | mitsukiLick (10x) | mitsukiLUL (8x) | mitsukiWhat (6x) | mitsukiFlirt (4x) | mitsukiThink (2x)";
             public readonly static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double your gamble if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";
