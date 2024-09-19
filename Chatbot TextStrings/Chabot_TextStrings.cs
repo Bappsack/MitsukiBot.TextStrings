@@ -464,7 +464,7 @@ namespace TextStrings
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
                 "Remember to use the correct command for your game: !tradeSWSH, !tradeBDSP , !tradePLA, or !tradeSV",
-                "Remember that you can use '!cap' to pay 5000 Pcoins to skip your cooldown!"
+                "Remember that you can use '!cap' to pay 5000 Pcoins to skip your cooldown!",
                 "Check out our trade guides at https://www.mitsuki.tv"
             };
         }
