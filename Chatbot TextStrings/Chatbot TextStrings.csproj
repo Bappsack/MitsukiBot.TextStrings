@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-   <TargetFrameworks>net8.0-windows</TargetFrameworks>
+   <TargetFrameworks>net9.0-windows</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <Authors>Mitsuki.TV</Authors>
     <AssemblyName>Chatbot TextStrings</AssemblyName>
@@ -22,7 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PKHeX.Core">
-      <HintPath>..\..\PKHeX\PKHeX.Core\bin\Debug\net8.0\PKHeX.Core.dll</HintPath>
+      <HintPath>..\..\PKHeX\PKHeX.WinForms\bin\Debug\net9.0-windows\win-x64\PKHeX.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
