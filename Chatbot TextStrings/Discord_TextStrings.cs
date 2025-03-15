@@ -17,7 +17,7 @@ namespace Chatbot_TextStrings
             public readonly static string InvalidFileTypePB8 = "{0} your provided file is not supported in BDSP, please use a .PB8 file. Trade cancelled!";
             public readonly static string InvalidFileTypePA8 = "{0} your provided file is not supported in PLA, please use a .PA8 file. Trade cancelled!";
             public readonly static string InvalidFileTypePK9 = "{0} your provided file is not supported in SV, please use a .PK9 file. Trade cancelled!";
-
+            public readonly static string BlockedDMs = "I was unable to send you a direct message for your trade. Please allow direct messages from this server.";
         }
 
         public static class ResponseStrings
