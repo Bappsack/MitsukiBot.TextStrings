@@ -102,7 +102,7 @@ namespace TextStrings
             public readonly static string Invalid_SID_TooLong = "Invalid: SID too long! Check '!help sid' for more info!";
             public readonly static string InvalidChangesAbortTrade = "Your provided customizations were invalid. Trade cancelled! Check '!help invalid' for troubleshooting steps or ask for help in the #support channel in our Discord server!";
 
-            public readonly static string FusedForm = "Invalid: Fused forms can't be traded!";
+            public readonly static string FusedForm = "Invalid: Pokémon fusions can't be traded!";
             public readonly static string NoRequest = "no wanted Pokémon specified!";
             public readonly static string NoDeposit = "no deposit Pokémon specified!";
             public readonly static string NotInGen6 = "This Pokémon isn't in XY/ORAS!";
@@ -227,13 +227,13 @@ namespace TextStrings
             // Save Trade Code
             public readonly static string SetCode_BlacklistedCode = "This Link Code is used by other people already! Please save a different Link Code!";
             public readonly static string SetCode_Success = "Your Link Code is now saved!";
-            public readonly static string SetCode_Error = "Your wanted Link Code is the wrong length (8 digits) or contains non-digits!";
+            public readonly static string SetCode_Error = "Failed to save Link Code! Your Link Code is invalid or you used the wrong command! Use '!setcode ####-####' to save an 8-digit Link Code!";
 
 
             // Transfer Pcoins
             public readonly static string Give_Success = "{0} transferred {1} Pcoins to {2}";
             public readonly static string Give_NegativeAmount = "You can't transfer a negative amount or gibberish Kappa";
-            public readonly static string Give_Error = "Failed to transfer Pcoins";
+            public readonly static string Give_Error = "Failed to transfer Pcoins!";
             public readonly static string Give_SameUser = "You can't transfer Pcoins to yourself!";
 
 
@@ -463,8 +463,9 @@ namespace TextStrings
                 "[SUBS ONLY] Use '!unlockdetails' and '!lockdetails' for un/locking your TID/SID!",
                 "Have you found a bug/glitch and want to tell us? Post it in the #support channel in our Discord server and it will be fixed :)",
                 "If you're stuck in the queue, use '!cancel' to remove yourself from the queue!",
-                "Remember to use the correct command for your game: !tradeSWSH, !tradeBDSP , !tradePLA, or !tradeSV",
+                "Remember to use the correct command for your game: !tradeSWSH, !tradeBDSP, !tradePLA, or !tradeSV",
                 "Remember that you can use '!cap' to pay 5000 Pcoins to skip your cooldown!",
+                "Friendly reminder, a Nintendo Switch Online membership is required to trade online!",
                 "Check out our trade guides at https://www.mitsuki.tv"
             };
         }
@@ -481,10 +482,10 @@ namespace TextStrings
 
             public readonly static string Error = "Specify what error you're getting: '!help linksv' for SV Link Trade, '!help linkpla' for PLA Link Trade, '!help linkbdsp' for BDSP Link Trade, '!help linkswsh' for SWSH Link Trade, '!help invalid' for invalid customizations, or ask for help in the #support channel in our Discord server!";
             public readonly static string ErrorGTS = "[3DS] 1) Correct trade prefix? (Gen 6 = !tradeORAS, Gen 7 = !tradeUSUM), 2) Correct friend code? (!myfc), 3) Correct Pokémon for Deposit & Request? (Deposit = Pokémon deposited, Request = Pokémon wanted), 4) Specified Deposit in Showdown set? (Add 'Deposit: Pokémon' after 1st line), 5) Correct spelling of wanted Pokémon?, 6) Gender & Level left at Any?, 7) Try a different deposit Pokémon";
-            public readonly static string ErrorLinkSWSH = "[SWSH] 1) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 2) Using correct in-game trade method? (Link Trade -> Set Link Code), 3) Using correct trade prefix? (!tradeSWSH), 4) Sending commands in correct order? (!setcode first, then !tradeSWSH), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
-            public readonly static string ErrorLinkBDSP = "[BDSP] 1) Using correct in-game trade method? (Global Room -> Yes, with a Link Code), 2) Using correct trade prefix? (!tradeBDSP), 3) Sending commands in correct order? (!setcode first, then !tradeBDSP), 4) Try saving a new Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
-            public readonly static string ErrorLinkPLA = "[PLA] 1) Using correct in-game trade method? (Trading Post -> Someone far away), 2) Using correct trade prefix? (!tradePLA), 3) Sending commands in correct order? (!setcode first, then !tradePLA), 4) Try saving a new Link Code, 5) Try searching early before your turn is announced, 6) Try restarting your Switch";
-            public readonly static string ErrorLinkSV = "[SV] 1) Connected to the Internet? (Main Menu -> (L) Connect to Internet), 2) Using correct in-game trade method? (Poké Portal -> Link Trade -> Set Link Code), 3) Using correct trade prefix? (!tradeSV), 4) Sending commands in correct order? (!setcode first, then !tradeSV), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
+            public readonly static string ErrorLinkSWSH = "[SWSH] 1) Have Nintendo Switch Online?, 2) Connected to the Internet? (Y-Comm -> (+) Connect to the Internet), 3) Using correct in-game trade method? (Link Trade -> Set Link Code), 4) Using correct trade prefix? (!tradeSWSH), 5) Sending commands in correct order? (!setcode first, then !tradeSWSH), 6) Try saving a new Link Code, 7) Try searching early before your turn is announced, 8) Try restarting your Switch";
+            public readonly static string ErrorLinkBDSP = "[BDSP] 1) Have Nintendo Switch Online?, 2) Using correct in-game trade method? (Pokémon Center basement -> Yes, with a Link Code), 3) Using correct trade prefix? (!tradeBDSP), 4) Sending commands in correct order? (!setcode first, then !tradeBDSP), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
+            public readonly static string ErrorLinkPLA = "[PLA] 1) Have Nintendo Switch Online?, 2) Using correct in-game trade method? (Trading Post -> Someone far away), 3) Using correct trade prefix? (!tradePLA), 4) Sending commands in correct order? (!setcode first, then !tradePLA), 5) Try saving a new Link Code, 6) Try searching early before your turn is announced, 7) Try restarting your Switch";
+            public readonly static string ErrorLinkSV = "[SV] 1) Have Nintendo Switch Online?, 2) Connected to the Internet? (Main Menu -> (L) Connect to Internet), 3) Using correct in-game trade method? (Poké Portal -> Link Trade -> Set Link Code), 4) Using correct trade prefix? (!tradeSV), 5) Sending commands in correct order? (!setcode first, then !tradeSV), 6) Try saving a new Link Code, 7) Try searching early before your turn is announced, 8) Try restarting your Switch";
             public readonly static string ErrorInvalid = "If your customizations are not legal, the bot will cancel the trade. Common issues include requesting an invalid shiny state, ball, level, and/or moveset, so try changing/removing these customizations first. If you require further assistance, ask for help in the #support channel in our Discord server!";
 
             public readonly static string Mythicals = "Mythical Pokémon: https://www.serebii.net/pokemon/legendary.shtml#mythical";
@@ -510,7 +511,7 @@ namespace TextStrings
             public readonly static string TIDSID = "Your TID and SID are 5-digit values. In Gen 7+, your Trainer ID No. is shown as a 6-digit DisplayTID with a 4-digit DisplaySID. The bot expects the 5-digit TID/SID combo, so entering your 6-digit DisplayTID will fail. It is recommended to use the TakeOwn command instead which automatically applies your trainer details to requested Pokémon. Check '!help takeown' for more info.";
             public readonly static string WonderTrade = "[3DS] Trade when the countdown timer from MitsukiBot says 'Go Wonder Trade!' to try your luck at winning a mythical Pokémon!";
 
-            public readonly static string PCoins = "[TWITCH ONLY] Pcoins are this Twitch stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username] [amount]', and earn Pcoins from the daily bonus (!daily), gambling (!gamble, !slots, !jackpot, !roulette), trivia (1000 Pcoins per win), or by just being in chat!";
+            public readonly static string PCoins = "[TWITCH ONLY] Pcoins are the Twitch stream's currency, check your Pcoin amount using '!pcoins', pay 5000 Pcoins to skip your trade cooldown using '!cap', give Pcoins to other viewers using '!give [username] [amount]', and earn Pcoins from the daily bonus (!daily), gambling (!gamble, !slots, !jackpot, !roulette), trivia (1000 Pcoins per win), or by just being in chat!";
             public readonly static string Raffle = "Raffle happens every 10 minutes and gives you the chance to win the total Pcoins from all the entries, pay 5000 Pcoins to enter using '!raffle'";
             public readonly static string Bandit = "Slots/bandit multiplies your gamble if you match 3 emotes, try your luck using '!slots ###' // Allowed gamble amounts: 1-50000 | quarter | half | all // Multipliers: mitsukiWill (20x) | mitsukiLick (10x) | mitsukiLUL (8x) | mitsukiWhat (6x) | mitsukiFlirt (4x) | mitsukiThink (2x)";
             public readonly static string Gamble = "Gamble/coinflip gives you a 50/50 chance to double your gamble if you win, try your luck using '!gamble ###' // Allowed gamble amounts: 1-50000 | quarter | half | all";

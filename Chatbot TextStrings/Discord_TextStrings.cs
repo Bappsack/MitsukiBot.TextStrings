@@ -48,22 +48,23 @@ namespace Chatbot_TextStrings
                 // internal static readonly string TradePostGeneral = @"^(?=.*\b(any[onebdy]*|some[onebdy]*|help)\b)(?=.*\b(trade|evolv[eing]*)\b).*$";
                 // internal static readonly string NonEnglishPost = @"\b(fran[çc]ais[e]*|des fr|les gars|tout le monde|bonjour|salut|slt|svp|merci|il y a|y a-t-il|quelqu['esun]*|[pour]*quoi|qui|[m']*aider|[ée]change[rs]*|espa[ñn]ol[a]*|alguien|ayudar|como|funciona|intercambi[aeor]*|deutsch[en]*|jemand|[d]*ich|dir|du|bist|sind|bitte|geht['s]*|k[öo]nnen|kann[st]*|haben|brauch[enst]*|kein[enst]*|bekommen|nicht|auch|welche[n]*|w[üu]rde|m[öo]chte|traden|tauschen|helfen)\b";
 
-                internal static readonly string BotPost = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|is\sit\spossible|problems?|issues?|help)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[aeiodnstz]*|[un]*ban[ned]*|invalid|encounter|partner|pcoins?|offline|takeown|format)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
-                internal static readonly string TradePost = @"^(?=.*\b(any[onebdy]*|some[onebdy]*|help)\b)(?=.*\b(trade|evolv[eing]*)\b).*$";
+                // internal static readonly string BotPost = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|is\sit\spossible|problems?|issues?|help)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[aeiodnstz]*|[un]*ban[ned]*|invalid|encounter|partner|pcoins?|offline|takeown|format)\b)(?!.*\b(raids?|evolv[seding]*|[poke]*dex|sand?wh?it?ch)\b).*$";
+                // internal static readonly string TradePost = @"^(?=.*\b(any[onebdy]*|some[onebdy]*|help)\b)(?=.*\b(trade|evolv[eing]*)\b).*$";
+                internal static readonly string TradeSupportPost = @"^(?=.*\b(what[\W?s]*|when[\W?s]*|where[\W?s]*|why[\W?s]*|how[\W?s]*|will|won\W?t|did[n\W?t]*|do[esn\W?t]*|can[n?o?\W?t]*|is\sit\spossible|problems?|issues?|help|any[onebdy]*|some[onebdy]*)\b)(?=.*\b(bots?|commands?|roles?|cool\s?downs?|sub[scribe]*|deposit[seding]*|request[seding]*|work[seding]*|custom[aeiodnstz]*|[un]*ban[ned]*|invalid|encounter|partner|pcoins?|offline|takeown|format|trad[eing]|evolv[eing]*|[poke]*dex)\b).*$";
                 internal static readonly string NonEnglishPost = @"\b(fran[çc]ais[e]*|des fr|les gars|tou[tse]|bonjour|salut|slt|s[tv]p|merci|il y a|y a-t-il|quelqu['esun]*|[pour]*quoi|qui|[m']*aider|[ée]change[rs]*|espa[ñn]ol[a]*|alguien|ayudar|como|funciona|intercambi[aeor]*|deutsch[en]*|jemand|[d]*ich|dir|du|das|b?ist|sind|bitte|geht['s]*|k[öo]nnen|kann[st]*|haben|brauch[enst]*|kein[enst]*|bekommen|nicht|auch|welche[n]*|w[üu]rde|m[öo]chte|schreib[en]*|traden|tauschen|helfen)\b";
             }
 
             internal static class RespondStrings
             {
-                internal static readonly string PostInSupport = "Your message was flagged as a possible help post. **If you need help with the bots, streams, or server, please post in <#629335412141195264>!**";
-                internal static readonly string PostInTradeRoom = "Your message was flagged as a possible trade post. **If you are looking to trade with other users, please post in <#313696378398310401>!**";
-                internal static readonly string EnglishOnly = "For moderation purposes, this server is **English only**.";
+                // internal static readonly string PostInSupport = "Your message was flagged as a possible help post. **If you need help with the bots, streams, or server, please post in <#629335412141195264>!**";
+                // internal static readonly string PostInTradeRoom = "Your message was flagged as a possible trade post. **If you are looking to trade with other users, please post in <#313696378398310401>!**";
+                internal static readonly string WrongChannel = "If you want to __**trade with other users**__, please post in <#313696378398310401>! If you need __**help with the bots, streams, or server**__, please post in <#629335412141195264>!";
+                internal static readonly string EnglishOnly = "For moderation purposes, this server is __**English only**__.";
             }
 
             public static string? GetResponderString(string Haystack, ulong ChannelID) => Haystack switch
             {
-                var h when (ChannelID == GeneralChat && Regex.IsMatch(h, Needles.BotPost, options)) => RespondStrings.PostInSupport,
-                var h when (ChannelID == GeneralChat && Regex.IsMatch(h, Needles.TradePost, options)) => RespondStrings.PostInTradeRoom,
+                var h when (ChannelID == GeneralChat && Regex.IsMatch(h, Needles.TradeSupportPost, options)) => RespondStrings.WrongChannel,
                 var h when (ChannelID == GeneralChat && Regex.IsMatch(h, Needles.NonEnglishPost, options)) => RespondStrings.EnglishOnly,
                 _ => null,
             };
