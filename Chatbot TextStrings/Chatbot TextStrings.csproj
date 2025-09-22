@@ -19,10 +19,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="TwitchLib.Client" Version="3.4.0-preview-d6687358268723051c755034b155a703c97c353a" />
+    <PackageReference Include="TwitchLib.EventSub.Core" Version="2.5.3-preview-e4631fd" />
+    <PackageReference Include="TwitchLib.EventSub.Websockets" Version="0.6.0-preview-dbc970c" />
+    <PackageReference Include="TwitchLib.PubSub" Version="3.2.6" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PKHeX.Core">
-      <HintPath>..\..\PKHeX\PKHeX.WinForms\bin\Debug\net9.0-windows\win-x64\PKHeX.Core.dll</HintPath>
+      <HintPath>..\..\PKHeX\PKHeX.Core\bin\Debug\net9.0\PKHeX.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
