@@ -60,6 +60,7 @@ namespace TextStrings
             public readonly static string Invalid_GMax = "Invalid Gmax State!";
             public readonly static string Invalid_Event = "Invalid Event State!";
             public readonly static string Invalid_Egg = "Invalid Egg State!";
+            public readonly static string Invalid_RandomIVs = "Invalid RandomIvs State!";
             public readonly static string Invalid_EncounterType = "Invalid EncounterType State!";
             public readonly static string Invalid_IgnoreHomeTracker = "Invalid IgnoreHomeTracker State!";
             public readonly static string Invalid_TakeOwn = "Invalid TakeOwn State!";
