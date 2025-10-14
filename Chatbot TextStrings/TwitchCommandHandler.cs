@@ -43,6 +43,7 @@ namespace TextStrings
                 "bdsp" => HelpCommandsStrings.TradeHelpBDSP,
                 "pla" => HelpCommandsStrings.TradeHelpPLA,
                 "sv" => HelpCommandsStrings.TradeHelpSV,
+                "plza" => HelpCommandsStrings.TradeHelpPLZA,
 
                 // Trade Error Help
                 "error" or "errors" => HelpCommandsStrings.Error,
@@ -51,6 +52,7 @@ namespace TextStrings
                 "linkbdsp" => HelpCommandsStrings.ErrorLinkBDSP,
                 "linkpla" => HelpCommandsStrings.ErrorLinkPLA,
                 "linksv" => HelpCommandsStrings.ErrorLinkSV,
+                "linkplza" => HelpCommandsStrings.ErrorLinkPLZA,
                 "invalid" => HelpCommandsStrings.ErrorInvalid,
 
                 // Mythicals Help
