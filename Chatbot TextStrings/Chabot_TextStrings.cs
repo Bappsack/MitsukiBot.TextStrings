@@ -213,6 +213,9 @@ namespace TextStrings
             public readonly static string SV_TradesBlocked = "SV trades are now disabled.";
             public readonly static string SV_TradesUnblocked = "SV trades are now enabled.";
 
+            public readonly static string PLZA_TradesBlocked = "PLZA trades are now disabled.";
+            public readonly static string PLZA_TradesUnblocked = "PLZA trades are now enabled.";
+
             public readonly static string All_TradesBlocked = "All trade requests are now disabled.";
             public readonly static string All_TradesUnblocked = "All trade requests are now enabled.";
 
