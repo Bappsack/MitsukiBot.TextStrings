@@ -113,6 +113,7 @@ namespace TextStrings
             public readonly static string NotInSinnoh = "This Pokémon isn't in BDSP!";
             public readonly static string NotInHisui = "This Pokémon isn't in PLA!";
             public readonly static string NotInPaldea = "This Pokémon isn't in SV!";
+            public readonly static string NotInPLZA = "This Pokémon isn't in PLZA!";
 
             public readonly static string SID5Digit = "Invalid: SID can only be 5 digits!";
             public readonly static string Level_to_high = "Level too high ({0}/100)";
