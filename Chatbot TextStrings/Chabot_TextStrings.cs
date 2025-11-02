@@ -92,6 +92,7 @@ namespace TextStrings
             public readonly static string NonExist_Move_BDSP = "Move{0} is not available in BDSP!";
             public readonly static string NonExist_Move_PLA = "Move{0} is not available in PLA!";
             public readonly static string NonExist_Move_SV = "Move{0} is not available in SV!";
+            public readonly static string NonExist_Move_PLZA = "Move{0} is not available in PLZA!";
 
             public readonly static string Invalid_Date_Past = "Invalid: Met Date must be >= 2000!";
             public readonly static string Invalid_Date_Future = "Invalid: Met Date must be <= 2099!";
@@ -138,6 +139,9 @@ namespace TextStrings
 
             // PLA
             public readonly static string PLA_NoHeldItemsAllowed = "Pokémon can't hold items in PLA!";
+
+            // PLZA
+            public readonly static string PLZA_NoMegastoneAllowed = "Megastones aren't tradeable in PLZA!";
         }
 
         public static class TradeResponseStrings_Twitch
