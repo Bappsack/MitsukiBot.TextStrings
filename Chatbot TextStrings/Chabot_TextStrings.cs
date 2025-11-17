@@ -72,6 +72,7 @@ namespace TextStrings
 
             public readonly static string Invalid_Dynamax = "Invalid Dynamax State!";
             public readonly static string Invalid_MoveFlags = "Invalid Move Flag State!";
+            public readonly static string Invalid_PlusFlags = "Invalid Plus Flag State!";
             public readonly static string Invalid_HyperTrained = "Invalid HyperTrained Flag State!";
             public readonly static string Invalid_Height = "Invalid Height! (0-255)";
             public readonly static string Invalid_Weight = "Invalid Weight! (0-255)";
